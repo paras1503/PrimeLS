@@ -64,7 +64,7 @@ const AboutUs = () => {
             fontSize="2.125rem"
             fontFamily="avenir"
           >
-            BRIGHT IDEAS-SMART SOLUTIONS
+            BRIGHT IDEAS - SMART SOLUTIONS
           </MtnHead>
           <MtnTxt
             initial={{ opacity: 0 }}
@@ -149,6 +149,7 @@ const AboutUs = () => {
                   backgroundColor="#DFBD69"
                   borderRadius="50%"
                   my="0.5"
+
                 />
               </Flex>
               <Divider
@@ -174,7 +175,6 @@ const AboutUs = () => {
               <Heading
                 fontSize="1.5rem"
                 fontFamily="avenir"
-                textTransform="uppercase"
               >
                 30+ years
               </Heading>
@@ -242,9 +242,8 @@ const AboutUs = () => {
                   fontSize="1.5rem"
                   fontFamily="avenir"
                   textAlign="left"
-                  textTransform="uppercase"
                 >
-                  1 Million sqft.{" "}
+                  
                   <Text
                     as="span"
                     fontSize="1.25rem"
@@ -253,6 +252,7 @@ const AboutUs = () => {
                   >
                     approx.
                   </Text>
+                   1 Million sqft.{" "}
                 </MtnHead>
                 <MtnTxt
                   initial={{ opacity: 0}}
