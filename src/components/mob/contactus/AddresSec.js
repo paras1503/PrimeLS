@@ -51,14 +51,18 @@ const AddresSec = () => {
           animate={animateFlx}
           transition={{ duration: 2, type: "just" }}
           direction="column"
-          w="100%"
+          w="90%"
           h="100%"
+          mt="-5rem"
           py="1.563rem"
           align="center"
           justify="center"
           pl="1rem"
           pr="1rem"
-          bgGradient={add ? "linear(to-b, #B88746, #DFBD69)" : "white"}
+          zIndex="1"
+          color={add? "#FFFFFF": "black"}
+          bg={add ? "#DFBD69" : "white"}
+          boxShadow="0px 10px 20px rgba(0, 0, 0, 0.25)"
           _hover={{ textDecoration: "none" }}
           onClick={(e) => {
             setAdd(true);
@@ -111,15 +115,18 @@ const AddresSec = () => {
           animate={animateFlx}
           transition={{ duration: 2, type: "just" }}
           direction="column"
-          w="100%"
+          w="90%"
           h="100%"
           align="center"
           justify="center"
           py="1.563rem"
           pl="1rem"
           pr="1rem"
+          mt="1.5rem"
+          boxShadow="0px 10px 20px rgba(0, 0, 0, 0.25)"
+          color={add?"black" : "#FFFFFF" }
+          bg={add ? "white" :"#DFBD69" }
           _hover={{ textDecoration: "none" }}
-          bgGradient={add ? "white" : "linear(to-b, #B88746, #DFBD69)"}
           onClick={(e) => {
             setAdd(false);
           }}
@@ -178,7 +185,7 @@ const AddresSec = () => {
           class="gmap_iframe"
             width="100%"
             height="100%"
-            frameborder="0"
+            frameBorder="0"
             scrolling="no"
             marginheight="0"
             marginwidth="0"
@@ -188,7 +195,7 @@ const AddresSec = () => {
           class="gmap_iframe"
             width="100%"
             height="100%"
-            frameborder="0"
+            frameBorder="0"
             scrolling="no"
             marginheight="0"
             marginwidth="0"
