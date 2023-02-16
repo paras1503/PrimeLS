@@ -23,14 +23,14 @@ const LeaderShip =()=>{
             bgRepeat="no-repeat"
             bgPos="center"
             bgSize="cover">
-                <Image w="160px" h="164px" src={leaders[0].img}/>
-            <Flex direction="column" w="160px">
-                <Text pb=".625rem" fontFamily="avenir" fontWeight="bold" textAlign="center" fontSize="1rem">MR. KRUNAL<br/>SHAH</Text>
-                <Text pb=".625rem" fontFamily="varela Round" textAlign="center" fontSize="1rem">{leaders[0].team}</Text>
+                <Image w="160px" h="164px" src={leaders[0].img} filter="drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.25))"/>
+            <Flex direction="column" w="160px" pl="0.8rem">
+                <Text pb=".625rem"  fontFamily="avenir" fontWeight="bold" textAlign="left" fontSize="1rem">MR. KRUNAL<br/>SHAH</Text>
+                <Text pb=".625rem" fontFamily="varela Round" textAlign="left" fontSize="1rem">{leaders[0].team}</Text>
                 <Icon
                   h="3.125rem"
                   w="3.125rem"
-                  alignSelf="center"
+                  alignSelf="left"
                   bgColor="#0A66C2"
                   color="#fff"
                   p="0.313rem"
@@ -43,14 +43,14 @@ const LeaderShip =()=>{
             bgRepeat="no-repeat"
             bgPos="center"
             bgSize="cover">
-                <Image w="160px" h="164px" src={leaders[1].img}/>
-            <Flex direction="column" w="160px">
-                <Text pb=".625rem" fontFamily="avenir" fontWeight="bold" textAlign="center" fontSize="1rem">{leaders[1].name}</Text>
-                <Text pb=".625rem" fontFamily="varela Round" textAlign="center" fontSize="1rem">{leaders[1].team}</Text>
+                <Image w="160px" h="164px" src={leaders[1].img} filter="drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.25))"/>
+            <Flex direction="column" w="160px" pl="0.8rem">
+                <Text pb=".625rem" fontFamily="avenir" fontWeight="bold" textAlign="left" fontSize="1rem">{leaders[1].name}</Text>
+                <Text pb=".625rem" fontFamily="varela Round" textAlign="left" fontSize="1rem">{leaders[1].team}</Text>
                 <Icon
                   h="3.125rem"
                   w="3.125rem"
-                  alignSelf="center"
+                  alignSelf="left"
                   bgColor="#0A66C2"
                   color="#fff"
                   p="0.313rem"
@@ -63,14 +63,14 @@ const LeaderShip =()=>{
             bgRepeat="no-repeat"
             bgPos="center"
             bgSize="cover">
-                <Image w="160px" h="164px" src={leaders[2].img}/>
-            <Flex direction="column" w="160px">
-                <Text pb=".625rem" fontFamily="avenir" fontWeight="bold" textAlign="center" fontSize="1rem">MR. JOHNY<br/>RAMAN</Text>
-                <Text pb=".625rem" fontFamily="varela Round" textAlign="center" fontSize="1rem">{leaders[2].team}</Text>
+                <Image w="160px" h="164px" src={leaders[2].img} filter="drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.25))"/>
+            <Flex direction="column" w="160px" pl="0.8rem">
+                <Text pb=".625rem" fontFamily="avenir" fontWeight="bold" textAlign="left" fontSize="1rem">MR. JOHNY<br/>RAMAN</Text>
+                <Text pb=".625rem" fontFamily="varela Round" textAlign="left" fontSize="1rem">{leaders[2].team}</Text>
                 <Icon
                   h="3.125rem"
                   w="3.125rem"
-                  alignSelf="center"
+                  alignSelf="left"
                   bgColor="#0A66C2"
                   color="#fff"
                   p="0.313rem"
@@ -83,14 +83,14 @@ const LeaderShip =()=>{
             bgRepeat="no-repeat"
             bgPos="center"
             bgSize="cover">
-                <Image w="160px" h="164px" src={leaders[3].img}/>
-            <Flex direction="column" w="160px">
-                <Text pb=".625rem" fontFamily="avenir" fontWeight="bold" textAlign="center" fontSize="1rem">{leaders[3].name}</Text>
-                <Text pb=".625rem" fontFamily="varela Round" textAlign="center" fontSize="1rem">{leaders[3].team}</Text>
+                <Image w="160px" h="164px" src={leaders[3].img} filter="drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.25))"/>
+            <Flex direction="column" w="160px" pl="0.8rem">
+                <Text pb=".625rem" fontFamily="avenir" fontWeight="bold" textAlign="left" fontSize="1rem">{leaders[3].name}</Text>
+                <Text pb=".625rem" fontFamily="varela Round" textAlign="left" fontSize="1rem">{leaders[3].team}</Text>
                 <Icon
                   h="3.125rem"
                   w="3.125rem"
-                  alignSelf="center"
+                  alignSelf="left"
                   bgColor="#0A66C2"
                   color="#fff"
                   p="0.313rem"
