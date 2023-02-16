@@ -59,7 +59,7 @@ const SecondSec = () => {
       justify="center"
 
     >
-      <Flex w="100%" px="1rem">
+      <Flex w="100%" px="1rem" filter="drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.25))">
         <Text
         pt="1.875rem"
         textAlign="center"
@@ -72,6 +72,7 @@ const SecondSec = () => {
         fontFamily="goudy"
         fontSize="2.125rem"
         pb="1.563rem"
+        filter="drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.25))"
       >
         PRESS RELEASE
       </Text>
