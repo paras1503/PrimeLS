@@ -1441,9 +1441,9 @@ const SkyhighInvest = () => {
             style={{height:"25rem",width:"80%",alignSelf:"center",position:"absolute",left:"15%"}}
             src={"https://www.youtube.com/embed/Psmw1t_S6-c"}
             title="The Economic Times | Best Realty Brands 2021 - Prime LifeSpace Developers"
-            frameborder="0"
+            frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
+            allowFullScreen
           ></embed>
           </Flex>
           </Slider>

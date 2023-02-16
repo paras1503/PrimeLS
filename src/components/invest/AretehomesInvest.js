@@ -220,8 +220,8 @@ const Twobhk = () => {
           SMART INVESTMENT
         </Text>
         <Flex w="100%" h="100%">
-          <Flex w="100%" h="100%" overflow="hidden">
-            <Image onClick={()=>open()} src={areteInto1} className="expandcar reveal"/>
+          <Flex w="100%" h="100%">
+            <Image onClick={()=>open()} src={areteInto1} className="expandcar reveal" filter="drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.25))"/>
           </Flex>
           <Flex w="100%" h="100%" overflow="hidden">
             {" "}
@@ -328,7 +328,7 @@ const Twobhk = () => {
                 fontFamily="avenir"
                 fontSize="1.5rem"
               >
-                ASSURED RENT > EMI
+                ASSURED RENT `{">"}` EMI
               </Heading>
               <Button
                 className="fadein revealOnce"
@@ -433,7 +433,7 @@ const Twobhk = () => {
               fontFamily="avenir"
               fontSize="1.125rem"
             >
-              ASSURED RENT > EMI
+              ASSURED RENT `{">"}` EMI
             </Heading>
           </Flex>
           <Flex
@@ -1743,9 +1743,9 @@ const Twobhk = () => {
             style={{height:"25rem",width:"80%",alignSelf:"center",position:"absolute",left:"15%"}}
             src={"https://www.youtube.com/embed/Psmw1t_S6-c"}
             title="The Economic Times | Best Realty Brands 2021 - Prime LifeSpace Developers"
-            frameborder="0"
+            frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
+            allowFullScreen
           ></embed>
           </Flex>
           </Slider>
@@ -1990,8 +1990,8 @@ const Threebhk = () => {
           SMART INVESTMENT
         </Text>
         <Flex w="100%" h="100%">
-          <Flex w="100%" h="100%" overflow="hidden">
-            <Image onClick={()=>open()} src={areteInto1} className="expandcar reveal"/>
+          <Flex w="100%" h="100%">
+            <Image onClick={()=>open()} src={areteInto1} className="expandcar reveal" filter="drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.25))"/>
           </Flex>
           <Flex w="100%" h="100%" overflow="hidden">
             {" "}
@@ -2052,6 +2052,7 @@ const Threebhk = () => {
                     h="3.125rem"
                     src={rentalYield}
                     mb="0.625rem"
+                    
                   />
                   <Heading fontSize="1.5rem" mb="0.625rem">
                     HIGH
@@ -2098,7 +2099,7 @@ const Threebhk = () => {
                 fontFamily="avenir"
                 fontSize="1.5rem"
               >
-                ASSURED RENT > EMI
+                ASSURED RENT `{">"}` EMI
               </Heading>
               <Button
                 className="fadein revealOnce"
@@ -2203,7 +2204,7 @@ const Threebhk = () => {
               fontFamily="avenir"
               fontSize="1.125rem"
             >
-              ASSURED RENT > EMI
+              ASSURED RENT `{">"}` EMI
             </Heading>
           </Flex>
           <Flex
@@ -3512,9 +3513,9 @@ const Threebhk = () => {
             style={{height:"25rem",width:"80%",alignSelf:"center",position:"absolute",left:"15%"}}
             src={"https://www.youtube.com/embed/Psmw1t_S6-c"}
             title="The Economic Times | Best Realty Brands 2021 - Prime LifeSpace Developers"
-            frameborder="0"
+            frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
+            allowFullScreen
           ></embed>
           </Flex>
           </Slider>
