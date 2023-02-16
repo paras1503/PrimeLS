@@ -5,4 +5,5 @@ const ServicedApartSc = () => {
   return <ServicedApartments />;
 };
 
+
 export default ServicedApartSc;

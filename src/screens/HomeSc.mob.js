@@ -20,8 +20,9 @@ const HomeScMob = () => {
     }
   });
   return (
-    <>
-      <MainSec />
+    <> 
+    
+      <MainSec width="100%"/>
       <AboutUs />
       <Invest />
       <OurProjects />
