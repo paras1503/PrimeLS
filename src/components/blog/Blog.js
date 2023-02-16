@@ -77,6 +77,7 @@ const Blog = () => {
           objectFit="cover"
           objectPosition="40%"
           src={banner1}
+          opacity="1"
         />
         <Image
           animation="blog-banner-up 1 2s linear"
@@ -85,6 +86,7 @@ const Blog = () => {
           objectFit="cover"
           objectPosition="70%"
           src={banner2}
+          opacity="1"
         />
         <Image
           animation="blog-banner-down 1 2s linear"
@@ -93,6 +95,7 @@ const Blog = () => {
           objectFit="cover"
           objectPosition="60%"
           src={banner3}
+          opacity="1"
         />
         <Heading
           top="45%"
@@ -175,7 +178,7 @@ const Blog = () => {
                     w="110%"
                     bgColor="#DFBD69"
                     p="3.125rem"
-                    boxShadow="xl"
+                    boxShadow="0px 10px 20px rgba(0,0,0,0.25)"
                     bottom="2rem"
                     right="0"
                   >
@@ -587,17 +590,17 @@ const BlogForm = () => {
           fontFamily="avenir"
           bgColor="gray.200"
           borderRadius="none"
+                 
         >
-          <option value="Home Buying Journey">Home Buying Journey</option>
+                  <option value="Home Buying Journey" style={{
+                      "&:hover": {
+                          backgroundColor: "#DFBD69",
+                      },
+                  }}>Home Buying Journey</option>
           <option value="Real Estate Investments">
             Real Estate Investments
           </option>
           <option
-            style={{
-              "&:hover": {
-                backgroundColor: "#DFBD69",
-              },
-            }}
             value="NRI Corner"
           >
             NRI Corner
@@ -648,28 +651,27 @@ const BlogForm = () => {
                 borderRadius="none"
               />
             </Flex>{" "}
-          </FormControl>
+                  </FormControl><FormControl>
+                      <Flex w="100%" justify="space-between" pb="0.938rem">
+                          <FormLabel fontFamily="avenir" fontSize="1rem" fontWeight="bold">
+                              EMAIL
+                          </FormLabel>
+                          <Input
+                              fontSize="1rem"
+                              fontFamily="avenir"
+                              lineHeight="1.5rem"
+                              w="13.125rem"
+                              h="2.188rem"
+                              bgColor="#E5E5E5"
+                              borderRadius="none"
+                          />
+                      </Flex>{" "}
+                  </FormControl>
           <FormControl isRequired>
             {" "}
             <Flex w="100%" justify="space-between" pb="0.938rem">
               <FormLabel fontFamily="avenir" fontSize="1rem" fontWeight="bold">
-                PHONE
-              </FormLabel>
-              <Input
-                fontSize="1rem"
-                fontFamily="avenir"
-                lineHeight="1.5rem"
-                w="13.125rem"
-                h="2.188rem"
-                bgColor="#E5E5E5"
-                borderRadius="none"
-              />
-            </Flex>{" "}
-          </FormControl>
-          <FormControl>
-            <Flex w="100%" justify="space-between" pb="0.938rem">
-              <FormLabel fontFamily="avenir" fontSize="1rem" fontWeight="bold">
-                EMAIL
+                PHONE NO.
               </FormLabel>
               <Input
                 fontSize="1rem"
@@ -711,7 +713,7 @@ const BlogForm = () => {
             }}
             _active={{ bgGradient: "linear(to-b, #B88746 ,#DFBD69)" }}
           >
-            SUBMIT NOW
+            ENQUIRE NOW
           </Button>
         </form>
       </Flex>
@@ -724,27 +726,33 @@ const BlogForm = () => {
           spacing={"0.938rem"}
           align="flex-start"
         >
-          <Box>
+          <Box pl="1rem">
             <Text fontFamily="veralaRound" fontSize="1rem">
+              <ul listStylePosition="outside">
               <li>
               Why should you choose flat over independent house?
               </li>
+              </ul>
             </Text>
           </Box>
-          <Box>
+          <Box pl="1rem">
             
             <Text fontFamily="veralaRound" fontSize="1rem">
+              <ul listStylePosition="outside">
               <li>
               Why investing in residential property, a must for better future?
               </li>
+              </ul>
             </Text>
             
           </Box>
-          <Box>
-            <Text fontFamily="veralaRound" fontSize="1rem">
-              <li>
+          <Box pl="1rem">
+              <Text fontFamily="veralaRound" fontSize="1rem">
+              <ul>
+              <li listStylePosition="outside">
               Amenities to ensure when buying a rented properties for sale
               </li>
+              </ul>
             </Text>
           </Box>
         </VStack>
