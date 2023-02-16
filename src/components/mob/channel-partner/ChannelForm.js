@@ -886,7 +886,7 @@ const ChannelForm = () => {
         </form>
       </Flex>
       <Flex
-        mb="4.7vh"
+        
         pos="relative"
         w="100%"
         align="center"
@@ -945,9 +945,7 @@ const ChannelForm = () => {
           />
           DOWNLOAD CP-BROCHURE
         </Flex>
-        {/* ) : (
-          ""
-        )} */}
+        
       </Flex>
     </>
   );
