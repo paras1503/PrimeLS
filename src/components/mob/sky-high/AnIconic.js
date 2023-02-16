@@ -95,11 +95,12 @@ const SecondSec = () => {
         textTransform="uppercase"
         textAlign="center"
         pb="1.875rem"
+        boxShadow="2xl"
       >
         An iconic dwell of
         sky high residences and retail spaces
       </MtnHead>
-      <Flex direction="column" w="100%" h="100%" align="center" justify="center"> 
+      <Flex direction="column" w="100%" h="100%" align="center" justify="center" > 
         <Flex w="100%" h="100%" direction="column" alignSelf="center">
         <MtnTxt
             px=".5rem"
@@ -110,6 +111,7 @@ const SecondSec = () => {
             mb="0.9rem"
             fontFamily="veralaRound"
             fontSize="1rem"
+            mt="2rem"
           >
             THE ULTIMATE ADDRESS: Experience the breathtaking views of Chennai's
             stunning skyline from Arete Homes SKY HIGH Tower the top 20th floor.
