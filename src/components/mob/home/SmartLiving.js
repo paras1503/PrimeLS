@@ -282,13 +282,12 @@ const SmartLiving = () => {
     // </Flex>
 
     <Flex
-      ref={ref}
-      direction="column"
-      w="100%"
-      h="100%"
-      pt="3.125rem"
-      px="100px"
-      align="center"
+    ref={ref}
+    w="100%"
+    h="100%"
+    py="3.125rem"
+    direction="column"
+    justify="center"
     >
       <MtnHd
         initial={{ y: -50, opacity: 0 }}
@@ -297,10 +296,44 @@ const SmartLiving = () => {
         fontSize="40px"
         fontFamily="goudy"
         fontWeight="400"
+        textAlign="center"
       >
         SMART LIVING
-      </MtnHd>
-
+    </MtnHd>
+    <Flex pt="1.875rem">
+     <Flex direction="column" w="100%" h="100%" px="2" justify="flex-start">
+    <MtnFlx
+            
+            transition={{ delay: 1.5, duration: 2, type: "just" }}
+          >
+            <Image className="expandcar reveal" w="570px" h="20.310rem" src="/images/smartliving.png" />
+          </MtnFlx>
+          <MtnFlx
+            initial={{ opacity: 0, x: 100 }}
+            animate={animateX}
+            transition={{ delay: 3.5, duration: 2, type: "just" }}
+            py="25%"
+            align="center"
+          >
+            <Image className="expandcar reveal" h="80px" w="80px" mr="2" src="/images/managed.svg" />
+            <Flex direction="column">
+              <Heading fontSize="24px" fontFamily="avenir">
+                MANAGED LIVING
+              </Heading>
+              <MtnTxt
+                initial={{ opacity: 0 }}
+                animate={animateFade}
+                transition={{ delay: 5, duration: 2, type: "just" }}
+                pt="0.625rem"
+                fontSize="18px"
+                fontFamily="veralaRound"
+              >
+                Premium serviced apartments in smart township living.
+              </MtnTxt>
+            </Flex>
+          </MtnFlx>
+          </Flex>
+          </Flex>
       </Flex>
   );
 };

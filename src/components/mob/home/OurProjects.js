@@ -316,19 +316,27 @@ const OurProjects = () => {
     h="100%"
     py="3.125rem"
     direction="column"
-    align="center"
     justify="center"
     bgImage='linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)), url("/images/bg-box.jpg")'
     bgRepeat="no-repeat"
     bgPos="center"
     bgSize="cover"
   >
-    <Text fontFamily="goudy" fontSize="40px" textAlign="center">
+    <Text textAlign="center"
+        pb="1.563rem"
+        transform={isInView ? "translateY(0)" : "translateY(-50px)"}
+        opacity={isInView ? "1" : "0"}
+        transition="all 2s"
+        fontFamily="goudy"
+        fontSize="2.125rem">
       OUR PROJECTS
     </Text>
     <Slider {...settings} ref={(slider) => setSlider(slider)}>
-    <Flex width="100%" p="0">
-    <Text m="0.93rem">
+    <Flex w="100%"
+            direction="column"
+            align="center"
+            justify="center">
+    <Text m="0.5rem">
     <Text
               fontSize="0.87rem"
               width="10rem"
@@ -360,7 +368,7 @@ const OurProjects = () => {
               animation="fadein 1 2s"
               zIndex="3"
               // pos="absolute"
-              w="100%"
+              w="150%"
               h="18.75rem"
               src={projects[projIndex].imgF}
             />
@@ -379,7 +387,7 @@ const OurProjects = () => {
           >
             {projects[projIndex].title}
           </MtnHd>
-          <Text fontFamily="varela round" maxW="12rem" margin="1rem auto" textAlign="center" fontSize="1rem">{projects[projIndex].text}</Text>
+          <Text fontFamily="varela round" maxW="12rem" height="6rem" margin="1rem auto" textAlign="center" fontSize="1rem">{projects[projIndex].text}</Text>
           <MtnBtn
             initial={{ opacity: 0 }}
             animate={animateX}
@@ -405,6 +413,7 @@ const OurProjects = () => {
           variant="outline"
           borderColor="#B88746"
           borderRadius="full"
+          border="3px solid"
           h="3.125rem"
           w="3.125rem"
           marginRight="2rem"
@@ -422,6 +431,7 @@ const OurProjects = () => {
           borderRadius="full"
           variant="outline"
           borderColor="#B88746"
+          border="3px solid"
           transform={"translate(0%, -50%)"}
           zIndex={2}
           h="3.125rem"

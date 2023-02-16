@@ -16,7 +16,8 @@ import { useRef } from "react";
 import Slider from "react-slick";
 
 import intro1 from "../sky-high imgs/INTRO1.jpg";
-import intro2 from "../sky-high imgs/INTRO2.jpg";
+// import intro2 from "../sky-high imgs/INTRO2.jpg";
+import intro3 from "../sky-high imgs/sky high - intro 1.jpg";
 
 // icons
 import first from "../sky-high imgs/1ST.svg";
@@ -248,10 +249,12 @@ const SecondSec = () => {
 
         </Flex>
       </Flex>
+      
     </Flex>
+
   );
 };
 
 export default SecondSec;
 
-const introImgs = [intro1, intro2];
+const introImgs = [intro1, intro3];

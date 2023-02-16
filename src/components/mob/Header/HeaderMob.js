@@ -25,7 +25,8 @@ import { useModalController } from '../../../hooks/util';
 import { HamburgerIcon, PhoneIcon} from "@chakra-ui/icons";
 import { BsArrowLeft, BsArrowRight} from "react-icons/bs";
 import { MdPhone} from "react-icons/md";
-import EnquireWindow from '../../enquireWindow';
+// import EnquireWindow from '../../enquireWindow';
+import EnquireWindowMob from '../../enquireWindowMob';
 import bgBox from "../../../components/careers imgs/bg-box.jpg"
 
 
@@ -63,7 +64,7 @@ export default function Nav() {
   };
   return (
     <>
-        {isOpened?<EnquireWindow isOpened={isOpened} onClosed={()=>openEnquire()} />:<></>}
+        {isOpened?<EnquireWindowMob isOpened={isOpened} onClosed={()=>openEnquire()} />:<></>}
         <Flex h="3.125rem" 
         width="100%"
         pos="fixed"
