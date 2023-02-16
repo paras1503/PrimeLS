@@ -35,7 +35,7 @@ const FirstSec = () => {
           w="100%"
           h="100%"
           initial={{ opacity: 0, scale: 0.8 }}
-          animate={{ opacity: 1, scale: 1 }}
+          animate={{ opacity: 2, scale: 1 }}
           transition={{ duration: 2, type: "just" }}
           src={firstSec}
         />

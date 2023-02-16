@@ -142,6 +142,7 @@ const Lifeatls = () => {
             aria-label="left-arrow"
             variant="outline"
             borderColor="#B88746"
+            border="3px solid"
             borderRadius="full"
             position="absolute"
             top="50%"
@@ -163,6 +164,7 @@ const Lifeatls = () => {
             borderRadius="full"
             variant="outline"
             borderColor="#B88746"
+            border="3px solid"
             position="absolute"
             transform={"translate(0%, -50%)"}
             zIndex={2}
