@@ -80,7 +80,7 @@ const NinethSec = () => {
           class="gmap_iframe"
           width="100%"
           height="430"
-          frameborder="0"
+          frameBorder="0"
           scrolling="no"
           marginheight="0"
           marginwidth="0">
@@ -89,7 +89,7 @@ const NinethSec = () => {
             class="gmap_iframe"
               width="100%"
               height="430"
-              frameborder="0"
+              frameBorder="0"
               scrolling="no"
               marginheight="0"
               marginwidth="0">
@@ -98,7 +98,7 @@ const NinethSec = () => {
             class="gmap_iframe"
               width="100%"
               height="430"
-              frameborder="0"
+              frameBorder="0"
               scrolling="no"
               marginheight="0"
               marginwidth="0">
@@ -107,7 +107,7 @@ const NinethSec = () => {
             class="gmap_iframe"
             width="100%"
             height="430"
-            frameborder="0"
+            frameBorder="0"
             scrolling="no"
             marginheight="0"
             marginwidth="0">
@@ -116,7 +116,7 @@ const NinethSec = () => {
           class="gmap_iframe"
           width="100%"
           height="430"
-          frameborder="0"
+          frameBorder="0"
           scrolling="no"
           marginheight="0"
           marginwidth="0">
@@ -125,7 +125,7 @@ const NinethSec = () => {
         class="gmap_iframe"
         width="100%"
         height="430"
-        frameborder="0"
+        frameBorder="0"
         scrolling="no"
         marginheight="0"
         marginwidth="0"></iframe>:<></>}
@@ -133,7 +133,7 @@ const NinethSec = () => {
         class="gmap_iframe"
         width="100%"
         height="430"
-        frameborder="0"
+        frameBorder="0"
         scrolling="no"
         marginheight="0"
         marginwidth="0"></iframe>:<></>}

@@ -165,7 +165,7 @@ const FourthSec = () => {
               className="fadein revealOnce"
               w="100%"
               h="23rem"
-              src="/images/sky-high/DECK2.jpg"
+              src="/images/sky-high/Asset 1-100.jpg"
               boxShadow="dark-lg"
             />
           </Flex>
