@@ -74,12 +74,14 @@ const Lifeatls = () => {
       textAlign="center"
       px="1rem"
       pb="1.875rem"
-      bgImage='linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)), url("/images/bg-box.jpg")'
+      bgImage='linear-gradient(rgba(255,255,255,0.2), rgba(255,255,255,0.2)), url("/images/bg-box.jpg")'
       bgRepeat="no-repeat"
       bgPos="center"
       bgSize="cover"
+      
+      
     >
-      <Flex bg="inherit" direction="column" pt="1.875rem" mt="-1.875rem">
+      <Flex bg="inherit" direction="column" pt="1.875rem" mt="-1.875rem" filter="drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.25))">
       <MtnHead
         initial={{ opacity: 0, y: -100 }}
         animate={animationHead}
@@ -88,6 +90,8 @@ const Lifeatls = () => {
         fontFamily="goudy"
         fontWeight="400"
         pb="0.928rem"
+        
+        
       >
         LIFE AT<br/>PRIME LIFESPACE
       </MtnHead>

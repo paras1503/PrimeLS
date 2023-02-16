@@ -45,6 +45,7 @@ const Buildchng = () => {
       animationDvd.start({ opacity: 1, y: 0 });
       animationLtr.start({ opacity: 1, x: 0 });
       animationRightTxt.start({ opacity: 1, x: 0 });
+      animationImg.start({ opacity: 1, x: 0 });
     }
   }, [isInView]);
   useEffect(() => {
@@ -118,7 +119,7 @@ const Buildchng = () => {
           h="100%"
           pos="relative"
         >
-          {/*<Flex w="100%" h="100%" direction="column" align="center">
+          {/* <Flex w="100%" h="100%" direction="column" align="center">
             {currImg ? (
               <MtnImg
                 px="1rem"
@@ -136,7 +137,7 @@ const Buildchng = () => {
             ) : (
               <img />
             )}
-            </Flex>*/}
+            </Flex> */}
           <Flex
             direction="row"
             w="100%"

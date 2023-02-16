@@ -25,7 +25,8 @@ const FirstSec = () => {
       w="100%"
       h="100vh"
       align="center"
-      bgImage={`linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)), url(${bgBox})`}
+      bgImage={`linear-gradient(rgba(255,255,255,0.2), rgba(255,255,255,0.2)), url(${bgBox})`}
+      
     >
       <Flex w="100%" h="100%" align="center">
         <MotnImg
