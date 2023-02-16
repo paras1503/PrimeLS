@@ -55,6 +55,8 @@ const LastSec = () => {
     console.log(loc.target.id)
     window.open(`${loc.target.id}`);
   }
+
+  console.log(primeReport)
   return (
     <Flex
       ref={ref}
@@ -104,13 +106,13 @@ const LastSec = () => {
         {/* Slider */}
         <Slider {...settings} ref={(slider) => setSlider(slider)}>
           {primeReport.map((prime,index) => (
-            <Flex w="100%" h="100%" align="center" pos="relative">
+            <Flex w="100%" h="100%" align="center" pos="relative" key={index}>
               <Flex w="50%" h="100%">
                 <Flex w="100%">
                   <Image
                     _hover={{cursor:"pointer"}} id={prime.location?prime.location:"no ID"} onClick={prime.location?(prime)=>redirect(prime):()=>console.log("no content")}
                     boxShadow="2px 4px 6px rgba(0,0,0, .2)"
-                    key={prime.id}
+                    key={index}
                     w="100%"
                     height="25rem"
                     // position="relative"
@@ -172,13 +174,12 @@ const LastSec = () => {
                     </Text>
                   </Flex>
                   <Flex direction="column" textAlign="right" w="100%" h="100%">
-                    <Heading fontFamily="avenir" fontSize="1.25rem" mt="0.9rem" pb="0.625rem">
+                    <Heading fontFamily="avenir" fontSize="1.25rem" mt="0.7rem" pb="0.625rem">
                     {prime.month==="APRIL 2019"?<>NEXT</>:<>PREVIOUS</>} NEWSLETTER
                     </Heading>
                     <Heading fontFamily="avenir" fontSize="1.5rem">
                       {prime.prevmonth}
                     </Heading>
-                    
                   </Flex>
                 </Flex>
               </Flex>
@@ -188,6 +189,7 @@ const LastSec = () => {
                 aria-label="left-arrow"
                 variant="outline"
                 borderColor="#B88746"
+                border="2px solid"
                 borderRadius="full"
                 // position="absolute"
                 bottom="0"
@@ -209,6 +211,7 @@ const LastSec = () => {
                 borderRadius="full"
                 variant="outline"
                 borderColor={prime.month==="APRIL 2019"?"grey":"#B88746"}
+                border="2px solid"
                 // position="absolute"
                 // right={side}
                 // top={top}

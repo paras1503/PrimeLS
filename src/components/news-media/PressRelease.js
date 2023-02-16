@@ -133,8 +133,8 @@ const SecondSec = () => {
         </IconButton>
         {/* Slider */}
         <Slider {...settings} ref={(slider) => setSlider(slider)}>
-          {pressRelease.map((prime) => (
-            <Flex px="0.625rem">
+          {pressRelease.map((prime, index) => (
+            <Flex px="0.625rem" key={index}>
               <Image
                 _hover={{cursor:"pointer"}}
                 id={prime.location}
