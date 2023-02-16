@@ -5,6 +5,7 @@ import { ImQuotesLeft, ImQuotesRight } from "react-icons/im";
 import { useRef } from "react";
 import { motion, useAnimation, useInView } from "framer-motion";
 import { useEffect } from "react";
+import "./lastSection.css";
 
 const MtnTxt = motion(Text);
 const MtnFlx = motion(Flex);
@@ -100,7 +101,7 @@ const LastSection = () => {
           <MtnTxt
             initial={{ opacity: 0 }}
             animate={animateFade}
-            transition={{ duration: 2, type: "just" }}
+            transition={{ duration: 2, type: "just"}}
             fontSize="40px"
             fontFamily="goudy"
             fontWeight="400"
@@ -110,9 +111,9 @@ const LastSection = () => {
           </MtnTxt>
         </Flex>
         <MtnFlx
-          initial={{ opacity: 0 }}
-          animate={animateFade}
-          transition={{ duration: 2, type: "just" }}
+            initial={{ opacity: 0 }}
+            animate={animateFade}
+            transition={{ duration: 2, type: "just" }}
           w="75%"
           h="80%"
           pos="absolute"
@@ -130,16 +131,19 @@ const LastSection = () => {
           ></iframe>
         </MtnFlx>
       </Flex>
-      <Flex w="100%" h="100%">
+      <Flex w="100%" h="80%" marginBottom="-5rem">
         <MtnFlx
-          initial={{ opacity: 0, y: 100 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 1.5, duration: 2, type: "just" }}
+          className="slide-animation"
+          initial={{ opacity: 0, x: 100 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ delay: 1.5, duration: 2, type: "just", }}
+          
           w="100%"
           h="100%"
           pos="relative"
           align="flex-start"
           justify="space-between"
+          pb="-2rem"
         >
           <Icon
             pos="absolute"
@@ -161,11 +165,15 @@ const LastSection = () => {
             pr="1.563rem"
             py="0.313rem"
             mt="3.125rem"
+            
             key={testIndex!==0?testimonial[testIndex-1].name:testimonial[testimonial.length-1].name}
           >
-            <Text fontSize="1rem" fontFamily="veralaRound">
+            <div style={{height:"15rem"}}>
+              <Text fontSize="1rem" fontFamily="veralaRound">
               {testIndex!==0?testimonial[testIndex-1].text:testimonial[testimonial.length-1].text}
             </Text>
+            </div>
+            
             <Flex
               w="100%"
               h="15rem"
@@ -211,9 +219,11 @@ const LastSection = () => {
             mt="3.125rem"
             key={test.name}
           >
+            <div style={{height:"15rem"}}>
             <Text fontSize="1rem" fontFamily="veralaRound">
               {test.text}
             </Text>
+            </div>
             <Flex
               w="100%"
               h="15rem"
@@ -259,9 +269,11 @@ const LastSection = () => {
             mt="3.125rem"
             key={testIndex!==testimonial.length-1?testimonial[testIndex+1].name:testimonial[0].name}
           >
+            <div style={{height:"15rem"}}>
             <Text fontSize="1rem" fontFamily="veralaRound">
               {testIndex!==testimonial.length-1?testimonial[testIndex+1].text:testimonial[0].text}
             </Text>
+            </div>
             <Flex
               w="100%"
               h="15rem"
