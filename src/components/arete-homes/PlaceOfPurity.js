@@ -87,9 +87,9 @@ const SecondSec = () => {
             />
             {/* Slider */}
             <Slider {...settings} ref={(slider) => setSlider(slider)}>
-              {introImgs.map((prime) => (
+              {introImgs.map((prime,index) => (
+                <div key={index}>
                 <Image
-                  key={prime.id}
                   w="100%"
                   height="29.25rem"
                   position="relative"
@@ -97,6 +97,7 @@ const SecondSec = () => {
                   objectFit="cover"
                   src={prime}
                 />
+                </div>
               ))}
             </Slider>
             <IconButton
