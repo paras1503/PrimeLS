@@ -20,7 +20,7 @@ const Whoweare =()=>{
             Our consultancy firm offers an end to end solution in real estate space and development firm is renowned creators of smart integrated townships that provide more than just spaces to live in.</Center>
         </Flex>
         </Flex>
-        <Flex overflow="hidden" pt="3.125rem" pb="6.875rem" >
+        <Flex overflow="hidden" pt="3.125rem" pb="6.875rem" pl="6rem" >
             <Flex direction="column" w="45%" className="fadein-2sdelay revealOnce">
                 <Center><Text pb="1rem" fontFamily="goudy" fontSize="2.5rem">MISSION</Text></Center>
                 <Center><Image h="5rem" w="5rem" src={missionSvg} pb="1.125rem" /></Center>
@@ -107,7 +107,7 @@ const Whoweare =()=>{
                         as={ImQuotesRight} />
                     </Text>
             </Flex>
-            <Image boxShadow="2xl" pos="absolute" right="130px" top="-8%" className="image-sliedright revealOnce" src={rajeev} w="448px" h="404px" alt="IMAGE"/>
+            <Image filter="drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.25))" pos="absolute" right="130px" top="-8%" className="image-sliedright revealOnce" src={rajeev} objectFit="cover" w="448px" h="404px" alt="IMAGE"/>
         </Flex>
         </Flex>
         </Flex>

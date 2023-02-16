@@ -93,17 +93,16 @@ const Award=()=>{
         />
         {/* Slider */}
         <Slider {...settings} ref={(slider) => setSlider(slider)}>
-          {gymclubimgs.map((prime) => (
-            <Flex w="100%" align="center">
+          {gymclubimgs.map((prime, index) => (
+            <Flex w="90%" align="center" key={index}>
               <Image
-                key={prime}
                 w="100%"
                 height="16.875rem"
                 pr="0.937rem"
                 position="relative"
                 objectPosition="center"
                 backgroundRepeat="no-repeat"
-                objectFit="fill"
+                objectFit="cover"
                 src={prime.img}
               />
               <Heading
@@ -122,6 +121,7 @@ const Award=()=>{
           aria-label="left-arrow"
           variant="outline"
           borderColor="#B88746"
+          border="3px solid"
           borderRadius="full"
           position="absolute"
           top="45%"
@@ -142,6 +142,7 @@ const Award=()=>{
           borderRadius="full"
           variant="outline"
           borderColor="#B88746"
+          border="3px solid"
           position="absolute"
           transform={"translate(0%, -50%)"}
           zIndex={2}
