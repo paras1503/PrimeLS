@@ -33,8 +33,10 @@ const AboutBanner = () => {
         left="50%"
         transform="translateX(-50%)"
         fontFamily="avenir"
-        fontSize="2.125rem"
+        fontSize="2rem"
         color="white"
+        fontweight="bold"
+        
       >
         OUR EXPERTISE
       </MtnHd>

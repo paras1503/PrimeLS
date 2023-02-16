@@ -5,6 +5,11 @@ import market from "./MARKETING.jpg";
 import manage from "./MANAGEMENT.jpg";
 import merge from "./MERGERS.jpg";
 import joint from "./JOINT VENTURE.jpg";
+import consIcon from "../expertise/CONSTRUCTION MANAGEMENT.svg"
+import organIcon from "../expertise/ORGANISATION.svg"
+import jointIcon from "../expertise/JOINT VENTURE.svg"
+import marketIcon from "../expertise/MARKETING.svg"
+import mergeIcon from "../expertise/MERGERS ICON.svg"
 
 const PrimeAdvisors=()=>{
 return (
@@ -52,11 +57,12 @@ return (
                                     left="50%"
                                     w="1.875rem"
                                     transform="translate(-50%)"
+                                    src={organIcon}
                                 />
                                 <Heading
                                     pos="absolute"
                                     fontFamily="avenir"
-                                    bottom="37%"
+                                    bottom="30%"
                                     left="50%"
                                     transform="translate(-50%)"
                                     fontSize=".75rem"
@@ -90,18 +96,21 @@ return (
                                     bottom="50%"
                                     left="50%"
                                     transform="translate(-50%)"
+                                    src={consIcon}
                                 />
                                 <Heading
-                                    pos="absolute"
+                                    
+                                    pos="relative"
                                     fontFamily="avenir"
-                                    bottom="28%"
-                                    left="50%"
+                                    left="52%"
+                                    top="60%"
+                                    textAlign="center"
                                     transform="translate(-50%)"
                                     fontSize=".75rem"
                                     color="#DFBD69"
+                                    
                                 >
-                                SOCIALLY RESPONSIBLE
-                                    CONSTRUCTION MANAGEMENT
+                                SOCIALLY RESPONSIBLE <br/>CONSTRUCTION MANAGEMENT
                                 </Heading>
                                 </Box>
                             </GridItem>
@@ -128,6 +137,7 @@ return (
                                     bottom="60%"
                                     left="50%"
                                     transform="translate(-50%)"
+                                    src={jointIcon}
                                 />
                                 <Heading
                                     textAlign="center"
@@ -143,7 +153,7 @@ return (
                                 </Heading>
                                 </Box>
                             </GridItem>
-                            <GridItem ml=".6rem"  pos="relative" w="100%" h="225px"  rowSpan={2} className="image-sliedup reveal">
+                            <GridItem pos="relative" right="0.2rem" w="100%" h="225px"  rowSpan={2} className="image-sliedup reveal">
                             <Image
                             h="100%" w="100%"
                              src={merge}
@@ -166,6 +176,7 @@ return (
                                     bottom="57%"
                                     left="50%"
                                     transform="translate(-50%)"
+                                    src={mergeIcon}
                                 />
                                 <Heading
                                     textAlign="center"
@@ -181,7 +192,7 @@ return (
                                 </Heading>
                                 </Box>
                             </GridItem>
-                            <GridItem pos="relative" w="213px" h="110px" colSpan={2} className="image-sliedleft reveal">
+                            <GridItem pos="relative" w="228px" h="110px" colSpan={2} className="image-sliedleft reveal">
                             <Image
                             h="100%" w="100%"
                              src={market}
@@ -204,12 +215,13 @@ return (
                                     bottom="50%"
                                     left="50%"
                                     transform="translate(-50%)"
+                                    src={marketIcon}
                                 />
                                 <Heading
                                     w="100%"
                                     pos="absolute"
                                     fontFamily="avenir"
-                                    bottom="28%"
+                                    bottom="18%"
                                     left="50%"
                                     textAlign="center"
                                     transform="translate(-50%)"
@@ -224,6 +236,7 @@ return (
         </Flex>
         </Flex>
     </Flex>
+    
     </>)
     }
 export default PrimeAdvisors;

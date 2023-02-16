@@ -16,7 +16,8 @@ const Whoweare =()=>{
             <Flex mt="-6rem" pt="1rem" direction="column" className="fadein-2sdelay revealOnce" w="100%" bgImage='linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)), url("/images/bg-box.jpg")'
             bgRepeat="no-repeat"
             bgPos="center"
-            bgSize="cover">
+            bgSize="cover" filter="drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.25))"
+            >
                     <Text pos="relative" fontSize="1rem" textAlign="center" >
                     <Icon
                         pos="absolute"
