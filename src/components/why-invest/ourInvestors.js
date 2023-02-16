@@ -98,14 +98,14 @@ const OurInvestors=()=>{
           <AiOutlineRight color="#B88746" size="2.5rem" />
         </IconButton>
         <Slider {...settings} ref={(slider) => setSlider(slider)}>
-          <Flex key={""} px="6.25rem" align="center" justify="center" pos="relative" h="25rem" w="100%">
+          <Flex key={""} px="6.25rem" align="center" justify="center" pos="relative" h="25rem" w="600px">
           <embed
             style={{height:"25rem",width:"80%",alignSelf:"center",position:"absolute",left:"15%"}}
             src={"https://www.youtube.com/embed/Psmw1t_S6-c"}
             title="The Economic Times | Best Realty Brands 2021 - Prime LifeSpace Developers"
-            frameborder="0"
+            frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
+            allowFullScreen
           >
           </embed>
           </Flex>
@@ -116,7 +116,7 @@ const OurInvestors=()=>{
               INVEST IN RENT GENERATING ASSETS
             </Text>
           </Flex>
-          <Flex mt="1.875rem" px="6.25rem" gap="1rem">
+          <Flex mt="1.875rem" px="6.25rem" gap="2.2rem">
           <Flex boxShadow="2xl" px="1rem" py="1.875rem" w="50%" h="100%" direction="column" align="center" className="fadein revealOnce" bgImage='linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)), url("/images/bg-box.jpg")'
             bgRepeat="no-repeat"
             bgPos="center"

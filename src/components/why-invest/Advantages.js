@@ -87,7 +87,7 @@ const Advantages =()=>{
             <Flex
             className="fadein revealOnce"
             w="100%"
-            h="15.5rem"
+            h="18.5rem"
             pt="1.875rem"
             px="1.875rem"
             align="center"
@@ -115,7 +115,7 @@ const Advantages =()=>{
             _hover={{boxShadow:"2xl"}}
             className="fadein revealOnce"
             w="100%"
-            h="15.5rem"
+            h="18.5rem"
             pt="1.875rem"
             px="1.875rem"
             align="center"
@@ -142,7 +142,7 @@ const Advantages =()=>{
           <Flex
             className="fadein revealOnce"
             w="100%"
-            h="15.5rem"
+            h="18.5rem"
             pt="1.875rem"
             px="1.875rem"
             align="center"
@@ -169,7 +169,7 @@ const Advantages =()=>{
           <Flex
            className="fadein revealOnce"
             w="100%"
-            h="15.5rem"
+            h="18.5rem"
             pt="1.875rem"
             px="1.875rem"
             align="center"

@@ -30,15 +30,14 @@ const Ourclients =()=>{
     },
   };
     return (<>
-        <Flex w="100%" ref={ref} direction="column" h="100%"overflow="hidden"  px="100px" pt="3.125rem" pb="1.875rem" mb="5rem" bgImage='linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)), url("/images/bg-box.jpg")'
+        <Flex w="100%" ref={ref} direction="column" h="100%" px="100px" pt="3.125rem" pb="1.875rem" mb="5rem" bgImage='linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)), url("/images/bg-box.jpg")'
             bgRepeat="no-repeat"
             bgPos="center"
             bgSize="cover">
         <Center pb="1.875rem" className="slidein-top revealOnce" fontFamily="goudy" fontSize="2.5rem">HIGHER RENTALS IN RESIDENTIAL PROPERTIES</Center>
-        <Flex w="100%" overflow="hidden">
+        <Flex w="100%">
         <Box
         position={"relative"}
-        overflow={"hidden"}
         w="50%"
       >
         {/* CSS files for react-slick */}
@@ -66,6 +65,7 @@ const Ourclients =()=>{
               objectPosition="center"
               backgroundRepeat="no-repeat"
               objectFit="cover"
+              filter="drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.25))"
               src={client[0].img}
             />
             </Flex>
