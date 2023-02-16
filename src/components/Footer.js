@@ -131,7 +131,7 @@ const Footer = () => {
           </VStack>
           </Flex>
           </Flex>
-          <Flex  mt="1rem" direction="column" w="100%">
+          <Flex  mt="3rem" direction="column" w="100%">
           <Heading fontSize="1rem" fontFamily="veralaRound" borderBottom="1px solid #DFBD69" textColor={"#DFBD69"}>
             Helpful Links
           </Heading>
