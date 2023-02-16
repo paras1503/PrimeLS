@@ -29,7 +29,7 @@ const SecondSec = () => {
     autoplay: true,
     speed: 500,
     fade: true,
-    autoplaySpeed: 4000,
+    autoplaySpeed: 3000,
     slidesToShow: 1,
     slidesToScroll: 1,
     pauseOnHover: false,
@@ -63,6 +63,7 @@ const SecondSec = () => {
         textTransform="uppercase"
         textAlign="center"
         pb="1.563rem"
+        boxShadow="2xl"
       >
         A place of purity<br/>& excellence
       </Heading>

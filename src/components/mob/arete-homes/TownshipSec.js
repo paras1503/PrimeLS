@@ -70,7 +70,7 @@ const FifthSec = () => {
         />
         {/* Slider */}
         <Slider {...settings} ref={(slider) => setSlider(slider)}>
-        <Flex px=".312rem" direction="column" textAlign="center" mb="1.875rem">
+        <Flex px=".312rem" pl="1rem" direction="column" textAlign="center" mb="1.875rem" _hover={{border:"none"}}>
             
             <Image
               className="expandcar reveal"
@@ -83,7 +83,7 @@ const FifthSec = () => {
               ARETE MEDITATION RETREAT
             </Heading>
         </Flex>
-        <Flex px=".312rem" textAlign="center" direction="column">
+        <Flex px=".312rem" pl="1rem" textAlign="center" direction="column">
             <Image
               className="expandcar reveal"
               src="/images/arete-homes/kids play area.jpeg"
@@ -95,7 +95,7 @@ const FifthSec = () => {
               KIDS PLAY AREA
             </Heading>
           </Flex>
-          <Flex px=".312rem" textAlign="center" direction="column" align="center" mb="1.875rem">
+          <Flex px=".312rem" pl="1rem" textAlign="center" direction="column" align="center" mb="1.875rem">
             
             <Image
               className="expandcar reveal"
@@ -108,7 +108,7 @@ const FifthSec = () => {
               GARDEN & JOGGING TRACK
             </Heading>
           </Flex>
-          <Flex px=".312rem" textAlign="center" direction="column" align="center">
+          <Flex px=".312rem" pl="1rem" textAlign="center" direction="column" align="center">
             
             <Image
               className="expandcar reveal"
