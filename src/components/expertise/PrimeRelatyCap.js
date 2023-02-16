@@ -12,11 +12,11 @@ const PrimeRealtyCap =()=>{
       <Flex w="100%" direction="column" overflow="hidden" px="100px" mt="3.125rem">
         <Text fontSize="2.5rem" className="slidein-top revealOnce" textAlign="center" pb="1.875rem" fontFamily="goudy">PRIME REALTY CAPITAL</Text>
         <Flex w="100%" pos="relative" pb="5rem">
-            <Flex overflow="hidden" direction="column" className="fadein revealOnce" w="25%" >
+            <Flex overflow="hidden" direction="column" className="fadein revealOnce" w="40%" >
                     <Heading pb=".625rem" fontFamily="avenir" fontSize="1.875rem">
                     TURN YOUR MONEY INTO WEALTH
                     </Heading>
-                    <Text pb=".625rem" fontFamily="varela Round" fontSize="1rem" >
+                    <Text pb=".625rem" fontFamily="varela Round" fontSize="1.25rem" >
                     If you are looking to prosper & protect your wealth, you have come to the right place.
                     </Text>
           <Flex
@@ -26,7 +26,7 @@ const PrimeRealtyCap =()=>{
             className="sliderightdisco reveal"
           >
             <Divider
-              w="75%"
+              w="90%"
               orientation="horizontal"
               border="3px solid"
               borderColor="#DFBD69"
@@ -57,7 +57,7 @@ const PrimeRealtyCap =()=>{
                 </Flex>
                 <Flex direction="column" align="center" className="fadein-2sdelay revealOnce">
                     <Image src={profitinvest} w="5rem" h="5rem"/>
-                    <Heading pb=".625rem" pt="1rem" textAlign="center" fontSize="1.125rem" fontFamily="avenir">PROFITABLE INVESTMENT PLANS</Heading>
+                    <Heading pb=".625rem" pt="1rem" textAlign="center" fontSize="1.125rem" fontFamily="avenir">PROFITABLE INVESTMENT <br/>PLANS</Heading>
                     <Text textAlign="center" fontSize="1rem" fontFamily="varela Round">Our flexibility allows real estate developers to plan their investments and turn them into wealth.</Text>
                 </Flex>
                 <Flex direction="column" align="center" className="fadein-2sdelay revealOnce">

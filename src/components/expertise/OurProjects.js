@@ -16,7 +16,7 @@ import { motion, useAnimation, useInView } from "framer-motion";
 import React, { useEffect, useRef, useState } from "react";
 
 import areteHomes from "../arete-homes imgs/BANNER2.jpg";
-import skyHigh from "../sky-high imgs/BANNER2.jpg";
+import skyHigh from "../sky-high imgs/BANNER2.png";
 //import nakshatra from "";
 import areteMall from "../commercial-properties imgs/Arete Mall.jpg";
 import aretePlaza from "../commercial-properties imgs/ARETE PLAZA1_11zon.jpg";
@@ -51,7 +51,7 @@ const OurProjects = () => {
   }
   const projects=[
     {title:"ARETE HOMES",link:"/arete-homes",imgF:areteHomes,imgB:skyHigh, text:"Our objective is to manage and develop the strongest property portfolios. Our expertise owns experience of 3 decades. We can provide you with all types of developments in all the major cities in the best strategic locations. Not us, but our work speaks for us...."},
-    {title:"SKY HIGH",link:"sky-high",imgF:skyHigh,imgB:aretePlaza, text:"Our objective is to manage and develop the strongest property portfolios. Our expertise owns experience of 3 decades. We can provide you with all types of developments in all the major cities in the best strategic locations. Not us, but our work speaks for us...."},
+    {title:"SKY HIGH TOWER",link:"sky-high",imgF:skyHigh,imgB:aretePlaza, text:"Our objective is to manage and develop the strongest property portfolios. Our expertise owns experience of 3 decades. We can provide you with all types of developments in all the major cities in the best strategic locations. Not us, but our work speaks for us...."},
     {title:"ARETE PLAZA",link:"/plaza",imgF:aretePlaza,imgB:areteMall, text:"Our objective is to manage and develop the strongest property portfolios. Our expertise owns experience of 3 decades. We can provide you with all types of developments in all the major cities in the best strategic locations. Not us, but our work speaks for us...."},
     {title:"ARETE MALL",link:"/mall",imgF:areteMall,imgB:ponneri, text:"Our objective is to manage and develop the strongest property portfolios. Our expertise owns experience of 3 decades. We can provide you with all types of developments in all the major cities in the best strategic locations. Not us, but our work speaks for us...."},
     {title:"PONNERI GYMKHANA CLUB",link:"",imgF:ponneri,imgB:areteHomes, text:"Our objective is to manage and develop the strongest property portfolios. Our expertise owns experience of 3 decades. We can provide you with all types of developments in all the major cities in the best strategic locations. Not us, but our work speaks for us...."},
@@ -126,7 +126,7 @@ const OurProjects = () => {
     infinite: true,
     draggable: true,
     speed: 500,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 3000,
     pauseOnHover: false,
     slidesToShow: 1,
     slidesToScroll: 1,

@@ -11,13 +11,14 @@ const Whoweare =()=>{
       return (
       <>
       <Flex direction="column">
-      <Flex><Image opacity="0" h="2.5rem" w="100%"/></Flex>
-      <Flex direction="column" overflow="hidden" px="100px" pt="0.625rem">
+      <Flex><Image opacity="0" h="2.5rem" w="100%" /></Flex>
+      <Flex direction="column" px="100px" pt="0.625rem">
         <Flex pos="relative">
             <Flex direction="column" className="fadein revealOnce" w="50%"  bgImage='linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)), url("/images/bg-box.jpg")'
             bgRepeat="no-repeat"
             bgPos="center"
-            bgSize="cover">
+            bgSize="cover" 
+            filter="drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.25))">
                     <Text pos="relative" fontSize="1.25rem" textAlign="center" >
                     <Icon
                         pos="absolute"

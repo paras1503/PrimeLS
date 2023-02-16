@@ -43,10 +43,10 @@ return (
                                 bottom="0"
                                 left="0"
                                 right="0"
-                                opacity="0"
+                                opacity="1"
                                 bgColor="rgba(0,0,0,0.6)"
                                 transition="all .3s"
-                                opacity="1"
+                                
                                 >
                                 <Image
                                     alt="IMAGE"
