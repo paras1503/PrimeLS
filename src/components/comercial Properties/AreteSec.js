@@ -1979,7 +1979,7 @@ const LocationAndFormMall = () => {const [isOpen, setIsOpen]= useState(false);
                     fontFamily="veralaRound"
                     fontSize={{ base: "0.75rem", lg: "1rem" }}
                   >
-                    EDUCATIONAL <br /> INSTITUTES
+                   EDUCATIONAL <br /> INSTITUTES
                   </Text>
                 </VStack>
               </Flex>
@@ -2456,7 +2456,7 @@ const LocationAndFormMall = () => {const [isOpen, setIsOpen]= useState(false);
                 bgColor="#E5E5E5"
                 borderRadius="none"
               />
-            </HStack>{" "}
+            </HStack>
           </FormControl>
           <FormControl isRequired>
             {" "}
@@ -2477,7 +2477,7 @@ const LocationAndFormMall = () => {const [isOpen, setIsOpen]= useState(false);
                 bgColor="#E5E5E5"
                 borderRadius="none"
               />
-            </HStack>{" "}
+            </HStack>
           </FormControl>
           <FormControl>
             <HStack w="100%" justify="space-between" pb="0.9rem">
@@ -2497,7 +2497,7 @@ const LocationAndFormMall = () => {const [isOpen, setIsOpen]= useState(false);
                 bgColor="#E5E5E5"
                 borderRadius="none"
               />
-            </HStack>{" "}
+            </HStack>
           </FormControl>
           <FormControl>
             <HStack

@@ -67,6 +67,7 @@ const BottomMenu = () => {
         </Heading>
       </Flex>
     </Flex>
+    
   );
 };
 

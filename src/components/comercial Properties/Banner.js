@@ -14,7 +14,7 @@ const Banner = () => {
     autoplay: true,
     speed: 500,
     fade: true,
-    autoplaySpeed: 4000,
+    autoplaySpeed: 3000,
     slidesToShow: 1,
     slidesToScroll: 1,
     pauseOnHover: false,
@@ -57,6 +57,7 @@ const Banner = () => {
             />
           ))}
         </Slider>
+        
         <IconButton
           pos="absolute"
           aria-label="left-arrow"
@@ -112,7 +113,7 @@ const Banner = () => {
         left="50%"
         transform={"translate(-50%, -50%)"}
       >
-        COMMERCIAL <br/>PROPERTIES
+        COMMERCIAL <br/> PROPERTIES
       </Heading>
     </Flex>
   );

@@ -1,5 +1,4 @@
 import {
-  Button,
   Flex,
   Text,
   Accordion,
@@ -13,7 +12,6 @@ import {
 } from "@chakra-ui/react";
 import React from "react";
 import { MinusIcon, AddIcon } from "@chakra-ui/icons";
-import { AiOutlineDownCircle } from "react-icons/ai";
 
 const DropDown = () => {
   return (
@@ -274,6 +272,7 @@ const AreteHomesPro = () => {
     </AccordionItem>
   );
 };
+
 
 const AreteHomesSky = () => {
   return (
