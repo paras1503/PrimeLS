@@ -18,9 +18,9 @@ import {
 } from "@chakra-ui/react";
 import React, { useEffect, useLayoutEffect, useRef, useState } from "react";
 // images
-import arete1 from "../commercial-properties imgs/ARETE PLAZA2_11zon.jpg";
-import arete2 from "../commercial-properties imgs/ARETE PLAZA4_11zon.jpg";
-import arete3 from "../commercial-properties imgs/ARETE PLAZA3_11zon.jpg";
+import arete1 from "../commercial-properties imgs/ARETE PLAZA2_11zon.png";
+import arete2 from "../commercial-properties imgs/ARETE PLAZA4_11zon.png";
+import arete3 from "../commercial-properties imgs/ARETE PLAZA3_11zon.png";
 import aretefloor from "../commercial-properties imgs/A7 commercial with C.A_pages-to-jpg-0001_11zon.jpg";
 
 import institute from "../Invest imgs/institutes.svg";
@@ -637,16 +637,13 @@ const AreteMall = () => {
             align="flex-start"
             direction={{ base: "column-reverse", lg: "row" }}
             gap="1.8rem"
-            overflow="hidden"
           >
-            <Flex w={{ base: "100%", lg: "50%" }} overflow="hidden" className="expandcar reveal">
+            <Flex w={{ base: "100%", lg: "50%" }} className="expandcar reveal" filter="drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.25))">
               <Image
-                boxShadow="dark-lg"
                 onClick={()=>open()}
                 src={mall}
                 h={{ base: "18.125rem", lg: "29.25rem" }}
                 w="100%"
-                
               />
             </Flex>{" "}
             <Button
@@ -748,7 +745,7 @@ const AreteMall = () => {
               <Text
                 fontSize={{ base: "1rem", lg: "1rem" }}
                 fontFamily="varela Round"
-                textAlign={{base:"center",lg:""}}
+                textAlign={{base:"left",lg:""}}
                 pb="1.875rem"
                 className="fadein-2sdelay revealOnce"
               >

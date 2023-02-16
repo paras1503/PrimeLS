@@ -112,7 +112,7 @@ const Banner = () => {
         left="50%"
         transform={"translate(-50%, -50%)"}
       >
-        COMMERCIAL PROPERTIES
+        COMMERCIAL <br/>PROPERTIES
       </Heading>
     </Flex>
   );

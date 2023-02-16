@@ -26,7 +26,7 @@ const DropDown = () => {
       <Accordion
         w="100%"
         border="1px solid #B88746"
-        allowMultiple
+        allowmultiple
         overflow="hidden"
       >
         <AccordionItem>
@@ -69,7 +69,7 @@ const PrimeLS = () => {
       w="100%"
       bgColor="#DFBD69"
       border="1px solid #DFBD69"
-      allowMultiple
+      allowmultiple
       px="5.25rem"
     >
       {({ isExpanded }) => (
@@ -136,7 +136,7 @@ const InvestWithUs = () => {
       w="100%"
       bgColor="#DFBD69"
       border="1px solid #DFBD69"
-      allowMultiple
+      allowmultiple
       px="5.25rem"
     >
       {({ isExpanded }) => (
@@ -206,7 +206,7 @@ const AreteHomesPro = () => {
       w="100%"
       bgColor="#DFBD69"
       border="1px solid #DFBD69"
-      allowMultiple
+      allowmultiple
       px="5.25rem"
     >
       {({ isExpanded }) => (
@@ -284,7 +284,7 @@ const AreteHomesSky = () => {
       w="100%"
       bgColor="#DFBD69"
       border="1px solid #DFBD69"
-      allowMultiple
+      allowmultiple
       px="5.25rem"
     >
       {({ isExpanded }) => (
@@ -425,7 +425,7 @@ const AreteHomesService = () => {
       w="100%"
       bgColor="#DFBD69"
       border="1px solid #DFBD69"
-      allowMultiple
+      allowmultiple
       px="5.25rem"
     >
       {({ isExpanded }) => (
