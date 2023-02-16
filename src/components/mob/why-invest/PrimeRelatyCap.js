@@ -12,8 +12,8 @@ const PrimeRealtyCap =()=>{
       <Flex w="100%" direction="column" overflow="hidden" px="1rem" pb="3.125rem">
         <Flex direction="column" w="100%" pos="relative">
             <Flex overflow="hidden" direction="column" className="fadein revealOnce" w="100%">
-            <Text textTransform="uppercase" textAlign="center" fontFamily="goudy" pb="1rem" fontSize="2.125rem">
-                    Factors to look at while choosing a residential property for investment
+            <Text textTransform="uppercase" textAlign="center" fontFamily="goudy" pb="1rem" fontSize="1.5rem">
+                    Factors to look at <br/> while choosing a <br/> residential property for<br/>investment
             </Text>
             </Flex>
             <SimpleGrid mt="1.875rem" gap="2.5rem" columns={1}>

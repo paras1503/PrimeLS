@@ -66,11 +66,11 @@ const SmartLiving = () => {
         initial={{ y: -50, opacity: 0 }}
         animate={animateY}
         transition={{ duration: 2, type: "just" }}
-        fontSize="2.125rem"
+        fontSize="1.5rem"
         fontFamily="goudy"
         fontWeight="400"
       >
-       ARETE HOMES THE PERFECT CHOICE FOR SMART INVESTMENT
+       ARETE HOMES THE PERFECT CHOICE FOR <br/> SMART INVESTMENT
       </MtnHd>
         <Flex direction="column" w="100%" h="100%" px="2" justify="flex-start">
           
@@ -96,7 +96,7 @@ const SmartLiving = () => {
           <MtnFlx
             transition={{ delay: 3.5, duration: 2, type: "just" }}
           >
-            <Image className="expandcar reveal" w="570px" h="15.625rem" src={one} />
+            <Image className="expandcar reveal" w="570px" h="15.625rem" src={one} filter="drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.25))"/>
           </MtnFlx>
           <MtnFlx
             className="fadein revealOnce"
@@ -128,6 +128,7 @@ const SmartLiving = () => {
               h="15.625rem"
               // mt="100px"
               src={two}
+              filter="drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.25))"
             />
           </MtnFlx>
           <MtnFlx
@@ -160,6 +161,7 @@ const SmartLiving = () => {
               h="15.625rem"
               // mt="100px"
               src={three}
+              filter="drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.25))"
             />
           </MtnFlx>
           <MtnFlx
@@ -184,7 +186,7 @@ const SmartLiving = () => {
           <MtnFlx
             transition={{ delay: 3.5, duration: 2, type: "just" }}
           >
-            <Image className="expandcar reveal"  w="570px" h="15.625rem" src={four} />
+            <Image className="expandcar reveal"  w="570px" h="15.625rem" src={four} filter="drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.25))"/>
           </MtnFlx>
           <MtnFlx
             className="fadein revealOnce"
@@ -208,7 +210,7 @@ const SmartLiving = () => {
           <MtnFlx
             transition={{ delay: 3.5, duration: 2, type: "just" }}
           >
-            <Image className="expandcar reveal"  w="570px" h="15.625rem" src={fifth} />
+            <Image className="expandcar reveal"  w="570px" h="15.625rem" src={fifth} filter="drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.25))"/>
           </MtnFlx>
         </Flex>
     </Flex>

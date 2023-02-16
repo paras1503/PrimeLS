@@ -33,9 +33,10 @@ const AboutBanner = () => {
         left="50%"
         transform="translateX(-50%)"
         fontFamily="avenir"
-        fontSize="3rem"
+        fontSize="2rem"
         lineHeight="3.562rem"
         color="white"
+        fontWeight="700"
       >
         WHY INVEST
       </MtnHd>
