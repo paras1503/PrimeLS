@@ -183,25 +183,25 @@ const Header = () => {
       {" "}
       <Flex w="20%"></Flex>
       <Flex alignItems={"center"} w="50%" justifyContent={"center"}>
-        <Heading _hover={{cursor:"pointer",color: navbar?"#B88746":"#DFBD69"}} _focusVisible={{boxShadow:"none", outline:"none",}} as="span" fontSize="1rem" fontFamily="avenir" px="1rem">
+        <Heading _hover={{cursor:"pointer",color: navbar?"#B88746":"#DFBD69"}} _focusVisible={{boxShadow:"none", outline:"none",}} as="span" fontSize="1rem" fontFamily="avenir" px="2rem">
           <Link href="/expertise" style={{textDecoration:"none"}}>EXPERTISE</Link>
         </Heading>
         <Menu isOpen={isOpenMenu} _focusVisible={{boxShadow:"none", outline:"none",}}>
           
-        <MenuButton _hover={{cursor:"pointer",color: navbar?"#B88746":"#DFBD69"}} _active={{bgColor:"inherit"}} _focusVisible={{boxShadow:"none", outline:"none",}} bgColor="inherit" mr="1rem" as={Button} fontSize="1rem" fontFamily="avenir" pr="6rem" px="1rem" onMouseEnter={btnMouseEnterEvent} onMouseLeave={btnMouseLeaveEvent}>
+        <MenuButton _hover={{cursor:"pointer",color: navbar?"#B88746":"#DFBD69"}} _active={{bgColor:"inherit"}} _focusVisible={{boxShadow:"none", outline:"none",}} bgColor="inherit" mr="1rem" as={Button} fontSize="1rem" fontFamily="avenir" pr="7.2rem" px="2rem" onMouseEnter={btnMouseEnterEvent} onMouseLeave={btnMouseLeaveEvent}>
           <Link style={{textDecoration:"none"}}>PROJECTS</Link>
         </MenuButton>
-        <MenuList boxShadow={navbar ? "2xl" : ""} fontFamily="avenir" fontSize="1rem" mt=".5rem" _focusVisible={{boxShadow:"none", outline:"none",}} bgColor={navbar ? "#fff" : "rgba(0,0,0,70%)"} border="none" borderRadius="none" onMouseEnter={menuListMouseEnterEvent} onMouseLeave={menuListMouseLeaveEvent}>
-        <MenuItem fontWeight="bold" _hover={{bgColor:"rgba(0,0,0,0)",cursor:"pointer",color: navbar?"#B88746":"#DFBD69"}} _focusVisible={{boxShadow:"none", outline:"none",}}>
+        <MenuList p="0.5rem" boxShadow={navbar ? "2xl" : ""} fontFamily="avenir" fontSize="1rem" mt=".5rem" _focusVisible={{boxShadow:"none", outline:"none",}} bgColor={navbar ? "#fff" : "rgba(0,0,0,70%)"} border="none" borderRadius="none" onMouseEnter={menuListMouseEnterEvent} onMouseLeave={menuListMouseLeaveEvent}>
+        <MenuItem borderBottom="1px solid lightgray" fontWeight="bold" _hover={{bgColor:"rgba(0,0,0,0)",cursor:"pointer",color: navbar?"#B88746":"#DFBD69"}} _focusVisible={{boxShadow:"none", outline:"none",}}>
             <Link href="/arete-homes" style={{textDecoration:"none"}}>ARETE HOMES</Link>
         </MenuItem>
-        <MenuItem fontWeight="bold" _hover={{bgColor:"rgba(0,0,0,0)",cursor:"pointer",color: navbar?"#B88746":"#DFBD69"}} _focusVisible={{boxShadow:"none", outline:"none",}}>
+        <MenuItem borderBottom="1px solid lightgray" fontWeight="bold" _hover={{bgColor:"rgba(0,0,0,0)",cursor:"pointer",color: navbar?"#B88746":"#DFBD69"}} _focusVisible={{boxShadow:"none", outline:"none",}}>
             <Link href="/sky-high" style={{textDecoration:"none"}}>SKY HIGH</Link>
         </MenuItem>
-        <MenuItem fontWeight="bold" _hover={{bgColor:"rgba(0,0,0,0)",cursor:"pointer",color: navbar?"#B88746":"#DFBD69"}} _focusVisible={{boxShadow:"none", outline:"none",}}>
+        <MenuItem borderBottom="1px solid lightgray" fontWeight="bold" _hover={{bgColor:"rgba(0,0,0,0)",cursor:"pointer",color: navbar?"#B88746":"#DFBD69"}} _focusVisible={{boxShadow:"none", outline:"none",}}>
             <Link href="/commercial-properties" onClick={()=>window.localStorage.setItem('commercialPage',true)} style={{textDecoration:"none"}}>ARETE PLAZA</Link>
         </MenuItem>
-        <MenuItem fontWeight="bold" _hover={{bgColor:"rgba(0,0,0,0)",cursor:"pointer",color: navbar?"#B88746":"#DFBD69"}} _focusVisible={{boxShadow:"none", outline:"none",}}>
+        <MenuItem borderBottom="1px solid lightgray" fontWeight="bold" _hover={{bgColor:"rgba(0,0,0,0)",cursor:"pointer",color: navbar?"#B88746":"#DFBD69"}} _focusVisible={{boxShadow:"none", outline:"none",}}>
             <Link href="/commercial-properties" onClick={()=>window.localStorage.setItem('commercialPage',false)} style={{textDecoration:"none"}}>ARETE MALL</Link>
         </MenuItem>
         <MenuItem fontWeight="bold" _hover={{bgColor:"rgba(0,0,0,0)",cursor:"pointer",color: navbar?"#B88746":"#DFBD69"}} _focusVisible={{boxShadow:"none", outline:"none",}}>
@@ -214,14 +214,14 @@ const Header = () => {
         </Flex>
         <Flex align="center">
         <Menu isOpen={isMenuTwoOpen}>
-        <MenuButton _hover={{cursor:"pointer",color: navbar?"#B88746":"#DFBD69"}} _active={{bgColor:"inherit"}} _focusVisible={{boxShadow:"none", outline:"none",}} bgColor="inherit" as={Button} fontSize="1rem" fontFamily="avenir" px="1rem" onMouseEnter={btnMouseTwoEnterEvent} onMouseLeave={btnMouseTwoLeaveEvent}>
+        <MenuButton _hover={{cursor:"pointer",color: navbar?"#B88746":"#DFBD69"}} _active={{bgColor:"inherit"}} _focusVisible={{boxShadow:"none", outline:"none",}} bgColor="inherit" as={Button} fontSize="1rem" fontFamily="avenir" pl="3.4rem" px="2rem" onMouseEnter={btnMouseTwoEnterEvent} onMouseLeave={btnMouseTwoLeaveEvent}>
           INVEST
         </MenuButton>
-        <MenuList boxShadow={navbar ? "2xl" : ""} fontFamily="avenir" fontSize="1rem" mt=".5rem" bgColor={navbar ? "#fff" : "rgba(0,0,0,70%)"} border="none" borderRadius="none" _focusVisible={{boxShadow:"none", outline:"none",}} onMouseEnter={menuListMouseTwoEnterEvent} onMouseLeave={menuListMouseTwoLeaveEvent}>
-        <MenuItem fontWeight="bold" _hover={{bgColor:"rgba(0,0,0,0)",cursor:"pointer",color: navbar?"#B88746":"#DFBD69"}} _focusVisible={{boxShadow:"none", outline:"none",}}>
+        <MenuList p="0.5rem" boxShadow={navbar ? "2xl" : ""} fontFamily="avenir" fontSize="1rem" mt=".5rem" bgColor={navbar ? "#fff" : "rgba(0,0,0,70%)"} border="none" borderRadius="none" _focusVisible={{boxShadow:"none", outline:"none",}} onMouseEnter={menuListMouseTwoEnterEvent} onMouseLeave={menuListMouseTwoLeaveEvent}>
+        <MenuItem borderBottom="1px solid lightgray" fontWeight="bold" _hover={{bgColor:"rgba(0,0,0,0)",cursor:"pointer",color: navbar?"#B88746":"#DFBD69"}} _focusVisible={{boxShadow:"none", outline:"none",}}>
             <Link href="/why-invest" style={{textDecoration:"none"}}>WHY INVEST</Link>
         </MenuItem>
-        <MenuItem fontWeight="bold" _hover={{bgColor:"rgba(0,0,0,0)",cursor:"pointer",color: navbar?"#B88746":"#DFBD69"}} _focusVisible={{boxShadow:"none", outline:"none",}}>
+        <MenuItem borderBottom="1px solid lightgray" fontWeight="bold" _hover={{bgColor:"rgba(0,0,0,0)",cursor:"pointer",color: navbar?"#B88746":"#DFBD69"}} _focusVisible={{boxShadow:"none", outline:"none",}}>
             <Link href="/arete-homes-invest" onClick={()=>window.localStorage.setItem('areteInvest',true)} style={{textDecoration:"none"}}>8% ROI ON HOMES</Link>
         </MenuItem>
         <MenuItem fontWeight="bold" _hover={{bgColor:"rgba(0,0,0,0)",cursor:"pointer",color: navbar?"#B88746":"#DFBD69"}} _focusVisible={{boxShadow:"none", outline:"none",}}>
@@ -229,17 +229,18 @@ const Header = () => {
         </MenuItem>
         </MenuList>
         </Menu>
-        <Heading _hover={{cursor:"pointer",color: navbar?"#B88746":"#DFBD69"}} as="span" fontSize="1rem" fontFamily="avenir" px="1rem">
+        <Heading _hover={{cursor:"pointer",color: navbar?"#B88746":"#DFBD69"}} as="span" fontSize="1rem" fontFamily="avenir" px="2rem">
           <Link href="/serviced-apartments" style={{textDecoration:"none"}}>HOUSING</Link>
         </Heading>
       </Flex>
       </Flex>
       <Flex w="25%" justify="flex-end" align="center">
-        <Heading as="span" fontFamily="avenir">
+        <Heading as="span" ml="3rem" fontFamily="avenir">
           <Button
-            onClick={()=>openEnquire()}
+            onClick={(e)=>{e.preventDefault(); openEnquire()}}
             h="3.125rem"
             my="1rem"
+            
             p="6"
             bgGradient="linear(to-b, #B88746 ,#DFBD69)"
             color="white"
@@ -252,15 +253,15 @@ const Header = () => {
           </Button>
         </Heading>
         <button style={{marginRight:"50px"}} onClick={()=>open()} >
-        <HamburgerIcon _hover={{cursor:"pointer",color: navbar?"#B88746":"#DFBD69"}} my="1rem" w="5rem" h="3.125rem"/>
+        <HamburgerIcon _hover={{cursor:"pointer",color: navbar?"#B88746":"#DFBD69"}} mr="-5rem" my="1rem" w="5rem" h="3.125rem"/>
         </button>
         {isModalOpen?
-        <Flex style={{position:"absolute",top:"0",left:"0",zIndex:"999"}}>
+        <Flex style={{position:"absolute",top:"0",left:"0",zIndex:"999", paddingBottom:"0"}}>
           <div style={{width:"80vw",height:"100vh",backgroundColor: "rgba(0,0,0,0.7)",}} onClick={()=>close()}>
           </div>
           <div style={{backgroundColor:"#FFFFFF"}}>
           <div style={{width:"20vw",color:"black",paddingTop:"2.5rem",paddingLeft:"1.5rem",paddingRight:"2rem",position:'relative'}}>
-              <button style={{fontSize:"2rem", marginLeft:"auto", height:"2rem",width:"2.2rem",align:"right",backgroundColor:"white",border:"none",position:'absolute',right:"2rem", top:"1rem"}} onClick={()=>close()}><span style={{fontWeight:"500", fontSize:"1.5rem", position:"relative", bottom:"0.8rem"}}>X</span></button>
+              <button style={{fontSize:"2rem", marginLeft:"auto", height:"2rem",width:"2.2rem",align:"right",backgroundColor:"white",border:"none",position:'absolute',right:"2rem", top:"1rem", marginBottom:"1rem"}} onClick={()=>close()}><span style={{fontWeight:"500", fontSize:"1.5rem", position:"relative", bottom:"0.8rem"}}>X</span></button>
               <br/>
               <div style={{height:"2.5rem", paddingTop:"0.5rem"}}>
                 <Heading _hover={{cursor:"pointer",color: navbar?"#B88746":"#DFBD69"}} as="span" fontSize="1rem" fontFamily="avenir">
@@ -294,7 +295,7 @@ const Header = () => {
             <Link href="/commercial-properties" onClick={()=>window.localStorage.setItem('commercialPage',false)} style={{textDecoration:"none"}}>ARETE MALL</Link>
         </MenuItem>
         <MenuItem fontWeight="bold" _hover={{bgColor:"rgba(0,0,0,0)",cursor:"pointer",color: navbar?"#B88746":"#DFBD69"}}>
-            <Link style={{textDecoration:"none"}}>POONERI GYMKHANA CLUB</Link>
+            <Link style={{textDecoration:"none"}}>PONNERI GYMKHANA CLUB</Link>
         </MenuItem>
         </MenuList>
               </Menu>
@@ -328,14 +329,13 @@ const Header = () => {
                 <Link href="/serviced-apartments" style={{textDecoration:"none"}}>SERVICED HOUSING</Link>
               </Heading>
               </div>
-              <br/>
-              <br/>
               </div>
-              <div  style={{backgroundImage:`url(${bgBox})`}}>
-              <div style={{width:"20vw",color:"black",paddingTop:"2.5rem",paddingLeft:"1.5rem",paddingRight:"2rem",position:'relative'}}>
+              <div  style={{backgroundImage:`url(${bgBox})`, height:"50%", position:"relative",
+            top:"1rem"}}>
+              <div style={{width:"20vw",color:"black",paddingTop:"0.5rem",paddingLeft:"1.5rem",paddingRight:"2rem",position:'relative'}}>
               <div style={{height:"2.5rem", paddingTop:"0.5rem"}}>
                 <Heading _hover={{cursor:"pointer",color: navbar?"#B88746":"#DFBD69"}} as="span" fontSize="1rem" fontFamily="avenir">
-                <Link href="/channel-partner" style={{textDecoration:"none"}}>CHANNEL PARTNER LOGIN</Link>
+                <Link href="/channel-partner" style={{textDecoration:"none"}}>CHANNEL PARTNER</Link>
               </Heading>
               </div>
               
