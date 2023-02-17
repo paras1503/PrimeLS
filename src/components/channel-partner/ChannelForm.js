@@ -123,7 +123,7 @@ const ChannelForm = () => {
 
   const options = [
     { value: "ARETE HOMES", label: "ARETE HOMES", pdf:"Channel Partner Brochure - Arete Homes.pdf" },
-    { value: "SKY HIGH TOWER", label: "SKY HIGH TOWER", pdf:"" },
+    { value: "SKY HIGH TOWER", label: "SKY HIGH TOWER", pdf:"Channel Partner Brochure - SKY HIGH Tower Arete Homes" },
     { value: "PGC", label: "PGC", pdf:"" },
     { value: "ARETE PLAZA", label: "ARETE PLAZA", pdf:""},
     { value: "ARETE MALL", label: "ARETE MALL", pdf:""},
@@ -145,7 +145,8 @@ const ChannelForm = () => {
 
   const downloadPDF = () =>{
     console.log(selectedOption)
-    fetch(options.pdf).then(response=>{
+    if(selectedOption === "ARETE HOMES"){
+      fetch("Channel Partner Brochure - Arete Homes.pdf").then(response=>{
       response.blob().then(blob=>{
         const fileURL = window.URL.createObjectURL(blob);
         let alink=document.createElement("a");
@@ -154,6 +155,18 @@ const ChannelForm = () => {
         alink.click();
       })
     })
+    }else if(selectedOption === "SKY HIGH TOWER"){
+      fetch("Channel Partner Brochure - SKY HIGH Tower Arete Homes.pdf").then(response=>{
+        response.blob().then(blob=>{
+          const fileURL = window.URL.createObjectURL(blob);
+          let alink=document.createElement("a");
+          alink.href = fileURL;
+          alink.download = "Channel Partner Brochure - SKY HIGH Tower Arete Homes.pdf"
+          alink.click();
+        })
+      })
+    }
+    
   }
   return (
     <>
