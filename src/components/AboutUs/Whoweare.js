@@ -15,9 +15,10 @@ const Whoweare =()=>{
       <Flex><Image opacity="0" h="2.5rem" w="100%"/></Flex>
       <Flex direction="column" overflow="hidden" px="100px" pt="2.5rem">
         <Center pb="1.875rem" className="slidein-top revealOnce" fontFamily="goudy" fontSize="2.5rem">WHO WE ARE</Center>
-        <Center pb="1.875rem" textAlign="center" className="fadein-2sdelay revealOnce" fontFamily="varela round" fontSize="1rem">Prime LifeSpace, as the name suggests, is a pre-eminent real estate consultancy & development firm, with 30+ years of experience in the industry.<br/>
-            Our brand is built on trust, transparency & quality in the real estate industry. We have established credentials in development of residential integrated townships & consulting services. Both these segments are equally important to us.<br/>
-            Our consultancy firm offers an end to end solution in real estate space and development firm is renowned creators of smart integrated townships that provide more than just spaces to live in.</Center>
+        <Center pb="1.875rem" textAlign="center" className="fadein-2sdelay revealOnce" fontFamily="varela round" fontSize="1rem">Prime LifeSpace, as the name suggests, is a pre-eminent real estate consultancy & development firm, with 30+ years of experience in the industry.
+Our brand is built on trust, transparency & quality in the real estate industry. We have established credentials in development of residential integrated townships & consulting services. Both these segments are equally important to us.
+Prime LifeSpace consultancy firm offers an end-to-end solution in the Real Estate Space. The team has excelled in providing deep expertise to biggest corporates like Blackstone for Chandigarh Elante Mall, L&T for Seawood Project, Sunteck for Naigaon Project etc. Also, structured various eminent Joint Ventures, Mergers like L&T GeoTech with Sharaf Foundation.
+Prime LifeSpace developers are renowned creators of smart integrated townships that provide more than just spaces to live in. The townships resemble improvement in quality of living, empowerment of communities and valuable experience of lifetime. Our properties are now fetching highest rental returns in the country. An investment choice for right value of money for the investors.</Center>
         </Flex>
         </Flex>
         <Flex overflow="hidden" pt="3.125rem" pb="6.875rem" pl="6rem" >
