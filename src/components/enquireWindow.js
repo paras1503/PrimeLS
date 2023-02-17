@@ -16,10 +16,10 @@ const EnquireWindow = ({isOpened,onClosed}) => {
       integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
       crossorigin="anonymous"
       />
-      <Modal size="lg" blockScrollOnMount={true} show={isOpened} onHide={onClosed}>
+      <Modal size="lg" blockScrollOnMount={false} trapFocus={false} autoFocus={false} returnFocusOnClose={false} show={isOpened} onHide={onClosed}>
           <Modal.Header closeButton>
           </Modal.Header>
-          <Modal.Body>
+          <Modal.Body returnFocusOnClose={false}>
             <Flex direction="column">
             <Flex>
               <Flex w="50%" align="center" direction="column" gap="1rem" h="50%">
@@ -42,7 +42,7 @@ const EnquireWindow = ({isOpened,onClosed}) => {
       bgPos="center"
       bgSize="cover">
               <form>
-              <Text textAlign="center"  fontSize="1rem" pt="1rem">Register here & avail best offers!</Text>
+              <Text textAlign="center" fontFamily="veralaRound" fontSize="1rem" pt="1rem">Register here & avail best offers!</Text>
               <FormControl isRequired>
                 {" "}
                 <HStack w="100%" justify="space-between" pb="0.938rem">
