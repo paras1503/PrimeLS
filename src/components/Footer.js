@@ -37,7 +37,7 @@ const Footer = () => {
     >
       <Flex pt="10" pb="1.125rem" pos="relative">
         <Flex direction="column" w="30%">
-        <Image  w="12.5rem"  src="/images/logo.png" />
+        <Image  w="78%" h="3.2rem" src="/images/logo.png" />
           <Flex align="left" py="6">
             <Icon mt="1" w="8" h="6" color="#DFBD69" as={ImLocation} />
             <Text fontSize="1rem" fontFamily="veralaRound">
@@ -51,20 +51,20 @@ const Footer = () => {
             </Heading>
 
             <Flex align="center">
-              <Icon as={MdEmail} w="8" h="6" color="#DFBD69" />
-              <Link fontSize="1rem" fontFamily="veralaRound">
+              <Icon as={MdEmail} w="8" h="6" color="#DFBD69"/>
+              <Link fontSize="1rem" fontFamily="veralaRound" onClick={()=>window.location="mailto:sales@primelifespace.com"}>
                 sales@primelifespace.com
               </Link>
             </Flex>
             <Flex align="center">
               <Icon as={BsWhatsapp} w="8" h="6" color="#DFBD69" />
-              <Link fontSize="1rem" fontFamily="veralaRound">
+              <Link fontSize="1rem" fontFamily="veralaRound" href="https://web.whatsapp.com/send?phone=919003199000">
                 +91 9003199000
               </Link>
             </Flex>
             <Flex align="center">
-              <Icon as={BsFillTelephoneFill} w="8" h="6" color="#DFBD69" />
-              <Link fontSize="1rem" fontFamily="veralaRound">
+              <Icon as={BsFillTelephoneFill} w="8" h="6" color="#DFBD69"/>
+              <Link fontSize="1rem" fontFamily="veralaRound" href="tel:+917338808775">
                 +91 7338808775
               </Link>
             </Flex>
@@ -132,7 +132,8 @@ const Footer = () => {
           </Flex>
           </Flex>
           <Flex  mt="3rem" direction="column" w="100%">
-          <Heading fontSize="1rem" fontFamily="veralaRound" borderBottom="1px solid #DFBD69" textColor={"#DFBD69"}>
+           
+          <Heading fontSize="1rem" width="20%" fontFamily="veralaRound" borderBottom="1px solid #DFBD69" textColor={"#DFBD69"}>
             Helpful Links
           </Heading>
           <Flex pt="4px" align={"flex-start"}>
@@ -141,7 +142,7 @@ const Footer = () => {
             fontFamily="veralaRound"
             fontWeight="400"
             >
-            <Link style={{textDecoration:"none"}} href="/channel-partner" fontSize="1rem">CHANNEL PARTNER LOGIN</Link>
+            <Link style={{textDecoration:"none"}} href="/channel-partner" fontSize="1rem">CHANNEL PARTNER</Link>
             <Link style={{textDecoration:"none"}} href="/contact-us" fontSize="1rem">CONTACT US</Link>
             <Link style={{textDecoration:"none"}} href="/careers" fontSize="1rem">CAREERS</Link>
           </VStack>
@@ -152,6 +153,7 @@ const Footer = () => {
             ml={""/*"auto"*/}
             pos="absolute"
             right="20"
+            bottom="3.7rem"
             >
             <Link style={{textDecoration:"none"}} href="/news-and-media" fontSize="1rem">NEWS & MEDIA</Link>
             <Link style={{textDecoration:"none"}} href="/refer-and-earn" onClick={()=>window.localStorage.setItem('referEarnPage',true)} fontSize="1rem">REFER & EARN</Link>
