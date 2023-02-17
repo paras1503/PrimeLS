@@ -94,11 +94,11 @@ const Ponneri = () => {
           >
           <Flex>
           <Image src={pgclogo} h="2.5rem" w="2.5rem" ml="1rem" mx="1rem" />
-          {/*<Spacer w="3.5rem" pos="relative">
+          <Spacer w="3.5rem" pos="relative">
           <Text pos="absolute" bottom="0.3rem" as="span" fontSize="1.5rem">
             PVT.
           </Text>
-          </Spacer>*/}
+          </Spacer>
           PONNERI GYMKHANA CLUB
             </Flex>         
                   </Heading>
@@ -107,7 +107,7 @@ const Ponneri = () => {
                       border="3px solid"
                       borderColor="#DFBD69"
                       bgColor="#DFBD69"
-                      width="9rem"
+                      width="6.5rem"
                       className="fadein revealOnce"
                   />
         </Flex>
@@ -121,14 +121,13 @@ const Ponneri = () => {
           <Flex align="flex-start" pr="100px" overflow="hidden">
             <Flex
               className="slidein-top reveal"
-              transition={"all 3s 3s"}
+              transition="all 2s 2s"
               h="100%"
               direction="column"
               align="center"
               px="1.563rem"
             >
               <Divider
-                
                 h="8.375rem"
                 orientation="vertical"
                 border="3px solid"
