@@ -9,6 +9,7 @@ import {
 } from "@chakra-ui/react";
 import { motion, useAnimation, useInView } from "framer-motion";
 import React, { useEffect, useRef } from "react";
+import Smart_living from "./homepage-imgs/smart-living.jpeg";
 
 const MtnHd = motion(Heading);
 const MtnFlx = motion(Flex);
@@ -67,7 +68,7 @@ const SmartLiving = () => {
             
             transition={{ delay: 1.5, duration: 2, type: "just" }}
           >
-            <Image className="expandcar reveal" w="570px" h="20.310rem" src="/images/smartliving.png" filter="drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.25))"/>
+            <Image className="expandcar reveal" w="570px" h="20.310rem" src={Smart_living} filter="drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.25))"/>
           </MtnFlx>
           <MtnFlx
             initial={{ opacity: 0, x: 100 }}
