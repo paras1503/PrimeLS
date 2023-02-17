@@ -17,7 +17,7 @@ const EnquireWindowMob
       integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
       crossorigin="anonymous"
       />
-      <Modal size="lg" blockScrollOnMount={true} show={isOpened} onHide={onClosed}>
+      <Modal size="lg" blockScrollOnMount={true} returnFocusOnClose={false} show={isOpened} onHide={onClosed}>
           <Modal.Header closeButton >
           </Modal.Header>
           <Modal.Body>
