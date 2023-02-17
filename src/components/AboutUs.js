@@ -29,6 +29,7 @@ const AboutUs = () => {
     }
   }, [isInView, animateHead, animateLeft]);
 
+  
   return (
     <Flex
       ref={ref}
@@ -90,12 +91,9 @@ const AboutUs = () => {
             fontSize="1rem"
             fontFamily="veralaRound"
           >
-            Prime LifeSpace consultancy firm offers an end-to-end solution in
-            the Real Estate Space. The team has excelled in providing deep
-            expertise to biggest corporates like Blackstone for Chandigarh
-            Elante Mall, L&T for Seawood Project, Sunteck for Naigaon Project
-            etc. Also, structured various eminent Joint Ventures, Mergers like
-            L&T GeoTech with Sharaf Foundation.
+            Prime LifeSpace, as the name suggests, is a pre-eminent real estate consultancy & development firm, with 30+ years of experience in the industry.
+Our brand is built on trust, transparency & quality in the real estate industry. We have established credentials in development of residential integrated townships & consulting services. Both these segments are equally important to us.
+Prime LifeSpace consultancy firm offers an end-to-end solution in the Real Estate Space. The team has excelled in providing deep expertise to biggest corporates like Blackstone for Chandigarh Elante Mall, L&T for Seawood Project, Sunteck for Naigaon Project etc. Also, structured various eminent Joint Ventures, Mergers like L&T GeoTech with Sharaf Foundation.
           </MtnTxt>
           <MtnTxt
             initial={{ opacity: 0 }}
@@ -105,12 +103,7 @@ const AboutUs = () => {
             fontSize="1rem"
             fontFamily="veralaRound"
           >
-            Prime LifeSpace developers are renowned creators of smart integrated
-            townships that provide more than just spaces to live in. The
-            townships resemble improvement in quality of living, empowerment of
-            communities and valuable experience of lifetime. Our properties are
-            now fetching highest rental returns in the country. An investment
-            choice for right value of money for the investors.
+            Prime LifeSpace developers are renowned creators of smart integrated townships that provide more than just spaces to live in. The townships resemble improvement in quality of living, empowerment of communities and valuable experience of lifetime. Our properties are now fetching highest rental returns in the country. An investment choice for right value of money for the investors.
           </MtnTxt>
         </Flex>
         <Flex w="100%" pt="0.938rem">
