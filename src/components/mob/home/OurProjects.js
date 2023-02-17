@@ -19,7 +19,7 @@ import areteHomes from "../../arete-homes imgs/BANNER2.jpg";
 import skyHigh from "../../sky-high imgs/BANNER2.png";
 //import nakshatra from "";
 import areteMall from "../../commercial-properties imgs/Arete Mall.jpg";
-import aretePlaza from "../../commercial-properties imgs/ARETE PLAZA1_11zon.jpg";
+import aretePlaza from "../../commercial-properties imgs/ARETE PLAZA1_11zon.png";
 import ponneri from "../../commercial-properties imgs/gymkhana.png";
 
 const MtnDvdr = motion(Divider);

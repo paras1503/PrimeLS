@@ -61,7 +61,7 @@ const OurInvestors=()=>{
           <Flex px="1rem" align="center" justify="center" pos="relative" h="18.75rem" w="100%">
           <embed
             style={{height:"18.75rem",width:"100%"}}
-            src={"https://www.youtube.com/embed/Psmw1t_S6-c"}
+            src={"https://www.youtube.com/embed/SP4Emn7CRJ4"}
             title="The Economic Times | Best Realty Brands 2021 - Prime LifeSpace Developers"
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -72,7 +72,18 @@ const OurInvestors=()=>{
           <Flex px="1rem" align="center" justify="center" pos="relative" h="18.75rem" w="100%">
           <embed
             style={{height:"18.75rem",width:"100%"}}
-            src={"https://www.youtube.com/embed/Psmw1t_S6-c"}
+            src={"https://www.youtube.com/embed/GB-_iFNmVwo"}
+            title="The Economic Times | Best Realty Brands 2021 - Prime LifeSpace Developers"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          >
+          </embed>
+          </Flex>
+          <Flex px="1rem" align="center" justify="center" pos="relative" h="18.75rem" w="100%">
+          <embed
+            style={{height:"18.75rem",width:"100%"}}
+            src={"https://www.youtube.com/embed/1vfQI3QG-Zs"}
             title="The Economic Times | Best Realty Brands 2021 - Prime LifeSpace Developers"
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

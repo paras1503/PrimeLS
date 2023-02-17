@@ -31,7 +31,7 @@ import {
 } from "@chakra-ui/react";
 import { ImQuotesLeft, ImQuotesRight } from "react-icons/im";
 import React, { useLayoutEffect, useRef, useState } from "react";
-import banner from "../../serviced apartments imgs/MIVAN TECHNOLOGY TOWER.jpg";
+import banner from "../../serviced apartments imgs/MIVAN TECHNOLOGY TOWER.jfif";
 import apartment from "../../serviced apartments imgs/serviced apartments icons/smart way of living - 1st.svg";
 import time from "../../serviced apartments imgs/serviced apartments icons/smart way of living-2nd.svg";
 import ringbell from "../../serviced apartments imgs/serviced apartments icons/smart way of living -3rd.svg";
