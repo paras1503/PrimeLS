@@ -100,14 +100,38 @@ const OurInvestors=()=>{
         <Slider {...settings} ref={(slider) => setSlider(slider)}>
           <Flex key={""} px="6.25rem" align="center" justify="center" pos="relative" h="25rem" w="600px">
           <embed
-            style={{height:"25rem",width:"80%",alignSelf:"center",position:"absolute",left:"15%"}}
-            src={"https://www.youtube.com/embed/Psmw1t_S6-c"}
+            style={{height:"25rem",width:"80%",alignSelf:"center",position:"absolute",left:"10%"}}
+            src={"https://www.youtube.com/embed/SP4Emn7CRJ4"}
             title="The Economic Times | Best Realty Brands 2021 - Prime LifeSpace Developers"
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
           >
           </embed>
+          </Flex>
+          <Flex key={""} px="6.25rem" align="center" justify="center" pos="relative" h="25rem" w="600px">
+          <embed
+            style={{height:"25rem",width:"80%",alignSelf:"center",position:"absolute",left:"10%"}}
+            src={"https://www.youtube.com/embed/GB-_iFNmVwo"}
+            title="The Economic Times | Best Realty Brands 2021 - Prime LifeSpace Developers"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          >
+          </embed>
+          
+          </Flex>
+          <Flex key={""} px="6.25rem" align="center" justify="center" pos="relative" h="25rem" w="600px">
+          <embed
+            style={{height:"25rem",width:"80%",alignSelf:"center",position:"absolute",left:"10%"}}
+            src={"https://www.youtube.com/embed/1vfQI3QG-Zs"}
+            title="The Economic Times | Best Realty Brands 2021 - Prime LifeSpace Developers"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          >
+          </embed>
+          
           </Flex>
           </Slider>
           </Box>
