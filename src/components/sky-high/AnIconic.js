@@ -15,9 +15,10 @@ import React, { useEffect,useState } from "react";
 import { useRef } from "react";
 import Slider from "react-slick";
 
-import intro1 from "../sky-high imgs/INTRO1.jpg";
+// import intro1 from "../sky-high imgs/INTRO1.jpg";
 // import intro2 from "../sky-high imgs/INTRO2.jpg";
 import intro3 from "../sky-high imgs/sky high - intro 1.jpg";
+import intro4 from "../sky-high imgs/sky high - intro 2.jpg";
 
 // icons
 import first from "../sky-high imgs/1ST.svg";
@@ -125,16 +126,18 @@ const SecondSec = () => {
             {/* Slider */}
             <Slider {...settings} ref={(slider) => setSlider(slider)}>
               {introImgs.map((prime) => (
-                <Box
-                  key={prime.id}
-                  w="100%"
-                  height="29.25rem"
-                  position="relative"
-                  backgroundPosition="center"
-                  backgroundRepeat="no-repeat"
-                  backgroundSize="cover"
-                  bgImage={prime}
-                />
+                // <Box
+                //   key={prime.id}
+                //   // w="100%"
+                //   // height="29.25rem"
+                //   // position="relative"
+                //   // backgroundPosition="center"
+                //   // backgroundRepeat="no-repeat"
+                //   // backgroundSize="cover"
+                //   bgImage={prime}
+                // />
+                <img src={prime} alt="projects"/>
+                
               ))}
             </Slider>
             
@@ -249,7 +252,6 @@ const SecondSec = () => {
 
         </Flex>
       </Flex>
-      
     </Flex>
 
   );
@@ -257,4 +259,4 @@ const SecondSec = () => {
 
 export default SecondSec;
 
-const introImgs = [intro1, intro3];
+const introImgs = [intro4, intro3];

@@ -2,8 +2,8 @@ import { Box, Flex, Image, IconButton, Text } from "@chakra-ui/react";
 //import { useInView } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import React, { useState } from "react";
-import banner1 from "./banner1.jpeg";
-import banner2 from "./banner2.jpeg";
+import banner1 from "../sky-high imgs/sky high - awaken in the ... 1.png";
+import banner2 from "../sky-high imgs/sky high - awaken in the ... 4.png";
 
 //import { useRef } from "react";
 import Slider from "react-slick";

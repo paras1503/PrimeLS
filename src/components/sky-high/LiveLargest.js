@@ -13,6 +13,11 @@ import React, { useState } from "react";
 import { useRef } from "react";
 import Slider from "react-slick";
 
+import AratePlaza1 from "../sky-high imgs/sky high - arete plaza 1.png"
+import AratePlaza2 from "../sky-high imgs/sky high - arete plaza 2.jpeg"
+import AratePlaza3 from "../sky-high imgs/sky high - arete plaza 3.png"
+import AratePlaza4 from "../sky-high imgs/sky high - arete plaza 4.png"
+
 const FifthSec = () => {
   const [slider, setSlider] = useState(null);
 
@@ -177,8 +182,8 @@ const FifthSec = () => {
 export default FifthSec;
 
 const plazaImgs = [
-  "/images/sky-high/ARETE PLAZA1.jpg",
-  "/images/sky-high/ARETE PLAZA2.jpg",
-  "/images/sky-high/ARETE PLAZA3.jpg",
-  "/images/sky-high/ARETE PLAZA4.jpg",
+ AratePlaza1,
+ AratePlaza2,
+AratePlaza3,
+ AratePlaza4,
 ];
