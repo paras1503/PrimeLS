@@ -4,7 +4,7 @@ import React from "react";
 const ModalImage = ({size,modalImage,isOpen,onClose}) => {
   return (
     <>
-      <Modal  size={size?size:"5xl"} blockScrollOnMount={true} isOpen={isOpen} onClose={onClose}>
+      <Modal  size={size?size:"5xl"} trapFocus={false} blockScrollOnMount={false} returnFocusOnClose={false} isOpen={isOpen} onClose={onClose}>
         <ModalOverlay />
         <ModalContent>
         <ModalCloseButton />
