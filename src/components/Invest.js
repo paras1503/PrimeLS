@@ -11,10 +11,9 @@ import {
   } from "@chakra-ui/react";
   import { motion, useAnimation, useInView } from "framer-motion";
   import React, { useEffect, useRef, useState } from "react";
-  import areteHomes from "./arete-homes imgs/BANNER2.jpg";
-  import investImg from "./invest.png";
-  import skyHigh from "./sky-high imgs/BANNER2.jpg";
-  import Slider from "react-slick";
+  import Invest1 from "../components/homepage-imgs/invest in rent generating assets 1.png";
+  import Invest2 from "../components/homepage-imgs/invest in rent generating assets 2.png";
+  import Invest3 from "../components/homepage-imgs/invest in rent generating assets 3.png";
   import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
   // import { ImLocation } from "react-icons/im";
   
@@ -24,7 +23,7 @@ import {
     draggable: false,
     infinite: true,
     autoplay: true,
-    speed: 5000,
+    speed: 3000,
     fade: true,
     autoplaySpeed: 3000,
     slidesToShow: 1,
@@ -39,9 +38,9 @@ import {
     const animateFade = useAnimation();
     const [assetIndex,setAssetIndex] = useState(0);
     const assets = [
-      {title:"8% ROI ON HOMES",room:"2 BHK",price:"Rs. 52 Lakhs",rent:"Rs. 32,000*",sqrft:"1085 sqft.",img:investImg},
-      {title:"7% RENTAL INCOME",room:"2 BHK",price:"Rs. 34 Lakhs",rent:"Rs. 20,000*",sqrft:"690 sqft.",img:areteHomes},
-      {title:"HIGHEST ROI ON HOMES",room:"3 BHK",price:"Rs. 85 Lakhs",rent:"Rs. 48,000*",sqrft:"1787 sqft.",img:skyHigh},
+      {title:"8% ROI ON HOMES",room:"2 BHK",price:"Rs. 52 Lakhs",rent:"Rs. 32,000*",sqrft:"1085 sqft.",img:Invest1},
+      {title:"7% RENTAL INCOME",room:"2 BHK",price:"Rs. 34 Lakhs",rent:"Rs. 20,000*",sqrft:"690 sqft.",img:Invest2},
+      {title:"HIGHEST ROI ON HOMES",room:"3 BHK",price:"Rs. 85 Lakhs",rent:"Rs. 48,000*",sqrft:"1787 sqft.",img:Invest3},
     ]
     const nextHandle=()=>{
       if(assetIndex===2){
@@ -98,6 +97,7 @@ import {
         pt="5rem"
         pb="3.125rem"
         px="100px"
+        overflow="hidden"
       >
         <link
             rel="stylesheet"
@@ -117,18 +117,23 @@ import {
           fontFamily="goudy"
           fontWeight="400"
           fontSize="40px"
+          overflow="hidden"
         >
           INVEST IN RENT GENERATING ASSETS
         </MtnHead>
-        <Flex w="100%" pt="1.875rem">
+        
+        <Flex w="100%" pt="1.875rem" overflow="hidden">
+          
           <MtnFlx
             transition={{ delay: 1.5, duration: 2, type: "just" }}
             w="47.5%"
             align="center"
             justify="center"
+           
           >
-            <Image className="expandcar reveal" w="608px" h="500px" src={assets[assetIndex].img} filter="drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.25))"/>
+            <Image className="expandcar reveal" w="608px"  h="500px" src={assets[assetIndex].img} filter="drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.25))"/>
           </MtnFlx>
+          
           <MtnFlx
             className="slidein-top reveal"
             h="145px"
@@ -136,12 +141,14 @@ import {
             direction="column"
             align="center"
             px="2.5rem"
+            overflow="hidden"
           >
             <Divider
                h="5.5rem"
               orientation="vertical"
               border="3px solid"
               borderColor="#DFBD69"
+             
             />
             <Box
               height="1.875rem"
@@ -151,6 +158,7 @@ import {
               boxShadow="0px 0px 0px 3px #B88746"
               borderRadius="50%"
               my="1"
+              
             />
           </MtnFlx>
           <MtnFlx
