@@ -234,5 +234,4 @@ const FourthSec = () => {
     </Flex>
   );
 };
-
 export default FourthSec;

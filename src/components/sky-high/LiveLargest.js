@@ -184,6 +184,6 @@ export default FifthSec;
 const plazaImgs = [
  AratePlaza1,
  AratePlaza2,
-AratePlaza3,
+ AratePlaza3,
  AratePlaza4,
 ];

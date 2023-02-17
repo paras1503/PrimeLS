@@ -5,7 +5,6 @@ import React, { useState } from "react";
 import banner1 from "../sky-high imgs/sky high - awaken in the ... 1.png";
 import banner2 from "../sky-high imgs/sky high - awaken in the ... 4.png";
 
-//import { useRef } from "react";
 import Slider from "react-slick";
 
 const SeventhSec = () => {

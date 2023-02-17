@@ -63,7 +63,7 @@ const SecondSec = () => {
     autoplay: true,
     speed: 500,
     fade: true,
-    autoplaySpeed: 4000,
+    autoplaySpeed: 3000,
     slidesToShow: 1,
     slidesToScroll: 1,
     pauseOnHover: false,
