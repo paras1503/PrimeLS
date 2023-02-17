@@ -1,7 +1,7 @@
 import { Box, Flex, Image, IconButton, Text, Heading } from "@chakra-ui/react";
 import React, { useState, useRef } from "react";
 import Slider from "react-slick";
-import banner from "../commercial-properties imgs/ARETE PLAZA1_11zon.jpg";
+import banner from "../commercial-properties imgs/ARETE PLAZA1_11zon.png";
 import banner2 from "../commercial-properties imgs/banner2.jpg";
 
 const Banner = () => {
