@@ -1,7 +1,7 @@
 import { Flex, Heading } from "@chakra-ui/react";
 import { motion } from "framer-motion";
 import React from "react";
-import banner from "./construction-silhouette.jpg";
+import banner from "./construction-silhouette.jfif";
 
 const MtnFlx = motion(Flex);
 const MtnHd = motion(Heading);
