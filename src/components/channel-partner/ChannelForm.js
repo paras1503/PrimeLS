@@ -122,12 +122,13 @@ const ChannelForm = () => {
   } = initialValues;
 
   const options = [
-    { value: "ARETE HOMES", label: "ARETE HOMES" },
-    { value: "SKY HIGH TOWER", label: "SKY HIGH TOWER" },
-    { value: "PGC", label: "PGC" },
-    { value: "ARETE PLAZA", label: "ARETE PLAZA" },
-    { value: "ARETE MALL", label: "ARETE MALL" },
+    { value: "ARETE HOMES", label: "ARETE HOMES", pdf:"Channel Partner Brochure - Arete Homes.pdf" },
+    { value: "SKY HIGH TOWER", label: "SKY HIGH TOWER", pdf:"" },
+    { value: "PGC", label: "PGC", pdf:"" },
+    { value: "ARETE PLAZA", label: "ARETE PLAZA", pdf:""},
+    { value: "ARETE MALL", label: "ARETE MALL", pdf:""},
   ];
+  const [selectedOption, setSelectedOption]=useState(null)
   const customStyles = {
     option: (provided, state) => ({
       ...provided,
@@ -141,6 +142,19 @@ const ChannelForm = () => {
       marginTop: "5%",
     }),
   };
+
+  const downloadPDF = () =>{
+    console.log(selectedOption)
+    fetch(options.pdf).then(response=>{
+      response.blob().then(blob=>{
+        const fileURL = window.URL.createObjectURL(blob);
+        let alink=document.createElement("a");
+        alink.href = fileURL;
+        alink.download = "Channel Partner Brochure - Arete Homes.pdf"
+        alink.click();
+      })
+    })
+  }
   return (
     <>
       <Flex
@@ -923,14 +937,17 @@ const ChannelForm = () => {
             borderRight="0"
             borderBottom="3px solid"
             icon={<TriangleDownIcon width="18px" height="18px" />}
+            onChange={(e)=>setSelectedOption(e.target.value)}
+            value={selectedOption}
           >
-            <option style={{ color: "black" }}>ARETE HOMES</option>
-            <option style={{ color: "black" }}>SKY HIGH TOWER</option>
-            <option style={{ color: "black" }}>PGC</option>
-            <option style={{ color: "black" }}>ARETE PLAZA</option>
-            <option style={{ color: "black" }}>ARETE MALL</option>
+            <option style={{ color: "black" }} value="ARETE HOMES">ARETE HOMES</option>
+            <option style={{ color: "black" }} value="SKY HIGH TOWER">SKY HIGH TOWER</option>
+            <option style={{ color: "black" }} value="PGC">PGC</option>
+            <option style={{ color: "black" }} value="ARETE PLAZA">ARETE PLAZA</option>
+            <option style={{ color: "black" }} value="ARETE MALL">ARETE MALL</option>
           </Select>
           {/*<DropMenu />*/}
+          
         </Flex>
         {/* {validForm ? ( */}
         <Flex
@@ -948,6 +965,7 @@ const ChannelForm = () => {
             h="1.875rem"
             w="1.875rem"
             mr="0.625rem"
+            onClick={downloadPDF}
           />
           DOWNLOAD CP-BROCHURE
         </Flex>
