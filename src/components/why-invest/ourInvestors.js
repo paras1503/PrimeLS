@@ -1,4 +1,4 @@
-import { Box, Button, Center, Divider, Flex, GridItem, Heading, Icon,IconButton,Image, SimpleGrid, Spacer, Text } from "@chakra-ui/react";
+import { Box, Button, Center, Divider, Flex, GridItem,Link, Heading, Icon,IconButton,Image, SimpleGrid, Spacer, Text } from "@chakra-ui/react";
 import { ImQuotesLeft, ImQuotesRight } from "react-icons/im";
 import React, { useRef, useState } from "react";
 import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
@@ -65,6 +65,7 @@ const OurInvestors=()=>{
           variant="outline"
           borderColor="#B88746"
           borderRadius="full"
+          border="3px solid"
           position="absolute"
           bottom="35%"
           left="5rem"
@@ -84,6 +85,7 @@ const OurInvestors=()=>{
           borderRadius="full"
           variant="outline"
           borderColor="#B88746"
+          border="3px solid"
           position="absolute"
           transform={"translate(0%, -50%)"}
           zIndex={2}
@@ -173,6 +175,7 @@ const OurInvestors=()=>{
               </Text>
             </Flex>
           </Flex>
+          <Link _hover={{textDecoration:"none"}} href="/arete-homes-invest">
           <Button
             mt="1.25rem"
             alignSelf="center"
@@ -184,8 +187,8 @@ const OurInvestors=()=>{
             fontSize="1rem"
             fontFamily="avenir"
             fontWeight="bold"
-            id="/arete-homes-invest"
-            onClick={(e)=>redirectAreteInvest(e)}
+            // id="/arete-homes-invest"
+            // onClick={(e)=>redirectAreteInvest(e)}
             _hover={{
               bgGradient: "linear(to-b, #DFBD69, #B88746)",
             }}
@@ -194,6 +197,7 @@ const OurInvestors=()=>{
           >
             VIEW DETAILS
           </Button>
+          </Link>
         </Flex>
         <Flex boxShadow="2xl" px="1rem" py="1.875rem" w="50%" h="100%" direction="column" align="center" className="fadein revealOnce" bgImage='linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)), url("/images/bg-box.jpg")'
             bgRepeat="no-repeat"
@@ -227,6 +231,7 @@ const OurInvestors=()=>{
               </Text>
             </Flex>
           </Flex>
+          <Link _hover={{textDecoration:"none"}} href="/sky-high-invest">
           <Button
             mt="1.25rem"
             alignSelf="center"
@@ -241,13 +246,14 @@ const OurInvestors=()=>{
             _hover={{
               bgGradient: "linear(to-b, #DFBD69, #B88746)",
             }}
-            id="/sky-high-invest"
-            onClick={(e)=>redirect(e)}
+            // id="/sky-high-invest"
+            // onClick={(e)=>redirect(e)}
             _active={{ bgGradient: "linear(to-b, #B88746 ,#DFBD69)" }}
             mb="1rem"
           >
             VIEW DETAILS
           </Button>
+          </Link>
         </Flex>
         </Flex>
       </Flex>
