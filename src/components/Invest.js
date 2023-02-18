@@ -8,6 +8,7 @@ import {
     Box,
     VStack,
     IconButton,
+    Link
   } from "@chakra-ui/react";
   import { motion, useAnimation, useInView } from "framer-motion";
   import React, { useEffect, useRef, useState } from "react";
@@ -38,9 +39,9 @@ import {
     const animateFade = useAnimation();
     const [assetIndex,setAssetIndex] = useState(0);
     const assets = [
-      {title:"8% ROI ON HOMES",room:"2 BHK",price:"Rs. 52 Lakhs",rent:"Rs. 32,000*",sqrft:"1085 sqft.",img:Invest1},
-      {title:"7% RENTAL INCOME",room:"2 BHK",price:"Rs. 34 Lakhs",rent:"Rs. 20,000*",sqrft:"690 sqft.",img:Invest2},
-      {title:"HIGHEST ROI ON HOMES",room:"3 BHK",price:"Rs. 85 Lakhs",rent:"Rs. 48,000*",sqrft:"1787 sqft.",img:Invest3},
+      {title:"8% ROI ON HOMES",room:"2 BHK",price:"Rs. 52 Lakhs",rent:"Rs. 32,000*",sqrft:"1085 sqft.",img:Invest1, link:"/why-invest"},
+      {title:"7% RENTAL INCOME",room:"2 BHK",price:"Rs. 34 Lakhs",rent:"Rs. 20,000*",sqrft:"690 sqft.",img:Invest2, link:"/arete-homes-invest"},
+      {title:"HIGHEST ROI ON HOMES",room:"3 BHK",price:"Rs. 85 Lakhs",rent:"Rs. 48,000*",sqrft:"1787 sqft.",img:Invest3, link:"/arete-homes-invest"},
     ]
     const nextHandle=()=>{
       if(assetIndex===2){
@@ -348,6 +349,7 @@ import {
                 </Text>
               </Flex>
             </Flex>*/}
+            <Link _hover={{textDecoration:"none"}} href={assets[assetIndex].link}>
             <Button
               mt="1rem"
               w="152px"
@@ -361,8 +363,9 @@ import {
               }}
               _active={{ bgGradient: "linear(to-b, #B88746 ,#DFBD69)" }}
             >
-              VIEW DETAILS
+               VIEW DETAILS
             </Button>
+            </Link>
             <IconButton
             aria-label="left-arrow"
             variant="outline"
