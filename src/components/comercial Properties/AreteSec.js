@@ -47,6 +47,9 @@ import ModalImage from "../modalImage";
 import { revealOnce } from "../../hooks/util";
 import { useInView } from "framer-motion";
 import Slider from "react-slick";
+import banner from "../commercial-properties imgs/ARETE PLAZA1_11zon.png";
+import banner2 from "../commercial-properties imgs/banner2.jpg";
+
 
 const AreteSec = () => {
   const [active, setActive] = useState(window.localStorage.getItem('commercialPage')?JSON.parse(window.localStorage.getItem('commercialPage')):false);
@@ -58,7 +61,13 @@ const AreteSec = () => {
     if ( data !== null ) setActive(JSON.parse(data));
   }, []);
   const [animate, setAnimate] = useState(false);
- 
+  const [isOpened, setIsOpened]= useState(false);
+  const close =() =>{
+    setIsOpened(false);
+  }
+  const open =() =>{
+    setIsOpened(true);
+  }
   const reveal = () => {
     var reveals = document.querySelectorAll(".reveal");
     try {
@@ -93,6 +102,8 @@ const AreteSec = () => {
   });
   return (
     <>
+        {isOpened?<ModalWindwow modalTitle={"ARETE PLAZA"} modalImage={banner} isOpen={isOpened} onClose={()=>close()} />:<></>}
+
       <Flex
         w="100%"
         h="100%"
@@ -182,9 +193,18 @@ const closeImage =() =>{
 const openImage =() =>{
   setIsOpen(true);
 }
+const [isOpened, setIsOpened]= useState(false);
+  const close =() =>{
+    setIsOpened(false);
+  }
+  const open =() =>{
+    setIsOpened(true);
+  }
 return (
   <>
     {isOpen?<ModalImage modalImage={aretefloor} isOpen={isOpen} onClose={()=>closeImage()} />:<></>}
+    {isOpened?<ModalWindwow modalTitle={"ARETE MALL"} modalImage={banner2} isOpen={isOpened} onClose={()=>close()} />:<></>}
+
       {" "}
       <Flex
         pt={{ base: "0", lg: "1.875rem" }}
@@ -449,6 +469,7 @@ return (
               bgGradient: "linear(to-b, #DFBD69, #B88746)",
             }}
             _active={{ bgGradient: "linear(to-b, #B88746 ,#DFBD69)" }}
+            onClick={open}
           >
             CHECK PRICE
           </Button>
@@ -552,6 +573,7 @@ return (
                 bgGradient: "linear(to-b, #DFBD69, #B88746)",
               }}
               _active={{ bgGradient: "linear(to-b, #B88746 ,#DFBD69)" }}
+              onClick={open}
             >
               CHECK PRICE
             </Button>
