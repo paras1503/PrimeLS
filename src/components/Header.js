@@ -196,7 +196,7 @@ const Header = () => {
             <Link href="/arete-homes" style={{textDecoration:"none"}}>ARETE HOMES</Link>
         </MenuItem>
         <MenuItem borderBottom="1px solid lightgray" fontWeight="bold" _hover={{bgColor:"rgba(0,0,0,0)",cursor:"pointer",color: navbar?"#B88746":"#DFBD69"}} _focusVisible={{boxShadow:"none", outline:"none",}}>
-            <Link href="/sky-high" style={{textDecoration:"none"}}>SKY HIGH</Link>
+            <Link href="/sky-high" style={{textDecoration:"none"}}>SKY HIGH TOWER</Link>
         </MenuItem>
         <MenuItem borderBottom="1px solid lightgray" fontWeight="bold" _hover={{bgColor:"rgba(0,0,0,0)",cursor:"pointer",color: navbar?"#B88746":"#DFBD69"}} _focusVisible={{boxShadow:"none", outline:"none",}}>
             <Link href="/commercial-properties" onClick={()=>window.localStorage.setItem('commercialPage',true)} style={{textDecoration:"none"}}>ARETE PLAZA</Link>
@@ -286,7 +286,7 @@ const Header = () => {
             <Link href="/arete-homes" style={{textDecoration:"none"}}>ARETE HOMES</Link>
         </MenuItem>
         <MenuItem borderBottom="1px solid lightgray" fontWeight="bold" _hover={{bgColor:"rgba(0,0,0,0)",cursor:"pointer",color: navbar?"#B88746":"#DFBD69"}}>
-            <Link href="/sky-high" style={{textDecoration:"none"}}>SKY HIGH</Link>
+            <Link href="/sky-high" style={{textDecoration:"none"}}>SKY HIGH TOWER</Link>
         </MenuItem>
         <MenuItem borderBottom="1px solid lightgray" fontWeight="bold" _hover={{bgColor:"rgba(0,0,0,0)",cursor:"pointer",color: navbar?"#B88746":"#DFBD69"}}>
             <Link href="/commercial-properties" onClick={()=>window.localStorage.setItem('commercialPage',true)} style={{textDecoration:"none"}}>ARETE PLAZA</Link>
@@ -353,6 +353,13 @@ const Header = () => {
               </Heading>
               </div>
               
+              <hr/>
+              <div style={{height:"2.5rem", paddingTop:"0.5rem"}}>
+                <Heading _hover={{cursor:"pointer",color: navbar?"#B88746":"#DFBD69"}} as="span" fontSize="1rem" fontFamily="avenir">
+                <Link href="/green-power" onClick={()=>window.localStorage.setItem('referEarnPage',true)} style={{textDecoration:"none"}}>GREEN POWER</Link>
+              </Heading>
+              </div>
+
               <hr/>
               <div style={{height:"2.5rem", paddingTop:"0.5rem"}}>
                 <Heading _hover={{cursor:"pointer",color: navbar?"#B88746":"#DFBD69"}} as="span" fontSize="1rem" fontFamily="avenir">
