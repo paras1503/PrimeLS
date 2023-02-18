@@ -17,6 +17,7 @@ import {
   Input,
   Checkbox,
   SimpleGrid,
+  Link
 } from "@chakra-ui/react";
 import Slider from "react-slick";
 import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
@@ -106,7 +107,7 @@ const SkyhighInvest = () => {
         </Text>
         <Flex w="100%" h="100%">
           <Flex w="100%" h="100%" overflow="hidden">
-            <Image onClick={()=>open()} src={smartInvest} className="expandcar reveal"/>
+            <Image onClick={()=>open()} src={smartInvest} className="expandcar reveal" filter="drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.25))"/>
           </Flex>
           <Flex w="100%" h="100%" overflow="hidden">
             {" "}
@@ -1405,6 +1406,7 @@ const SkyhighInvest = () => {
           variant="outline"
           borderColor="#B88746"
           borderRadius="full"
+          border="3px solid"
           position="absolute"
           bottom="35%"
           left="5rem"
@@ -1424,6 +1426,7 @@ const SkyhighInvest = () => {
           borderRadius="full"
           variant="outline"
           borderColor="#B88746"
+          border="3px solid"
           position="absolute"
           transform={"translate(0%, -50%)"}
           zIndex={2}
@@ -1501,6 +1504,7 @@ const SkyhighInvest = () => {
               </Text>
             </Flex>
           </Flex>
+          <Link _hover={{textDecoration:"none"}} href="/arete-homes-invest">
           <Button
             mt="1.25rem"
             alignSelf="center"
@@ -1512,8 +1516,8 @@ const SkyhighInvest = () => {
             fontSize="1rem"
             fontFamily="avenir"
             fontWeight="bold"
-            id="/arete-homes-invest"
-            onClick={(e)=>redirect(e)}
+            // id="/arete-homes-invest"
+            // onClick={(e)=>redirect(e)}
             _hover={{
               bgGradient: "linear(to-b, #DFBD69, #B88746)",
             }}
@@ -1521,6 +1525,7 @@ const SkyhighInvest = () => {
           >
             VIEW DETAILS
           </Button>
+          </Link>
         </Flex>
         <Flex
           pt="1.875rem"
@@ -1748,6 +1753,7 @@ const MoreAmenities = () => {
           variant="outline"
           borderColor="#B88746"
           borderRadius="full"
+          border="3px solid"
           position="absolute"
           top="45%"
           left="0"
@@ -1767,6 +1773,7 @@ const MoreAmenities = () => {
           borderRadius="full"
           variant="outline"
           borderColor="#B88746"
+          border="3px solid"
           position="absolute"
           transform={"translate(0%, -50%)"}
           zIndex={2}

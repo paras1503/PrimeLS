@@ -537,6 +537,8 @@ const Twobhk = () => {
                 bgGradient: "linear(to-b, #DFBD69, #B88746)",
               }}
               _active={{ bgGradient: "linear(to-b, #B88746 ,#DFBD69)" }}
+              onClick={open}
+
             >
               GET HOME LOAN
             </Button>
@@ -1716,6 +1718,7 @@ const Twobhk = () => {
           variant="outline"
           borderColor="#B88746"
           borderRadius="full"
+          border="3px solid"
           position="absolute"
           bottom="35%"
           left="5rem"
@@ -1735,6 +1738,7 @@ const Twobhk = () => {
           borderRadius="full"
           variant="outline"
           borderColor="#B88746"
+          border="3px solid"
           position="absolute"
           transform={"translate(0%, -50%)"}
           zIndex={2}
@@ -2148,6 +2152,7 @@ const Threebhk = () => {
                   bgGradient: "linear(to-b, #DFBD69, #B88746)",
                 }}
                 _active={{ bgGradient: "linear(to-b, #B88746 ,#DFBD69)" }}
+                onClick={()=>open}
               >
                 I AM INTERESTED
               </Button>
@@ -3916,6 +3921,7 @@ const MoreAmenities = () => {
           variant="outline"
           borderColor="#B88746"
           borderRadius="full"
+          border="3px solid"
           position="absolute"
           top="45%"
           left="0"
@@ -3935,6 +3941,7 @@ const MoreAmenities = () => {
           borderRadius="full"
           variant="outline"
           borderColor="#B88746"
+          border="3px solid"
           position="absolute"
           transform={"translate(0%, -50%)"}
           zIndex={2}
