@@ -81,7 +81,7 @@ const Footer = () => {
           >
             <Link href="/about-us" style={{textDecoration:"none"}} fontSize="1rem">ABOUT US</Link>
             <Link href="/expertise" style={{textDecoration:"none"}} fontSize="1rem">EXPERTISE</Link>
-            <Link style={{textDecoration:"none"}} fontSize="1rem">GREEN POWER</Link>
+            <Link href="/green-power" style={{textDecoration:"none"}} fontSize="1rem">GREEN POWER</Link>
           </VStack>
           <VStack mt="0.325rem" align="flex-start" pt="10">
             <Heading fontSize="1rem" fontFamily="veralaRound" textUnderlineOffset={"4px"} textDecoration={"underline"} textColor={"#DFBD69"}>
