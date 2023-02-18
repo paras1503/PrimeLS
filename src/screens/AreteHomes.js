@@ -15,7 +15,7 @@ import LastSec from "../components/arete-homes/HappyFamilies";
 import DropDown from "../components/arete-homes/DropDown";
 import DownloadBtn from "../components/sky-high/DownloadBtn";
 import { revealAgain, revealOnce } from "../hooks/util";
-
+import areteInto1 from "../components/arete-homes imgs/arate-homes.jpeg";
 const AreteHomes = () => {
   useLayoutEffect(()=>{
     window.addEventListener("scroll", revealAgain);
@@ -27,7 +27,7 @@ const AreteHomes = () => {
   });
   return (
     <>
-      <DownloadBtn />
+      <DownloadBtn title="ARETE HOMES" images={areteInto1} Pdf="Channel Partner Brochure - Arete Homes.pdf" />
       <FirstSec />
       <SecondSec />
       <ThirdSec />

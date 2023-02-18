@@ -13,7 +13,7 @@ import SixthSec from "../components/sky-high/PonneriGymClub";
 import TenthSec from "../components/sky-high/SmartInvest";
 import ThirdSec from "../components/sky-high/ExperienceBanner";
 import { revealAgain, revealOnce } from "../hooks/util";
-
+import SkyHighTower from "../components/sky-high imgs/TERRACE.png"
 const SkyHighSc = () => {
   useLayoutEffect(()=>{
     window.addEventListener("scroll", revealAgain);
@@ -25,8 +25,7 @@ const SkyHighSc = () => {
   });
   return (
     <>
-      {" "}
-      <DownloadBtn />
+      <DownloadBtn title="SKY HIGH TOWER" images={SkyHighTower} Pdf="Channel Partner Brochure - SKY HIGH Tower Arete Homes.pdf"/>
       <FirstSec />
       <SecondSec />
       <ThirdSec />

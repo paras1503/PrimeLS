@@ -2,6 +2,8 @@ import React, { useLayoutEffect } from "react";
 import Banner from "../components/invest/Banner";
 import SkyhighInvest from "../components/invest/SkyhighInvest";
 import { revealAgain, revealOnce } from "../hooks/util";
+import smartInvest from "../components/Invest imgs/INTRO1.jpg";
+import DownloadBtn from "../components/sky-high/DownloadBtn";
 
 const SkyhighInvestSc = () => {
   const reveal = () => {
@@ -36,6 +38,8 @@ const SkyhighInvestSc = () => {
   });
   return (
     <>
+        <DownloadBtn title="SKY HIGH INVESTMENT" images={smartInvest} Pdf="https://drive.google.com/file/d/1XBtOPS1e8t6mYzH6kuVSaN-oBRwt7uM0/view" />
+
       <Banner />
       <SkyhighInvest />
     </>
