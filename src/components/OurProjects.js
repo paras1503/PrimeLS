@@ -6,9 +6,9 @@ import {
     Text,
     Image,
     Box,
-    UnorderedList,
     ListItem,
     IconButton,
+    Link
 } from "@chakra-ui/react";
 import Slider from "react-slick";
 import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
@@ -34,13 +34,13 @@ const OurProjects = () => {
     const isInView = useInView(ref, { once: true });
     const [projIndex, setProjIndex] = useState(0);
     const projects = [
-        { title: "ARETE HOMES", list: true, status: "READY TO MOVE IN", imgF: areteHomes, imgB: skyHigh, text: '6 Towers, 2, 2.5, 3 BHK Smart Residencies, 70% Open Space' },
-        { title: "SKY HIGH", list: true, status: "UNDER CONSTRUCTION", imgF: skyHigh, imgB: areteHomes, text: '18 Storey Tall, Sky Residencies 2 BHK, G+1 Retail Plaza' },
-        { title: "NAKSHATRA", list: false, status: "COMPLETED", imgF: nakshatra, imgB: skyHigh, text: "Pune" },
-        { title: "I - LAND", list: false, status: "COMPLETED", imgF: iLand, imgB: skyHigh, text: "Pune" },
-        { title: "ARETE MALL", list: false, status: "COMING SOON", imgF: areteMall, imgB: skyHigh, text: "" },
-        { title: "ARETE PLAZA", list: false, status: "UNDER CONSTRUCTION", imgF: aretePlaza, imgB: areteMall, text: "20 Retail Spcaes in the Tallest Tower of North Chennai." },
-        { title: "PONNERI GYMKHANA CLUB", list: false, status: "READY TO USE", imgF: ponneri, imgB: aretePlaza, text: "PGC is 60,000 sqft. World Class Private Club for Sports, Business and Celebration." },
+        { title: "ARETE HOMES", list: true, status: "READY TO MOVE IN", imgF: areteHomes, imgB: skyHigh, text: '6 Towers, 2, 2.5, 3 BHK Smart Residencies, 70% Open Space', link:"/arete-homes" },
+        { title: "SKY HIGH TOWER", list: true, status: "UNDER CONSTRUCTION", imgF: skyHigh, imgB: areteHomes, text: '18 Storey Tall, Sky Residencies 2 BHK, G+1 Retail Plaza', link:"/sky-high" },
+        { title: "NAKSHATRA", list: false, status: "COMPLETED", imgF: nakshatra, imgB: skyHigh, text: "Pune", link:"" },
+        { title: "I - LAND", list: false, status: "COMPLETED", imgF: iLand, imgB: skyHigh, text: "Pune", link:""},
+        { title: "ARETE MALL", list: false, status: "COMING SOON", imgF: areteMall, imgB: skyHigh, text: "",link:"/commercial-properties" },
+        { title: "ARETE PLAZA", list: false, status: "UNDER CONSTRUCTION", imgF: aretePlaza, imgB: areteMall, text: "20 Retail Spcaes in the Tallest Tower of North Chennai.", link:"/commercial-properties"},
+        { title: "PONNERI GYMKHANA CLUB", list: false, status: "READY TO USE", imgF: ponneri, imgB: aretePlaza, text: "PGC is 60,000 sqft. World Class Private Club for Sports, Business and Celebration.", link:"" },
     ];   
     const [isList, setIsList] = useState(true);
     const animateX = useAnimation();
@@ -172,6 +172,7 @@ const OurProjects = () => {
                                 {projects[projIndex].title}
                             </MtnHd>
                             <Text fontFamily="varela round" fontSize="18px">{projects[projIndex].text}</Text>
+                            <Link _hover={{textDecoration:"none"}} href={projects[projIndex].title}>
                             <MtnBtn
                                 initial={{ opacity: 0 }}
                                 animate={animateX}
@@ -190,6 +191,7 @@ const OurProjects = () => {
                             >
                                 VIEW PROJECT
                             </MtnBtn>
+                            </Link>
                             <IconButton
                                 aria-label="left-arrow"
                                 variant="outline"
