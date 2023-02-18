@@ -6,6 +6,7 @@ import {
   Divider,
   Box,
   Button,
+  Link
 } from "@chakra-ui/react";
 import { motion, useAnimation, useInView } from "framer-motion";
 import React, { useEffect, useRef } from "react";
@@ -262,6 +263,7 @@ const SmartLiving = () => {
         </Flex>
       </Flex>
       <Flex mt="-2rem" direction="column" align="center">
+        <Link _hover={{textDecoration:"none"}} href="/serviced-apartments">
         <MtnBtn
           initial={{ opacity: 0}}
           animate={animateY}
@@ -280,6 +282,7 @@ const SmartLiving = () => {
         >
           EXPLORE NOW
         </MtnBtn>
+        </Link>
       </Flex>
     </Flex>
   );
