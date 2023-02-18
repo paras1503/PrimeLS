@@ -9,24 +9,25 @@ import OurProjects from "../components/mob/expertise/OurProjects";
 import PrimeRealtyCap from "../components/mob/expertise/PrimeRelatyCap";
 import PrimeAdvisors from "../components/mob/expertise/PrimeAdvisors";
 const ExpertiseScMob =()=>{
-    useLayoutEffect(()=>{
-        window.addEventListener("scroll", revealAgain);
-        window.addEventListener("scroll", revealOnce);
-        return()=>{
-          window.removeEventListener("scroll", revealAgain);
-          window.removeEventListener("scroll", revealOnce);
-        }
-      });
-      return 
-      (<>
+  useLayoutEffect(()=>{
+    window.addEventListener("scroll", revealAgain);
+    window.addEventListener("scroll", revealOnce);
+    return()=>{
+      window.removeEventListener("scroll", revealAgain);
+      window.removeEventListener("scroll", revealOnce);
+    }
+  });
+      return (
+        <>
         <AboutBanner/>
-        <Whoweare/>
-        <Consultation/>
-        <Ourclients/>
-        <OurProjects/>
-        <PrimeRealtyCap/>
-        <PrimeAdvisors/>
-        <DropDown/>
-      </>)
+        <Whoweare />
+        <Consultation />
+        <Ourclients />
+        <OurProjects />
+        <PrimeRealtyCap />
+        <PrimeAdvisors />
+        <DropDown />
+        </>
+      )
 }
 export default ExpertiseScMob;

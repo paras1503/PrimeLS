@@ -136,9 +136,9 @@ const FourthSec = () => {
                 width="100%"
                 src={"https://www.youtube.com/embed/Psmw1t_S6-c"}
                 title="The Economic Times | Best Realty Brands 2021 - Prime LifeSpace Developers"
-                frameborder="0"
+                frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
+                allowFullScreen
               ></embed>
               </Flex>
               <Heading pt="1rem" textAlign="center" fontFamily="varela round" fontSize="1.125rem">
@@ -152,9 +152,9 @@ const FourthSec = () => {
             width="100%"
             src={"https://www.youtube.com/embed/q3mTlDmEPlA"}
             title="The Economic Times | Best Realty Brands 2021 - Prime LifeSpace Developers"
-            frameborder="0"
+            frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
+            allowFullScreen
           ></embed>
           </Flex>
           <Heading pt="1rem" textAlign="center" fontFamily="varela round" fontSize="1.125rem">
@@ -168,9 +168,9 @@ const FourthSec = () => {
             width="100%"
             src={"https://www.youtube.com/embed/y_cXovtyWlM"}
             title="The Economic Times | Best Realty Brands 2021 - Prime LifeSpace Developers"
-            frameborder="0"
+            frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
+            allowFullScreen
           ></embed>
           </Flex>
           <Heading pt="1rem" textAlign="center" fontFamily="varela round" fontSize="1.125rem">
@@ -185,9 +185,9 @@ const FourthSec = () => {
             width="100%"
             src={"https://www.youtube.com/embed/fmLJwumDI20"}
             title="The Economic Times | Best Realty Brands 2021 - Prime LifeSpace Developers"
-            frameborder="0"
+            frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
+            allowFullScreen
           ></embed>
           </Flex>
           <Heading pt="1rem" textAlign="center" fontFamily="varela round" fontSize="1.125rem">

@@ -38,7 +38,7 @@ const SeventhSec = () => {
     infinite: true,
     draggable: true,
     speed: 500,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 3000,
     pauseOnHover: false,
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -107,7 +107,7 @@ const SeventhSec = () => {
                 key={prime}
                 w="20.625rem"
                 height="15.625rem"
-                pr="0.312rem"
+                pr="1rem"
                 position="relative"
                 objectPosition="center"
                 backgroundRepeat="no-repeat"

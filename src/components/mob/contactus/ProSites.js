@@ -43,6 +43,7 @@ const ProSites = () => {
       align="center"
       justify="center"
       pos="relative"
+      
     >
       <MtnHd
         initial={{ opacity: 0, y: -50 }}
@@ -52,6 +53,7 @@ const ProSites = () => {
         fontWeight="400"
         textAlign="center"
         fontSize="2.125rem"
+       
       >
         OUR <br/>PROJECT SITES
       </MtnHd>

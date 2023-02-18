@@ -9,13 +9,13 @@ const FirstSec = () => {
   const [isInView, setIsinView] = useState(false);
   const settings = {
     draggable: false,
-    infinite: false,
+    infinite: true,
     autoplay: true,
-    speed: 500,
+    speed: 100,
     fade: true,
-    autoplaySpeed: 5000,
-    slidesToShow: 1,
-    slidesToScroll: 1,
+    autoplaySpeed: 3000,
+    slidesToShow: 2,
+    slidesToScroll: 2,
     pauseOnHover: false,
   };
   setTimeout(() => {
@@ -60,9 +60,9 @@ const FirstSec = () => {
               width="100%"
               src="https://www.youtube.com/embed/bRaQbvUuzh4"
               title=""
-              frameborder="0"
+              frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
+              allowFullScreen
               ></embed>
             </Flex>
         </Slider>

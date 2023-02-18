@@ -61,22 +61,33 @@ const OurInvestors=()=>{
           <Flex px="1rem" align="center" justify="center" pos="relative" h="18.75rem" w="100%">
           <embed
             style={{height:"18.75rem",width:"100%"}}
-            src={"https://www.youtube.com/embed/Psmw1t_S6-c"}
+            src={"https://www.youtube.com/embed/SP4Emn7CRJ4"}
             title="The Economic Times | Best Realty Brands 2021 - Prime LifeSpace Developers"
-            frameborder="0"
+            frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
+            allowFullScreen
           >
           </embed>
           </Flex>
           <Flex px="1rem" align="center" justify="center" pos="relative" h="18.75rem" w="100%">
           <embed
             style={{height:"18.75rem",width:"100%"}}
-            src={"https://www.youtube.com/embed/Psmw1t_S6-c"}
+            src={"https://www.youtube.com/embed/GB-_iFNmVwo"}
             title="The Economic Times | Best Realty Brands 2021 - Prime LifeSpace Developers"
-            frameborder="0"
+            frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
+            allowFullScreen
+          >
+          </embed>
+          </Flex>
+          <Flex px="1rem" align="center" justify="center" pos="relative" h="18.75rem" w="100%">
+          <embed
+            style={{height:"18.75rem",width:"100%"}}
+            src={"https://www.youtube.com/embed/1vfQI3QG-Zs"}
+            title="The Economic Times | Best Realty Brands 2021 - Prime LifeSpace Developers"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
           >
           </embed>
           </Flex>
@@ -90,6 +101,7 @@ const OurInvestors=()=>{
               aria-label="left-arrow"
               variant="outline"
               borderColor="#B88746"
+              border="3px solid"
               borderWidth="2px"
               borderRadius="full"
               bottom="-5"
@@ -112,6 +124,7 @@ const OurInvestors=()=>{
               pos="absolute"
               aria-label="right-arrow"
               borderRadius="full"
+              border="3px solid"
               variant="outline"
               borderColor="#B88746"
               borderWidth="2px"
@@ -194,7 +207,7 @@ const OurInvestors=()=>{
             VIEW DETAILS
           </Button>
         </Flex>
-        <Flex boxShadow="2xl" px="1rem" py="1.875rem" w="100%" h="100%" direction="column" align="center" className="fadein revealOnce" bgImage='linear-gradient(rgba(255,255,255,.2), rgba(255,255,255,.2)), url("/images/bg-box.jpg")'
+        <Flex boxShadow="2xl" mt="2rem"px="1rem" py="1.875rem" w="100%" h="100%" direction="column" align="center" className="fadein revealOnce" bgImage='linear-gradient(rgba(255,255,255,.2), rgba(255,255,255,.2)), url("/images/bg-box.jpg")'
             bgRepeat="no-repeat"
             bgPos="center"
             bgSize="cover">

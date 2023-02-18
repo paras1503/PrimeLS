@@ -6,7 +6,7 @@ const ReferAndEarn = () => {
   return (
     <>
       <ReferEarn />
-      <ReferTabs />
+      
     </>
   );
 };

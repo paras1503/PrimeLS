@@ -77,7 +77,7 @@ const SmartLiving = () => {
             
             transition={{ delay: 1.5, duration: 2, type: "just" }}
           >
-            <Image className="expandcar reveal" w="570px" h="20.310rem" src={one} />
+            <Image className="expandcar reveal" w="570px" h="20.310rem" src={one} filter="drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.25))"/>
           </MtnFlx>
           <MtnFlx
             h="20rem"
@@ -111,6 +111,7 @@ const SmartLiving = () => {
               w="570px"
               h="20.310rem"
               // mt="100px"
+              filter="drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.25))"
               src={three}
             />
           </MtnFlx>
@@ -145,6 +146,7 @@ const SmartLiving = () => {
               w="570px"
               h="20.310rem"
               // mt="100px"
+              filter="drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.25))"
               src={fifth}
             />
           </MtnFlx>
@@ -323,7 +325,7 @@ const SmartLiving = () => {
           <MtnFlx
             transition={{ delay: 3.5, duration: 2, type: "just" }}
           >
-            <Image className="expandcar reveal"  w="570px" h="20.310rem" src={two} />
+            <Image className="expandcar reveal"  w="570px" h="20.310rem" src={two} filter="drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.25))"/>
           </MtnFlx>
           <MtnFlx
              h="20rem"
@@ -348,7 +350,7 @@ const SmartLiving = () => {
           <MtnFlx
             transition={{ delay: 3.5, duration: 2, type: "just" }}
           >
-            <Image className="expandcar reveal"  w="570px" h="20.310rem" src={four} />
+            <Image className="expandcar reveal"  w="570px" h="20.310rem" src={four} filter="drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.25))"/>
           </MtnFlx>
           <MtnFlx initial={{ opacity: 0 }}
                 animate={animateFade}

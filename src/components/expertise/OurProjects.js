@@ -9,6 +9,7 @@ import {
   UnorderedList,
   ListItem,
   IconButton,
+  Link
 } from "@chakra-ui/react";
 import Slider from "react-slick";
 import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
@@ -16,10 +17,11 @@ import { motion, useAnimation, useInView } from "framer-motion";
 import React, { useEffect, useRef, useState } from "react";
 
 import areteHomes from "../arete-homes imgs/BANNER2.jpg";
-import skyHigh from "../sky-high imgs/BANNER2.jpg";
-//import nakshatra from "";
+import skyHigh from "../sky-high imgs/BANNER2.png";
+import nakshathra from "../homepage-imgs/project6.png";
+import iLand from "../homepage-imgs/project7.png";
 import areteMall from "../commercial-properties imgs/Arete Mall.jpg";
-import aretePlaza from "../commercial-properties imgs/ARETE PLAZA1_11zon.jpg";
+import aretePlaza from "../commercial-properties imgs/ARETE PLAZA1_11zon.png";
 import ponneri from "../commercial-properties imgs/gymkhana.png";
 
 const MtnDvdr = motion(Divider);
@@ -50,11 +52,13 @@ const OurProjects = () => {
     
   }
   const projects=[
-    {title:"ARETE HOMES",link:"/arete-homes",imgF:areteHomes,imgB:skyHigh, text:"Our objective is to manage and develop the strongest property portfolios. Our expertise owns experience of 3 decades. We can provide you with all types of developments in all the major cities in the best strategic locations. Not us, but our work speaks for us...."},
-    {title:"SKY HIGH",link:"sky-high",imgF:skyHigh,imgB:aretePlaza, text:"Our objective is to manage and develop the strongest property portfolios. Our expertise owns experience of 3 decades. We can provide you with all types of developments in all the major cities in the best strategic locations. Not us, but our work speaks for us...."},
-    {title:"ARETE PLAZA",link:"/plaza",imgF:aretePlaza,imgB:areteMall, text:"Our objective is to manage and develop the strongest property portfolios. Our expertise owns experience of 3 decades. We can provide you with all types of developments in all the major cities in the best strategic locations. Not us, but our work speaks for us...."},
-    {title:"ARETE MALL",link:"/mall",imgF:areteMall,imgB:ponneri, text:"Our objective is to manage and develop the strongest property portfolios. Our expertise owns experience of 3 decades. We can provide you with all types of developments in all the major cities in the best strategic locations. Not us, but our work speaks for us...."},
-    {title:"PONNERI GYMKHANA CLUB",link:"",imgF:ponneri,imgB:areteHomes, text:"Our objective is to manage and develop the strongest property portfolios. Our expertise owns experience of 3 decades. We can provide you with all types of developments in all the major cities in the best strategic locations. Not us, but our work speaks for us...."},
+    {title:"ARETE HOMES",link:"/arete-homes",imgF:areteHomes,imgB:skyHigh, text:"Our objective is to manage and develop the strongest property portfolios. Our expertise owns experience of 3 decades. We can provide you with all types of developments in all the major cities in the best strategic locations. Not us, but our work speaks for us....",link:"/arete-homes"},
+    {title:"SKY HIGH TOWER",link:"sky-high",imgF:skyHigh,imgB:aretePlaza, text:"Our objective is to manage and develop the strongest property portfolios. Our expertise owns experience of 3 decades. We can provide you with all types of developments in all the major cities in the best strategic locations. Not us, but our work speaks for us....",link:"/sky-high"},
+    {title:"ARETE PLAZA",link:"/plaza",imgF:aretePlaza,imgB:areteMall, text:"Our objective is to manage and develop the strongest property portfolios. Our expertise owns experience of 3 decades. We can provide you with all types of developments in all the major cities in the best strategic locations. Not us, but our work speaks for us....",link:"/commercial-properties"},
+    {title:"ARETE MALL",link:"/mall",imgF:areteMall,imgB:ponneri, text:"Our objective is to manage and develop the strongest property portfolios. Our expertise owns experience of 3 decades. We can provide you with all types of developments in all the major cities in the best strategic locations. Not us, but our work speaks for us....", link:"/commercial-properties"},
+    {title:"PONNERI GYMKHANA CLUB",link:"",imgF:ponneri,imgB:nakshathra, text:"Our objective is to manage and develop the strongest property portfolios. Our expertise owns experience of 3 decades. We can provide you with all types of developments in all the major cities in the best strategic locations. Not us, but our work speaks for us....", link:"/commercial-properties"},
+    {title:"NAKSHATRA",link:"",imgF:nakshathra,imgB:iLand, text:"Our objective is to manage and develop the strongest property portfolios. Our expertise owns experience of 3 decades. We can provide you with all types of developments in all the major cities in the best strategic locations. Not us, but our work speaks for us....",link:""},
+    {title:"I-LAND",link:"",imgF:iLand,imgB:areteHomes, text:"Our objective is to manage and develop the strongest property portfolios. Our expertise owns experience of 3 decades. We can provide you with all types of developments in all the major cities in the best strategic locations. Not us, but our work speaks for us....",link:""},
   ];
   const [isList,setIsList]= useState(true);
   const animateX = useAnimation();
@@ -125,7 +129,7 @@ const OurProjects = () => {
     autoplay:true,
     infinite: true,
     draggable: true,
-    speed: 500,
+    speed:500,
     autoplaySpeed: 2000,
     pauseOnHover: false,
     slidesToShow: 1,
@@ -156,6 +160,7 @@ const OurProjects = () => {
           </Heading>
         </Flex>
       </Flex>
+      
       <Flex pos="relative" align="flex-start" justify="space-between">
       <Flex
           w="50%"
@@ -236,7 +241,7 @@ const OurProjects = () => {
           >
             {projects[projIndex].title}
           </MtnHd>
-          
+          <Link _hover={{textDecoration:"none"}} href={projects[projIndex].link}>
           <MtnBtn
             id={projects[projIndex].link}
             onClick={(e)=>redirect(e)}
@@ -256,11 +261,13 @@ const OurProjects = () => {
           >
             VIEW PROJECT
           </MtnBtn>
+          </Link>
           <IconButton
           aria-label="left-arrow"
           variant="outline"
           borderColor="#B88746"
           borderRadius="full"
+          border="3px solid"
           position="absolute"
           bottom="-2rem"
           left="0"
@@ -282,10 +289,11 @@ const OurProjects = () => {
           borderRadius="full"
           variant="outline"
           borderColor="#B88746"
+          border="3px solid"
           position="absolute"
           transform={"translate(0%, -50%)"}
           zIndex={2}
-          left="4rem"
+          left="5rem"
           bottom="-2rem"
           h="3.125rem"
           w="3.125rem"

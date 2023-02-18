@@ -5,8 +5,6 @@ import {
   Divider,
   Box,
   Text,
-  Avatar,
-  Stack,
 } from "@chakra-ui/react";
 import { motion, useAnimation, useInView } from "framer-motion";
 import React from "react";
@@ -81,7 +79,7 @@ const Allia = () => {
             <Image
               w="100%"
               h="200px"
-              pl="1.563rem"
+              pl="2.563rem"
               pb="15px"
               src="/images/award1.png"
             />
@@ -96,7 +94,7 @@ const Allia = () => {
             <Image
               w="100%"
               h="200px"
-              px="1.563rem"
+              px="2.563rem"
               pb="15px"
               src="/images/award2.png"
             />
@@ -142,7 +140,7 @@ export default Allia;
 
 const logos = [
   "/images/alliances.png",
-  "/images/alliances2.png",
+  "/images/5.png",
   "/images/alliances3.png",
   "/images/alliances4.png",
 ];

@@ -13,7 +13,7 @@ const settings = {
   infinite: true,
   autoplay: true,
   speed: 500,
-  autoplaySpeed: 2000,
+  autoplaySpeed: 3000,
   slidesToShow: 1,
   slidesToScroll: 1,
 };
@@ -48,8 +48,8 @@ const Carousel = () => {
   return (
     <Box
       position={"relative"}
-      height={"100vh"}
       width={"100%"}
+      h={"50%"}
       overflow={"hidden"}
     >
       {/* CSS files for react-slick */}
@@ -96,7 +96,7 @@ const Carousel = () => {
           <Box
             key={index}
             w="100%"
-            height={"100vh"}
+            height="28rem"
             position="relative"
             backgroundPosition="center"
             backgroundRepeat="no-repeat"

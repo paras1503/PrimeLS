@@ -84,8 +84,18 @@ const SkyhighInvest = () => {
     const data = window.localStorage.getItem('areteInvest');
     if ( data !== null ) setActive(JSON.parse(data));
   }, []);
+  const [isOpen, setIsOpen]= useState(false);
+  const close =() =>{
+    setIsOpen(false);
+   
+  }
+  const open =() =>{
+    setIsOpen(true);
+  }
   return (
     <>
+        {isOpen?<ModalWindwow modalTitle={"ARATE HOMES"} modalImage={areteInto1} isOpen={isOpen} onClose={()=>close()} />:<></>}
+
       {" "}
       <Flex w="100%" h="100%" direction="column" align="center">
         <Flex w="100%">
@@ -220,8 +230,8 @@ const Twobhk = () => {
           SMART INVESTMENT
         </Text>
         <Flex w="100%" h="100%">
-          <Flex w="100%" h="100%" overflow="hidden">
-            <Image onClick={()=>open()} src={areteInto1} className="expandcar reveal"/>
+          <Flex w="100%" h="100%">
+            <Image onClick={()=>open()} src={areteInto1} className="expandcar reveal" filter="drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.25))"/>
           </Flex>
           <Flex w="100%" h="100%" overflow="hidden">
             {" "}
@@ -328,7 +338,7 @@ const Twobhk = () => {
                 fontFamily="avenir"
                 fontSize="1.5rem"
               >
-                ASSURED RENT > EMI
+                ASSURED RENT `{">"}` EMI
               </Heading>
               <Button
                 className="fadein revealOnce"
@@ -345,6 +355,7 @@ const Twobhk = () => {
                   bgGradient: "linear(to-b, #DFBD69, #B88746)",
                 }}
                 _active={{ bgGradient: "linear(to-b, #B88746 ,#DFBD69)" }}
+                onClick={open}
               >
                 I AM INTERESTED
               </Button>
@@ -433,7 +444,7 @@ const Twobhk = () => {
               fontFamily="avenir"
               fontSize="1.125rem"
             >
-              ASSURED RENT > EMI
+              ASSURED RENT `{">"}` EMI
             </Heading>
           </Flex>
           <Flex
@@ -1738,14 +1749,34 @@ const Twobhk = () => {
           <AiOutlineRight color="#B88746" size="2.5rem" />
         </IconButton>
         <Slider {...settings} ref={(slider) => setSlider(slider)}>
+        <Flex key={""} px="6.25rem" align="center" justify="center" pos="relative" h="25rem" w="100%">
+          <embed
+            style={{height:"25rem",width:"80%",alignSelf:"center",position:"absolute",left:"10%"}}
+            src={"https://www.youtube.com/embed/SP4Emn7CRJ4"}
+            title="The Economic Times | Best Realty Brands 2021 - Prime LifeSpace Developers"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          ></embed>
+          </Flex>
           <Flex key={""} px="6.25rem" align="center" justify="center" pos="relative" h="25rem" w="100%">
           <embed
-            style={{height:"25rem",width:"80%",alignSelf:"center",position:"absolute",left:"15%"}}
-            src={"https://www.youtube.com/embed/Psmw1t_S6-c"}
+            style={{height:"25rem",width:"80%",alignSelf:"center",position:"absolute",left:"10%"}}
+            src={"https://www.youtube.com/embed/GB-_iFNmVwo"}
             title="The Economic Times | Best Realty Brands 2021 - Prime LifeSpace Developers"
-            frameborder="0"
+            frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
+            allowFullScreen
+          ></embed>
+          </Flex>
+          <Flex key={""} px="6.25rem" align="center" justify="center" pos="relative" h="25rem" w="100%">
+          <embed
+            style={{height:"25rem",width:"80%",alignSelf:"center",position:"absolute",left:"10%"}}
+            src={"https://www.youtube.com/embed/1vfQI3QG-Zs"}
+            title="The Economic Times | Best Realty Brands 2021 - Prime LifeSpace Developers"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
           ></embed>
           </Flex>
           </Slider>
@@ -1911,6 +1942,7 @@ const Twobhk = () => {
                   bgGradient: "linear(to-b, #DFBD69, #B88746)",
                 }}
                 _active={{ bgGradient: "linear(to-b, #B88746 ,#DFBD69)" }}
+                
               >
                 SCHEDULE A CALL
               </Button>{" "}
@@ -1990,8 +2022,8 @@ const Threebhk = () => {
           SMART INVESTMENT
         </Text>
         <Flex w="100%" h="100%">
-          <Flex w="100%" h="100%" overflow="hidden">
-            <Image onClick={()=>open()} src={areteInto1} className="expandcar reveal"/>
+          <Flex w="100%" h="100%">
+            <Image onClick={()=>open()} src={areteInto1} className="expandcar reveal" filter="drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.25))"/>
           </Flex>
           <Flex w="100%" h="100%" overflow="hidden">
             {" "}
@@ -2052,6 +2084,7 @@ const Threebhk = () => {
                     h="3.125rem"
                     src={rentalYield}
                     mb="0.625rem"
+                    
                   />
                   <Heading fontSize="1.5rem" mb="0.625rem">
                     HIGH
@@ -2098,7 +2131,7 @@ const Threebhk = () => {
                 fontFamily="avenir"
                 fontSize="1.5rem"
               >
-                ASSURED RENT > EMI
+                ASSURED RENT `{">"}` EMI
               </Heading>
               <Button
                 className="fadein revealOnce"
@@ -2203,7 +2236,7 @@ const Threebhk = () => {
               fontFamily="avenir"
               fontSize="1.125rem"
             >
-              ASSURED RENT > EMI
+              ASSURED RENT `{">"}` EMI
             </Heading>
           </Flex>
           <Flex
@@ -2296,6 +2329,7 @@ const Threebhk = () => {
                 bgGradient: "linear(to-b, #DFBD69, #B88746)",
               }}
               _active={{ bgGradient: "linear(to-b, #B88746 ,#DFBD69)" }}
+              onClick={open}
             >
               GET HOME LOAN
             </Button>
@@ -3512,9 +3546,9 @@ const Threebhk = () => {
             style={{height:"25rem",width:"80%",alignSelf:"center",position:"absolute",left:"15%"}}
             src={"https://www.youtube.com/embed/Psmw1t_S6-c"}
             title="The Economic Times | Best Realty Brands 2021 - Prime LifeSpace Developers"
-            frameborder="0"
+            frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
+            allowFullScreen
           ></embed>
           </Flex>
           </Slider>
@@ -3664,6 +3698,7 @@ const Threebhk = () => {
                     fontFamily="veralaRound"
                     fontSize="1rem"
                     size="lg"
+                    
                   >
                     Book a visit
                   </Checkbox>

@@ -19,6 +19,7 @@ const ThirdSec = () => {
       align="center"
       justify="center"
       pos="relative"
+      
     >
       <Image
         transform={inView ? "scale(1)" : "scale(0.6)"}
@@ -26,7 +27,7 @@ const ThirdSec = () => {
         w="100%"
         h="100%"
         src={Banner}
-        objectPosition="30% 30%"
+        objectPosition="10% 10%"
         bgRepeat="no-repeat"
         objectFit="cover"
       />
@@ -34,11 +35,11 @@ const ThirdSec = () => {
         transform={inView ? "none" : "translateX(-100px)"}
         opacity={inView ? "1" : "0"}
         transition="all 2s"
-        h="7.5rem"
+        h="5.5rem"
         src={bannerasset}
         pos="absolute"
-        top="12.812rem"
-        right="1.375rem"
+        top="10.812rem"
+        right="0.55rem"
       />
     </Flex>
   );

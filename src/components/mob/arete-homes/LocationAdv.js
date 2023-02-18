@@ -224,7 +224,7 @@ const NinethSec = () => {
           class="gmap_iframe"
               width="100%"
               height="350"
-              frameborder="0"
+              frameBorder="0"
               scrolling="no"
               marginheight="0"
               marginwidth="0">
@@ -233,7 +233,7 @@ const NinethSec = () => {
             class="gmap_iframe"
             width="100%"
             height="350"
-            frameborder="0"
+            frameBorder="0"
             scrolling="no"
             marginheight="0"
             marginwidth="0">
@@ -242,7 +242,7 @@ const NinethSec = () => {
             class="gmap_iframe"
             width="100%"
             height="350"
-            frameborder="0"
+            frameBorder="0"
             scrolling="no"
             marginheight="0"
             marginwidth="0">
@@ -251,7 +251,7 @@ const NinethSec = () => {
             class="gmap_iframe"
             width="100%"
             height="350"
-            frameborder="0"
+            frameBorder="0"
             scrolling="no"
             marginheight="0"
             marginwidth="0">
@@ -260,7 +260,7 @@ const NinethSec = () => {
           class="gmap_iframe"
           width="100%"
           height="350"
-          frameborder="0"
+          frameBorder="0"
           scrolling="no"
           marginheight="0"
           marginwidth="0">
@@ -269,7 +269,7 @@ const NinethSec = () => {
         class="gmap_iframe"
         width="100%"
         height="350"
-        frameborder="0"
+        frameBorder="0"
         scrolling="no"
         marginheight="0"
         marginwidth="0"></iframe>:<></>}
@@ -277,7 +277,7 @@ const NinethSec = () => {
         class="gmap_iframe"
         width="100%"
         height="350"
-        frameborder="0"
+        frameBorder="0"
         scrolling="no"
         marginheight="0"
         marginwidth="0"></iframe>:<></>}
@@ -484,6 +484,7 @@ const NinethSec = () => {
               transition="all 2s 2s"
               fontFamily="avenir"
               fontSize="1rem"
+              
             >
               10 Mins
             </Heading>
@@ -530,7 +531,7 @@ const NinethSec = () => {
           </Flex>
           <Flex w="65%" h="100%" direction="column" gap="1.875rem">
             <UnorderedList
-              pt="1.875rem"
+              pt="4rem"
               transform={isInView ? "none" : "translateX(-100px)"}
               opacity={isInView ? "1" : "0"}
               transition="all 2s"
@@ -538,7 +539,7 @@ const NinethSec = () => {
               flexDir="column"
               textTransform="capitalize"
               fontFamily="veralaRound"
-              fontSize="1rem"
+              fontSize="0.75rem"
             >
               <ListItem pb="0.312rem">
                 Walk to Velammal International School{" "}
@@ -554,7 +555,8 @@ const NinethSec = () => {
               flexDir="column"
               textTransform="capitalize"
               fontFamily="veralaRound"
-              fontSize="1rem"
+              fontSize="0.75rem"
+              pt="4.1rem"
             >
               <ListItem pb="0.312rem">Connect To Outer Ring Road</ListItem>
               <ListItem pb="0.312rem">
@@ -570,7 +572,8 @@ const NinethSec = () => {
               flexDir="column"
               textTransform="capitalize"
               fontFamily="veralaRound"
-              fontSize="1rem"
+              fontSize="0.75rem"
+              pt="2.6rem"
             >
               <ListItem pb="0.312rem">Drive To Redhills</ListItem>
               <ListItem pb="0.312rem">Pulicat Lake </ListItem>
@@ -584,7 +587,8 @@ const NinethSec = () => {
               flexDir="column"
               textTransform="capitalize"
               fontFamily="veralaRound"
-              fontSize="1rem"
+              fontSize="0.75rem"
+              pt="2.4rem"
             >
               <ListItem pb="0.312rem">Drive To Sri City</ListItem>
               <ListItem pb="0.312rem">Drive To Adani Port</ListItem>
@@ -598,7 +602,8 @@ const NinethSec = () => {
               flexDir="column"
               textTransform="capitalize"
               fontFamily="veralaRound"
-              fontSize="1rem"
+              fontSize="0.75rem"
+              pt="2.3rem"
             >
               {" "}
               <ListItem>Drive To Chennai Airport</ListItem>
@@ -611,7 +616,8 @@ const NinethSec = () => {
               flexDir="column"
               textTransform="capitalize"
               fontFamily="veralaRound"
-              fontSize="1rem"
+              fontSize="0.75rem"
+              pt="0.5rem"
             >
               {" "}
               <ListItem>Drive T0 Tirupati</ListItem>

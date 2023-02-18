@@ -97,6 +97,7 @@ const SecondSec = () => {
           variant="outline"
           position="absolute"
           borderRadius="50%"
+          border="2px solid"
           // left={side}
           // top={top}
           left="0"
@@ -120,6 +121,7 @@ const SecondSec = () => {
           // right={side}
           // top={top}
           right="0"
+          border="2px solid"
           top="40%"
           transform={"translate(0%, -50%)"}
           zIndex={2}
@@ -133,8 +135,8 @@ const SecondSec = () => {
         </IconButton>
         {/* Slider */}
         <Slider {...settings} ref={(slider) => setSlider(slider)}>
-          {pressRelease.map((prime) => (
-            <Flex px="0.625rem">
+          {pressRelease.map((prime, index) => (
+            <Flex px="0.625rem" key={index}>
               <Image
                 _hover={{cursor:"pointer"}}
                 id={prime.location}

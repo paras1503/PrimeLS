@@ -95,6 +95,7 @@ const ThirdSec = () => {
           h="3.125rem"
           w="3.125rem"
           borderColor="#B88746"
+          border="2px solid"
           _hover={{ bgColor: "none" }}
           onClick={() => slider?.slickPrev()}
         >
@@ -114,6 +115,7 @@ const ThirdSec = () => {
           h="3.125rem"
           w="3.125rem"
           borderColor="#B88746"
+          border="2px solid"
           _hover={{ bgColor: "none" }}
           onClick={() => slider?.slickNext()}
         >

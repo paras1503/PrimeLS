@@ -20,7 +20,7 @@ const Passionatwork =()=>{
     const ref = useRef(null);
     const isInView = useInView(ref, { once: true });
       return (<>
-        <Flex direction="column" h="100%" w="100%" overflow="hidden" mt="3.125rem">
+        <Flex direction="column" h="100%" w="100%" overflow="hidden" mt="2.125rem">
         <Center  className="slidein-top revealOnce" fontFamily="goudy" fontSize="2.125rem" textAlign="center">PASSION AT WORK</Center>
         <Flex wrap="wrap" direction="column" pt="1.563rem" px="1rem" >
             <Text className="fadein-2sdelay revealOnce" fontSize="1rem" textAlign="center">
@@ -40,44 +40,45 @@ const Passionatwork =()=>{
                 right resources we set gold standards for customer centric design,
                 quality and safety.
             </Text>
-            <Image mt="2rem" src={con} className="expandcar reveal" h="18.75rem" alt="IMAGE"/>
+            <Image mt="2rem" src={con} className="expandcar reveal" h="18.75rem" objectFit="cover" alt="IMAGE"/>
         </Flex>
         <Flex direction="column" pb="1.875rem" mt="3.125rem" bgImage='linear-gradient(rgba(255,255,255,.2), rgba(255,255,255,.2)), url("/images/bg-box.jpg")'
             bgRepeat="no-repeat"
             bgPos="center"
             bgSize="cover">
            <Flex direction="column"  w="100%" overflow="hidden">
-                <Center><Text mb="1.563rem" pt="1.875rem" className="slidein-top revealOnce" fontFamily="goudy" fontSize="2.125rem">KEY SERVICES</Text></Center>
+                <Center><Text mb="1.563rem" pt="1.875rem" className="slidein-top revealOnce" fontFamily="goudy" fontSize="1.125rem">KEY SERVICES</Text></Center>
                 <Flex direction="column" gap="2%">
                     <Flex mb="1.875rem" align="center" direction="column" w="100%" className="fadein revealOnce">
-                        <Heading fontFamily="avenir" fontSize="1.125rem">CONSULTING</Heading>
+                        <Heading fontFamily="varela round" fontSize="1rem">CONSULTING</Heading>
                         <Image my=".625rem" h="3.125rem" w="3.125rem" src={consultingSVG}/>
-                        <Flex w="100%" >
-                            <Flex direction="column" pl="1rem">
-                                <Text fontFamily="varela round"><li>Merger & Acquisition</li></Text>
-                                <Text fontFamily="varela round"><li>Structured Transaction</li></Text>
-                                <Text fontFamily="varela round"><li>Art & Architecture</li></Text>
-                                
-                            </Flex>
-                            <Flex direction="column" pl="1rem">
-                                <Text fontFamily="varela round"><li>Contracts</li></Text>
-                                <Text fontFamily="varela round"><li>Broking</li></Text>
-                                <Text fontFamily="varela round"><li>Joint Ventures</li></Text>
-                            </Flex>                            
+                        <Flex w="100%" ml="8rem" fontFamily="varela round">
+                                <ul style={{listStylePosition:"inside",width:"20rem",textAlign:"center"}}>
+                                <li style={{float:"left"}}>Merger & Acquisition</li>
+                                <li style={{float:"right", marginRight:"2rem"}}>Contracts</li>
+                                <li style={{float:"left", marginLeft:"-0.3"}}>Art & Architecture</li>
+                                <li style={{float:"right", marginRight:"1.5rem" }}>Joint Ventures</li>
+                                <li style={{float:"left"}}>Broking</li>
+                                <li style={{float:"right",marginRight:"2rem" }}>Structured Transaction</li>
+                                </ul>                        
                         </Flex>
                     </Flex>
                     <Flex  mb="1.875rem" direction="column" align="center" w="100%" className="fadein revealOnce">
-                        <Heading textAlign="center" fontFamily="avenir" fontSize="1.125rem">REAL ESTATE DEVELOPMENTS</Heading>
+                        <Heading textAlign="center" fontFamily="avenir" fontSize="1.125rem">REAL ESTATE<br/> DEVELOPMENTS</Heading>
                         <Image my=".625rem" h="3.125rem" w="3.125rem" src={realEstateSVG}/>
                         <Flex >
                             <Flex direction="column" >
                                 <Text fontFamily="varela round"><li>Mumbai</li></Text>
-                                <Text fontFamily="varela round"><li>Pune</li></Text>                                
+                                                                
                             </Flex>
                             <Flex direction="column" pl="1rem">
-                                <Text fontFamily="varela round"><li>Chennai</li></Text>
+                                <Text fontFamily="varela round"><li>Pune</li></Text>
+                                <Text fontFamily="varela round" ml="-1rem"><li>Chennai</li></Text>
+                            </Flex>  
+                            <Flex direction="column" pl="1rem">
                                 <Text fontFamily="varela round"><li>Indore</li></Text>
-                            </Flex>                            
+                              
+                            </Flex>                          
                         </Flex>                        
                     </Flex>
                 </Flex>
@@ -95,7 +96,7 @@ const Passionatwork =()=>{
                 </Flex>
            </Flex>
            <Flex ref={ref} mt="3.125rem" direction="column" h="100%" w="100%" overflow="hidden">
-                <Center><Text textAlign="center" mb="1.563rem" className="slidein-top revealOnce" fontFamily="goudy" fontSize="2.125rem" px="1rem">OUR CORE STRENGTHS</Text></Center>
+                <Center><Text textAlign="center" mb="1.563rem" className="slidein-top revealOnce" fontFamily="goudy" fontSize="1.5rem" px="1rem">OUR CORE STRENGTHS</Text></Center>
                 <SimpleGrid
                         px="1rem"
                         columns={3}
@@ -123,6 +124,7 @@ const Passionatwork =()=>{
                                     w="1.875rem"
                                     transform="translate(-50%)"
                                     src={icLegacy}
+                                    
                                 />
                                 <Heading
                                     pos="absolute"

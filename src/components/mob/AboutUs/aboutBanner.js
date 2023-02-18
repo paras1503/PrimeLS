@@ -17,7 +17,6 @@ const AboutBanner = () => {
         h="100%"
         pos="absolute"
         bgImage={banner}
-        bgPos="center"
         bgRepeat="no-repeat"
         bgSize="cover"
         align="center"

@@ -160,11 +160,11 @@ const [video,setVideo] = useState(videos[0]);*/}
         />
         <link rel="manifest" href="/app.webmanifest" crossorigin="use-credentials" />
         <Slider {...settings2} ref={(slider) => setSlider(slider)}>
-          <iframe height="400" src="https://www.youtube.com/embed/TAQmMqYE1PY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-          <iframe height="400" src="https://www.youtube.com/embed/ModLKkqrkKg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-          <iframe height="400" src="https://www.youtube.com/embed/886jUmkMlDI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-          <iframe height="400" src="https://www.youtube.com/embed/IqV6r9O8nDM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-          <iframe height="400" src="https://www.youtube.com/embed/IuU_-7TVQ1k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          <iframe height="400" src="https://www.youtube.com/embed/TAQmMqYE1PY" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+          <iframe height="400" src="https://www.youtube.com/embed/ModLKkqrkKg" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+          <iframe height="400" src="https://www.youtube.com/embed/886jUmkMlDI" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+          <iframe height="400" src="https://www.youtube.com/embed/IqV6r9O8nDM" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+          <iframe height="400" src="https://www.youtube.com/embed/IuU_-7TVQ1k" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
         </Slider>
       </Box>
         <IconButton

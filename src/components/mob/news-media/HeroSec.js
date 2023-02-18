@@ -19,7 +19,7 @@ const FirstSec = () => {
         align="center"
         justify="center"
       ></MtnFlx>
-      <Image w="100%" h="100vh" src={banner} />
+      <Image w="100%" h="100vh" src={banner} objectPosition="right 10%" objectFit="cover"/>
       <MtnHd
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}

@@ -2,8 +2,8 @@ import { Box, Center, Divider, Flex, Heading, Icon,IconButton,Image, Text } from
 import React, { useRef, useState } from "react";
 import Slider from "react-slick";
 import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
-import client1 from "./rajeev2.jpeg"
-import client2 from "./punit-chopraa.jpg"
+import client1 from "./our clients1.jpeg"
+import client2 from "./our clients2.jpeg"
 import { useInView } from "framer-motion";
 import ommetal from "./1.png";
 import sharaf from "./2.png";

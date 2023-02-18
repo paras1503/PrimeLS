@@ -67,7 +67,7 @@ const LastSec = () => {
       justify="center"
       pos="relative"
       overflow="hidden"
-      bgImage='linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)), url("/images/bg-box.jpg")'
+      bgImage='linear-gradient(rgba(255,255,255,0.2), rgba(255,255,255,0.2)), url("/images/bg-box.jpg")'
       bgRepeat="no-repeat"
       bgSize="cover"
     >

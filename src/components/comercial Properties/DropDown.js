@@ -1,5 +1,4 @@
 import {
-  Button,
   Flex,
   Text,
   Accordion,
@@ -13,7 +12,6 @@ import {
 } from "@chakra-ui/react";
 import React from "react";
 import { MinusIcon, AddIcon } from "@chakra-ui/icons";
-import { AiOutlineDownCircle } from "react-icons/ai";
 
 const DropDown = () => {
   return (
@@ -26,7 +24,7 @@ const DropDown = () => {
       <Accordion
         w="100%"
         border="1px solid #B88746"
-        allowMultiple
+        allowmultiple
         overflow="hidden"
       >
         <AccordionItem>
@@ -69,7 +67,7 @@ const PrimeLS = () => {
       w="100%"
       bgColor="#DFBD69"
       border="1px solid #DFBD69"
-      allowMultiple
+      allowmultiple
       px="5.25rem"
     >
       {({ isExpanded }) => (
@@ -136,7 +134,7 @@ const InvestWithUs = () => {
       w="100%"
       bgColor="#DFBD69"
       border="1px solid #DFBD69"
-      allowMultiple
+      allowmultiple
       px="5.25rem"
     >
       {({ isExpanded }) => (
@@ -206,7 +204,7 @@ const AreteHomesPro = () => {
       w="100%"
       bgColor="#DFBD69"
       border="1px solid #DFBD69"
-      allowMultiple
+      allowmultiple
       px="5.25rem"
     >
       {({ isExpanded }) => (
@@ -275,6 +273,7 @@ const AreteHomesPro = () => {
   );
 };
 
+
 const AreteHomesSky = () => {
   return (
     <AccordionItem
@@ -284,7 +283,7 @@ const AreteHomesSky = () => {
       w="100%"
       bgColor="#DFBD69"
       border="1px solid #DFBD69"
-      allowMultiple
+      allowmultiple
       px="5.25rem"
     >
       {({ isExpanded }) => (
@@ -425,7 +424,7 @@ const AreteHomesService = () => {
       w="100%"
       bgColor="#DFBD69"
       border="1px solid #DFBD69"
-      allowMultiple
+      allowmultiple
       px="5.25rem"
     >
       {({ isExpanded }) => (

@@ -22,6 +22,7 @@ const FirstSec = () => {
         bgSize="cover"
         align="center"
         justify="center"
+        opacity="1"
       ></MtnFlx>
       <MtnHd
         initial={{ opacity: 0 }}

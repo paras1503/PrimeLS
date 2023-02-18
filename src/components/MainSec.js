@@ -1,4 +1,4 @@
-import { Button, Flex, Heading, Text } from "@chakra-ui/react";
+import { Button, Flex, Heading, Text, Link } from "@chakra-ui/react";
 import { motion } from "framer-motion";
 import React from "react";
 import Carousel from "./Carousel";
@@ -69,6 +69,7 @@ const MainSec = () => {
         >
           Arete Homes your wish for a <br /> smart living, NOW GRANTED
         </Text>
+        <Link _hover={{textDecoration:"none"}} href="/arete-homes">
         <Button
           my="9px"
           w="162px"
@@ -84,6 +85,7 @@ const MainSec = () => {
         >
           EXPLORE NOW
         </Button>
+        </Link>
       </Flex>{" "}
       <Flex
         w="75%"

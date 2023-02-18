@@ -2,6 +2,10 @@ import { Flex, Image, Text, Box, Divider, Heading } from "@chakra-ui/react";
 import { motion, useAnimation, useInView } from "framer-motion";
 import React from "react";
 import { useEffect,useRef } from "react";
+import Deck1 from "../sky-high imgs/DECK1.jpeg"
+import Deck2 from "../sky-high imgs/DECK2.jpeg"
+import Deck3 from "../sky-high imgs/DECK3.jpeg"
+import TERRACE from "../sky-high imgs/TERRACE.png"
 //import { useInView } from "react-intersection-observer";
 
 const MtnTxt = motion(Text);
@@ -70,7 +74,7 @@ const FourthSec = () => {
               className="fadein-2sdelay revealOnce"
               w="100%"
               h="23rem"
-              src="/images/sky-high/DECK1.jpg"
+              src={Deck1}
               boxShadow="dark-lg"
             />
           </Flex>
@@ -165,7 +169,7 @@ const FourthSec = () => {
               className="fadein revealOnce"
               w="100%"
               h="23rem"
-              src="/images/sky-high/DECK2.jpg"
+              src={Deck2}
               boxShadow="dark-lg"
             />
           </Flex>
@@ -177,7 +181,7 @@ const FourthSec = () => {
               className="fadein revealOnce"
               w="100%"
               h="23rem"
-              src="/images/sky-high/DECK3.jpg"
+              src={Deck3}
               boxShadow="dark-lg"
             />
           </Flex>
@@ -222,7 +226,7 @@ const FourthSec = () => {
             className="fadein revealOnce"
             w="100%"
             h="23rem"
-            src="/images/sky-high/TERRACE.jpg"
+            src={TERRACE}
             boxShadow="dark-lg"
           />
         </Flex>
@@ -230,5 +234,4 @@ const FourthSec = () => {
     </Flex>
   );
 };
-
 export default FourthSec;

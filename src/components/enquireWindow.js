@@ -7,7 +7,7 @@ import call from "./callback.svg";
 import free from "./free.svg";
 import unmatched from "./unmatched.svg";
 
-const EnquireWindow = ({isOpen,onClose}) => {
+const EnquireWindow = ({isOpened,onClosed}) => {
   return (
     <>
       <link
@@ -16,15 +16,15 @@ const EnquireWindow = ({isOpen,onClose}) => {
       integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
       crossorigin="anonymous"
       />
-      <Modal size="lg" blockScrollOnMount={true} show={isOpen} onHide={onClose}>
+      <Modal size="lg" blockScrollOnMount={false} trapFocus={false} autoFocus={false} returnFocusOnClose={false} show={isOpened} onHide={onClosed}>
           <Modal.Header closeButton>
           </Modal.Header>
-          <Modal.Body>
+          <Modal.Body returnFocusOnClose={false}>
             <Flex direction="column">
             <Flex>
-              <Flex w="50%" align="center" direction="column" gap="1rem">
-              <Image px="2rem" src="/images/logo.png" />
-              <Flex direction="column" w="12rem" align="flex-start">
+              <Flex w="50%" align="center" direction="column" gap="1rem" h="50%">
+              <Image px="2rem" src="/images/logo.png" ml="20rem" />
+              <Flex direction="column" w="12rem" align="flex-start" >
                 <Image h="3.125rem" mb=".625rem" ml="25%" src={call} />
                 <Heading mr="0.9rem" bgClip="text" bgGradient="linear(to-b,#B88746, #DFBD69)" w="100%"  fontSize="1rem" fontFamily="avenir">INSTANT CALL BACK</Heading>
               </Flex>
@@ -37,12 +37,12 @@ const EnquireWindow = ({isOpen,onClose}) => {
               <Heading mr="0.9rem" bgClip="text" bgGradient="linear(to-b,#B88746, #DFBD69)" w="100%"  fontSize="1rem" fontFamily="avenir">UNMATCHED PRICE</Heading>
               </Flex>
             </Flex>
-            <Flex boxShadow="2xl" w="50%" align="center" justify="center" direction="column" pb="1rem" bgImage='linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)), url("/images/bg-box.jpg")'
+            <Flex boxShadow="2xl" w="50%" align="center" justify="center" direction="column" pb="1rem" mt="5rem" bgImage='linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)), url("/images/bg-box.jpg")'
       bgRepeat="no-repeat"
       bgPos="center"
       bgSize="cover">
               <form>
-              <Text textAlign="center"  fontSize="1rem">Register here & avail best offers!</Text>
+              <Text textAlign="center" fontFamily="veralaRound" fontSize="1rem" pt="1rem">Register here & avail best offers!</Text>
               <FormControl isRequired>
                 {" "}
                 <HStack w="100%" justify="space-between" pb="0.938rem">

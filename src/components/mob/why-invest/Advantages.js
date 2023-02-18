@@ -1,5 +1,6 @@
 import { Box, Center, Divider, Flex, GridItem, Heading, Icon,Image, SimpleGrid, Spacer, Text } from "@chakra-ui/react";
-import { ImQuotesLeft, ImQuotesRight } from "react-icons/im";
+import { BsArrowDown} from "react-icons/bs";
+import { AiOutlinePlus} from "react-icons/ai";
 import React, { useRef } from "react";
 
 import pmayScheme from "./Pmay scheme.png";
@@ -22,7 +23,7 @@ const Advantages =()=>{
       return (
       <>
       <Flex w="100%" px="1rem" direction="column" overflow="hidden" ref={advRef} pb="3.125rem">
-      <Text textAlign="center" pt="3.125rem" pb="1.563rem" className="slidein-top revealOnce" fontFamily="goudy" fontSize="2.125rem">ADVANTAGES OF INVESTING IN ASSURED RENTAL INCOME, RESIDENTIAL PROPERTIES </Text>
+      <Text textAlign="center" pt="3.125rem" pb="1.563rem" className="slidein-top revealOnce" fontFamily="goudy" fontSize="1.5rem">ADVANTAGES OF INVESTING IN ASSURED RENTAL INCOME</Text>
       <Flex
           mx="25%"
           overflow="hidden"
@@ -41,7 +42,7 @@ const Advantages =()=>{
                 src={rentalIncome}
                 mr="0.625rem"
               />
-              <Heading color="#D4AD4B" fontSize="1.25rem">
+              <Heading color="#D4AD4B" fontSize="1.25rem" fontFamily="avenir">
                 RENTAL INCOME
               </Heading>
             </Flex>
@@ -72,7 +73,7 @@ const Advantages =()=>{
             </Flex>
           </Flex>
           <Text textAlign="center" color="#D4AD4B" fontWeight="bold" fontSize="3rem" opacity={advInView?1:0} transitionDelay={"3.5s"}>
-              &#8595;
+          <BsArrowDown style={{height:"5rem", textAlign:"center",position: 'relative',left: '11rem',}} transitionDelay={"3.5s"}/>
             </Text>
             <Text textAlign="center" color="#D4AD4B" fontFamily="avenir" fontWeight="bold" fontSize="1.25rem" opacity={advInView?1:0} transitionDelay={"4s"}>
             INCOME GROWTH OF YOUR INVESTMENT

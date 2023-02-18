@@ -16,10 +16,10 @@ import { motion, useAnimation, useInView } from "framer-motion";
 import React, { useEffect, useRef, useState } from "react";
 
 import areteHomes from "../../arete-homes imgs/BANNER2.jpg";
-import skyHigh from "../../sky-high imgs/BANNER2.jpg";
+import skyHigh from "../../sky-high imgs/BANNER2.png";
 //import nakshatra from "";
 import areteMall from "../../commercial-properties imgs/Arete Mall.jpg";
-import aretePlaza from "../../commercial-properties imgs/ARETE PLAZA1_11zon.jpg";
+import aretePlaza from "../../commercial-properties imgs/ARETE PLAZA1_11zon.png";
 import ponneri from "../../commercial-properties imgs/gymkhana.png";
 
 const MtnDvdr = motion(Divider);
@@ -113,9 +113,9 @@ const OurProjects = () => {
     infinite: true,
     draggable: true,
     speed: 500,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 3000,
     pauseOnHover: false,
-    slidesToShow: 1,
+    slidesToShow: 5,
     slidesToScroll: 1,
   };
   return (

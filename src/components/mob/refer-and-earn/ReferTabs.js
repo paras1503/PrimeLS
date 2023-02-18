@@ -153,7 +153,7 @@ const ReferAFriend = () => {
             className="sliderightdisco reveal"
           >
             <Divider
-              w="89%"
+              w="60%"
               orientation="horizontal"
               border="3px solid"
               borderColor="#DFBD69"
@@ -170,7 +170,7 @@ const ReferAFriend = () => {
               my="1"
             />
           </Flex>
-          <Text pb="1.875rem" fontFamily="veralaRound" fontSize="1rem">
+          <Text pb="1.875rem" width="70%" fontFamily="veralaRound" fontSize="1rem">
             Fill up the form on website & submit the details of as many friends
             & family members you would like to refer.
           </Text>
@@ -185,8 +185,9 @@ const ReferAFriend = () => {
           </Heading>
           <Flex
             w="100%"
-            align="center"
+            align="right"
             pb="0.313rem"
+            ml="3.6rem"
             className="slideleftdisco reveal"
           >
             <Box
@@ -200,14 +201,15 @@ const ReferAFriend = () => {
               my="1"
             />
             <Divider
-              w="89%"
+             mt="0.7rem"
+              w="60%"
               orientation="horizontal"
               border="3px solid"
               borderColor="#DFBD69"
               bgColor="#DFBD69"
             />{" "}
           </Flex>{" "}
-          <Text pb="1.875rem" fontFamily="veralaRound" fontSize="1rem" textAlign="right">
+          <Text pb="1.875rem" width="70%" ml="3.6rem" fontFamily="veralaRound" fontSize="1rem" textAlign="right">
             Your provided referral will be contacted by our team and complete
             assistance will be provided in the booking process.
           </Text>
@@ -225,7 +227,7 @@ const ReferAFriend = () => {
             className="sliderightdisco reveal"
           >
             <Divider
-              w="89%"
+              w="60%"
               orientation="horizontal"
               border="3px solid"
               borderColor="#DFBD69"
@@ -242,7 +244,7 @@ const ReferAFriend = () => {
               my="1"
             />
           </Flex>{" "}
-          <Text pr="0.2rem" fontFamily="veralaRound" fontSize="1rem">
+          <Text pr="0.2rem" width="70%" fontFamily="veralaRound" fontSize="1rem">
             Every time your referral becomes a successful booking, you’ll earn
             rewards upto Rs 1 Lakh.
           </Text>
@@ -410,16 +412,16 @@ const ReferAFriend = () => {
                     }
                     borderRadius="none"
                   >
-                    <option style={{ color: "black"}}>
+                    <option style={{ color: "black", width:"5rem"}} >
                       <Text pt="0.2rem">Select Project</Text>
                     </option>
-                    <option style={{ color: "black" }}>
+                    <option style={{ color: "black", width:"5rem" }}>
                       <Text>Arete Homes</Text>
                     </option>
-                    <option style={{ color: "black" }}>
+                    <option style={{ color: "black", width:"5rem" }}>
                       <Text>Sky High Tower</Text>
                     </option>
-                    <option style={{ color: "black" }}>
+                    <option style={{ color: "black", width:"5rem" }}>
                       <Text>Ponneri Gymkhana Club</Text>
                     </option>
                   </Select>
@@ -573,16 +575,19 @@ const BookAVisit = () => {
           className="expandcar reveal"
           src={bookIll}
           objectFit="cover"
+          
         />
           <div className="fadein revealOnce">
           <HStack w="100%" alignSelf="left" justify="center" pb="3.125rem">
-            <Image alignSelf="center" src={carIll} />
+            <Image alignSelf="center" src={carIll} ml="1.2rem" />
             <Heading
               textAlign="center"
               fontFamily="avenir"
               fontSize={{base:"1rem"}}
               bgGradient="linear(to-l, #B88746, #DFBD69)"
               bgClip="text"
+              pr="1.2rem"
+              fontWeight="700"
             >
               FREE PICK UP - DROP SERVICE AVAILABLE
             </Heading>

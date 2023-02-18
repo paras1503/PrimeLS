@@ -1,8 +1,9 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+  import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import { Flex, Text } from "@chakra-ui/react";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
+import HeaderMob from "./components/mob/Header/HeaderMob";
 import HomeSc from "./screens/HomeSc";
 import CareersSc from "./screens/CareersSc";
 import Contact from "./screens/Contact";
@@ -50,10 +51,11 @@ function App() {
       setIsMobile(true);
     }
   },[]);
+  console.log("app",isMobile)
   if(!isMobile){
   return (
     <BrowserRouter>
-      <Header />
+      <Header/>
       <Flex
         as="main"
         direction="column"
@@ -78,6 +80,7 @@ function App() {
           <Route path="/arete-homes" element={<AreteHomes />} />
           <Route path="/news-and-media" element={<NewsMediaSc />} />
           <Route path="/refer-and-earn" element={<ReferAndEarn />} />
+          <Route path="/green-power" element={<EnergySc />} />
           <Route path="/commercial-properties" element={<CommercialProperties />} />
           <Route path="/serviced-apartments" element={<ServicedApartSc />} />
           <Route path="/blog" element={<BlogSc />} />
@@ -91,7 +94,7 @@ function App() {
   else{
     return (
       <BrowserRouter>
-        {/* <Header /> */}
+        <HeaderMob/>
         <Flex
           as="main"
           direction="column"

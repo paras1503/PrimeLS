@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import { useInView } from "react-intersection-observer";
 //import { useInView } from "framer-motion";
 import {
@@ -15,7 +15,8 @@ import {
   Tbody,
   Td,
 } from "@chakra-ui/react";
-
+import ModalWindwow from "../modalWindow";
+import SkyHighTower from "../sky-high imgs/TERRACE.png";
 const EightSec = () => {
   //const ref = useRef(null);
   //const isInView = useInView(ref, { once: true });
@@ -23,7 +24,18 @@ const EightSec = () => {
     threshold: 0,
     rootMargin: "50px",
   });
+  
+  const [isOpen, setIsOpen]= useState(false);
+  const close =() =>{
+    setIsOpen(false);
+  }
+  const open =() =>{
+    setIsOpen(true);
+  }
   return (
+    <>
+    {isOpen?<ModalWindwow modalTitle={"SKY HIGH TOWER"} modalImage={SkyHighTower} isOpen={isOpen} onClose={()=>close()} />:<></>}
+
     <Flex
       ref={ref}
       w="100%"
@@ -225,11 +237,13 @@ const EightSec = () => {
             bgGradient: "linear(to-b, #DFBD69, #B88746)",
           }}
           _active={{ bgGradient: "linear(to-b, #B88746 ,#DFBD69)" }}
+          onClick={open}
         >
           CHECK PRICE
         </Button>
       </Flex>
     </Flex>
+    </>
   );
 };
 

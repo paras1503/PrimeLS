@@ -1,13 +1,23 @@
 import { Button, Flex, Heading, Icon, Image } from "@chakra-ui/react";
-import React from "react";
+import React,{useState, useEffect} from "react";
 import { BiInfinite } from "react-icons/bi";
 // images
 import banner from "../refer and earn imgs/BANNER IMAGE.png";
 import "./animations.css";
+import ReferTabs from "./ReferTabs";
 import "./rne.css";
 
 const ReferEarn = () => {
+  const [active, setActive] = useState(window.localStorage.getItem('referEarnPage')?JSON.parse(window.localStorage.getItem('referEarnPage')):false);
+  useEffect(() => {
+    window.localStorage.setItem('referEarnPage', JSON.stringify(active));
+  }, [active]);
+  useEffect(() => {
+    const data = window.localStorage.getItem('referEarnPage');
+    if ( data !== null ) setActive(JSON.parse(data));
+  }, []);
   return (
+    <>
     <Flex w="100%" h="100vh" bgColor="#ACCAD4" pos="relative" overflow="hidden">
       <Image
         style={{ opactiy: 0, animation: "fadein 1 2s linear" }}
@@ -17,6 +27,7 @@ const ReferEarn = () => {
         objectFit="cover"
         right="-6%"
         bottom="0"
+        top="9%"
       />
       <Flex
         px={{base:"0.8rem",lg:"6.25rem"}}
@@ -47,7 +58,7 @@ const ReferEarn = () => {
           Gauranteed Rewards
         </Heading>
         <BiInfinite
-          size="3.125rem"
+          size="5.5rem"
           color="#1F4973"
           style={{ transform:"translateX(6rem)", opactiy: 0, animation: "fadein-2sdelay 1 4s linear" }}
         />
@@ -60,8 +71,7 @@ const ReferEarn = () => {
         >
           Unlimited Times
         </Heading>
-        </Flex>
-        {/*<Button
+        {/* <Button
           style={{ opactiy: 0, animation: "fadein-2sdelay 1 4s linear" }}
           w="fit-content"
           bgGradient="linear(to-b, #B88746 ,#DFBD69)"
@@ -73,11 +83,19 @@ const ReferEarn = () => {
             bgGradient: "linear(to-b, #DFBD69, #B88746)",
           }}
           _active={{ bgGradient: "linear(to-b, #B88746 ,#DFBD69)" }}
+          onClick={() => {
+            setActive(false);
+          }}
+          href="#booksite"
         >
           BOOK A SITE VISIT
-        </Button>*/}
+        </Button> */}
+        </Flex>
+       
       </Flex>
     </Flex>
+    <ReferTabs  active={active} setActive={setActive}/>
+    </>
   );
 };
 

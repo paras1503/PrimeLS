@@ -31,15 +31,15 @@ import { useState } from "react";
 import "./animations.css";
 import "./rne.css";
 
-const ReferTabs = () => {
-  const [active, setActive] = useState(window.localStorage.getItem('referEarnPage')?JSON.parse(window.localStorage.getItem('referEarnPage')):false);
-  useEffect(() => {
-    window.localStorage.setItem('referEarnPage', JSON.stringify(active));
-  }, [active]);
-  useEffect(() => {
-    const data = window.localStorage.getItem('referEarnPage');
-    if ( data !== null ) setActive(JSON.parse(data));
-  }, []);
+const ReferTabs = ({active, setActive}) => {
+  // const [active, setActive] = useState(window.localStorage.getItem('referEarnPage')?JSON.parse(window.localStorage.getItem('referEarnPage')):false);
+  // useEffect(() => {
+  //   window.localStorage.setItem('referEarnPage', JSON.stringify(active));
+  // }, [active]);
+  // useEffect(() => {
+  //   const data = window.localStorage.getItem('referEarnPage');
+  //   if ( data !== null ) setActive(JSON.parse(data));
+  // }, []);
   const reveal = () => {
     var reveals = document.querySelectorAll(".reveal");
     try {
@@ -187,7 +187,7 @@ const ReferAFriend = () => {
             />{" "}
             <Box
               height="1.875rem"
-              width="2.1rem"
+              width="1.9rem"
               mr="0.15rem"
               backgroundColor="#DFBD69"
               border="3px solid white"
@@ -227,7 +227,7 @@ const ReferAFriend = () => {
             />{" "}
             <Box
               height="1.875rem"
-              width="2.1rem"
+              width="1.9rem"
               mr="0.3rem"
               backgroundColor="#DFBD69"
               border="3px solid white"
@@ -276,7 +276,7 @@ const ReferAFriend = () => {
             />{" "}
             <Box
               height="1.875rem"
-              width="2.1rem"
+              width="1.9rem"
               mr="0.16rem"
               backgroundColor="#DFBD69"
               border="3px solid white"
@@ -609,6 +609,7 @@ const BookAVisit = () => {
           pos="absolute"
           objectFit="cover"
           left="0"
+          top="5%"
           bottom={{ base: "10rem", lg: "0" }}
         />
         <Flex
@@ -630,7 +631,7 @@ const BookAVisit = () => {
             fontSize={{ base: "2rem", lg: "2.5rem" }}
             pb="1.875rem"
           >
-            YOU ARE ONLY ONE RIDE AWAY FROM YOUR DREAM HOME
+            YOU ARE ONLY ONE RIDE <br/> AWAY FROM YOUR DREAM HOME
           </Text>
           <div className="fadein reveal">
             <HStack w="100%" align="center" justify="center" pb="3.125rem">
@@ -682,6 +683,7 @@ const BookAVisit = () => {
         bgPos="center"
         bgSize="cover"
         px="6.25rem"
+        
       >
         <form
           style={{
@@ -690,7 +692,9 @@ const BookAVisit = () => {
             flexDirection: "column",
             alignItems: "center",
             justifyContent: "center",
+            
           }}
+          
         >
           <Text
             className="serv-text-up reveal"
@@ -820,6 +824,7 @@ const BookAVisit = () => {
                     fontFamily="avenir"
                     fontSize="1rem"
                     fontWeight="bold"
+                    type="time"
                   >
                     TIME
                   </FormLabel>

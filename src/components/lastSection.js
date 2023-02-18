@@ -5,6 +5,15 @@ import { ImQuotesLeft, ImQuotesRight } from "react-icons/im";
 import { useRef } from "react";
 import { motion, useAnimation, useInView } from "framer-motion";
 import { useEffect } from "react";
+import AksahayOberoi from "../components/homepage-imgs/akshay oberoi.jpg"
+import AnujPuri from "../components/homepage-imgs/anuj puri.jfif"
+import ShrikantJoshi from "../components/homepage-imgs/Shrikant_Joshi.jpg"
+import BabulalVarma from "../components/homepage-imgs/Mr.-Babulal-Varma.jpg"
+import ShrikantBhasi from "../components/homepage-imgs/Shrikant_Bhasi_1.png"
+import VijayKethan from "../components/homepage-imgs/Vijay.jpg"
+import MitheshKothari from "../components/homepage-imgs/mitesh kothari.webp"
+import HomePageVedios from "./homepage-imgs/homepage_vedio.mp4?autoplay=0&muted=0"
+import "./lastSection.css";
 
 const MtnTxt = motion(Text);
 const MtnFlx = motion(Flex);
@@ -14,43 +23,43 @@ const LastSection = () => {
     {
       name: "Shrikant Joshi",
       title: "CEO-L&T Realty",
-      avtr: "",
+      avtr: ShrikantJoshi,
       text: "Prime Lifespace has played a significant role in the joint venture formation to one of our biggest project CRESCENT Bay at Parel. I highly recommend Prime Lifespace & wish them success.",
     },
     {
       name: "Anuj Puri",
       title: "Chairman-JLL Industries",
-      avtr: "",
+      avtr: AnujPuri,
       text: "Prime Lifespace’s launch of primelifespace.com dedicated to connecting Indian end users to properties that meet their budgets & requirements is laudable.",
     },
     {
       name: "Babulal Verma",
       title: "MD-Omkar Realtors",
-      avtr: "",
+      avtr: BabulalVarma,
       text: "Prime Lifespace has made significant contributions in the development and growth of L&T realty. I highly recommend Prime Lifespace.",
     },
     {
       name: "Akshay Oberoi",
       title: "Bollywood Actor",
-      avtr: "",
+      avtr: AksahayOberoi,
       text: "Prime Lifespace team presents a professional outlook on real estate issues and gives the right solution. They helped me find a perfect home. I highly recommend them.",
     },
     {
       name: "Shrikant Bhasi",
       title: "Managing Director, Carnival Motion Pictures",
-      avtr: "",
+      avtr: ShrikantBhasi,
       text: "Looking for a home? Do rely on Prime Lifespace to get you best deals on location, floor choice and advantage of price.",
     },
     {
       name: "Vijay Khetan",
       title: "Managing Director, Vijaykhetan Group ",
-      avtr: "",
+      avtr: VijayKethan,
       text: "Prime Lifespace as a company has a excellent knowledge of real estate and understands the best options & the future for individual, commercial as well as residential properties. I definitely recommend them.",
     },
     {
       name: "Mitesh Kothari",
       title: "Deputy Managing Director, Pan Parag India",
-      avtr: "",
+      avtr: MitheshKothari,
       text: "Prime Lifespace has a team of professionals with heart and vision which makes a client extremely comfortable. Though professional, you always feel at home and have a family bonding with them.",
     },
   ];
@@ -100,7 +109,7 @@ const LastSection = () => {
           <MtnTxt
             initial={{ opacity: 0 }}
             animate={animateFade}
-            transition={{ duration: 2, type: "just" }}
+            transition={{ duration: 2, type: "just"}}
             fontSize="40px"
             fontFamily="goudy"
             fontWeight="400"
@@ -110,36 +119,42 @@ const LastSection = () => {
           </MtnTxt>
         </Flex>
         <MtnFlx
-          initial={{ opacity: 0 }}
-          animate={animateFade}
-          transition={{ duration: 2, type: "just" }}
-          w="75%"
+            initial={{ opacity: 0 }}
+            animate={animateFade}
+            transition={{ duration: 2, type: "just" }}
+          w="70%"
           h="80%"
           pos="absolute"
           left="24%"
           top="10%"
         >
-          <iframe
+          <video
             width="100%"
             height="100%"
-            src="https://www.youtube.com/embed/I4W3vUKtobA?list=PLqrT0vNnEFLMvPT1N2NpvkxTOR1fENykN"
+            src={HomePageVedios}
             title="See what our customer speaks about Arete Homes!"
             frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; "
             allowFullScreen
-          ></iframe>
+            muted={true}
+            autoPlay
+            controls
+          ></video>
         </MtnFlx>
       </Flex>
-      <Flex w="100%" h="100%">
+      <Flex w="100%" h="80%" marginBottom="-5rem">
         <MtnFlx
-          initial={{ opacity: 0, y: 100 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 1.5, duration: 2, type: "just" }}
+          className="slide-animation"
+          initial={{ opacity: 0, x: 100 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ delay: 1.5, duration: 2, type: "just", }}
+          
           w="100%"
           h="100%"
           pos="relative"
           align="flex-start"
           justify="space-between"
+          pb="-2rem"
         >
           <Icon
             pos="absolute"
@@ -161,11 +176,15 @@ const LastSection = () => {
             pr="1.563rem"
             py="0.313rem"
             mt="3.125rem"
+            
             key={testIndex!==0?testimonial[testIndex-1].name:testimonial[testimonial.length-1].name}
           >
-            <Text fontSize="1rem" fontFamily="veralaRound">
+            <div style={{height:"15rem"}}>
+              <Text fontSize="1rem" fontFamily="veralaRound">
               {testIndex!==0?testimonial[testIndex-1].text:testimonial[testimonial.length-1].text}
             </Text>
+            </div>
+            
             <Flex
               w="100%"
               h="15rem"
@@ -211,9 +230,11 @@ const LastSection = () => {
             mt="3.125rem"
             key={test.name}
           >
+            <div style={{height:"15rem"}}>
             <Text fontSize="1rem" fontFamily="veralaRound">
               {test.text}
             </Text>
+            </div>
             <Flex
               w="100%"
               h="15rem"
@@ -259,9 +280,11 @@ const LastSection = () => {
             mt="3.125rem"
             key={testIndex!==testimonial.length-1?testimonial[testIndex+1].name:testimonial[0].name}
           >
+            <div style={{height:"15rem"}}>
             <Text fontSize="1rem" fontFamily="veralaRound">
               {testIndex!==testimonial.length-1?testimonial[testIndex+1].text:testimonial[0].text}
             </Text>
+            </div>
             <Flex
               w="100%"
               h="15rem"

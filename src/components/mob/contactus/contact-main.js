@@ -20,7 +20,7 @@ const ContactMain = () => {
       justify="center"
     ><Image w="100%" h="100vh" pos="absolute" src={bgImage} />
       <Flex
-        zIndex={1}
+        
         w="100%"
         h="100%"
         align="center"

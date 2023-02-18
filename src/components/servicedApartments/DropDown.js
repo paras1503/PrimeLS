@@ -18,7 +18,7 @@ import { AiOutlineDownCircle } from "react-icons/ai";
 const DropDown = () => {
   return (
     <Flex h="100%" w="100%" px="5.25rem" bgColor="#B88746">
-      <Accordion w="100%" border="1px solid #B88746" allowMultiple>
+      <Accordion w="100%" border="1px solid #B88746" allowmultiple>
         <AccordionItem>
           <h2>
             <AccordionButton
@@ -54,7 +54,7 @@ const PrimeLS = () => {
       w="100%"
       bgColor="#DFBD69"
       border="1px solid #DFBD69"
-      allowMultiple
+      allowmultiple
     >
       {({ isExpanded }) => (
         <>
@@ -122,7 +122,7 @@ const InvestWithUs = () => {
       w="100%"
       bgColor="#DFBD69"
       border="1px solid #DFBD69"
-      allowMultiple
+      allowmultiple
     >
       {({ isExpanded }) => (
         <>
@@ -193,7 +193,7 @@ const AreteHomesPro = () => {
       w="100%"
       bgColor="#DFBD69"
       border="1px solid #DFBD69"
-      allowMultiple
+      allowmultiple
     >
       {({ isExpanded }) => (
         <>
@@ -272,7 +272,7 @@ const AreteHomesSky = () => {
       w="100%"
       bgColor="#DFBD69"
       border="1px solid #DFBD69"
-      allowMultiple
+      allowmultiple
     >
       {({ isExpanded }) => (
         <>
@@ -409,7 +409,7 @@ const AreteHomesService = () => {
       w="100%"
       bgColor="#DFBD69"
       border="1px solid #DFBD69"
-      allowMultiple
+      allowmultiple
     >
       {({ isExpanded }) => (
         <>

@@ -30,7 +30,7 @@ import {
 } from "@chakra-ui/react";
 import { ImQuotesLeft, ImQuotesRight } from "react-icons/im";
 import React, { useLayoutEffect, useRef, useState } from "react";
-import banner from "../serviced apartments imgs/MIVAN TECHNOLOGY TOWER.jpg";
+import banner from "../serviced apartments imgs/MIVAN TECHNOLOGY TOWER.jfif";
 import apartment from "../serviced apartments imgs/serviced apartments icons/smart way of living - 1st.svg";
 import time from "../serviced apartments imgs/serviced apartments icons/smart way of living-2nd.svg";
 import ringbell from "../serviced apartments imgs/serviced apartments icons/smart way of living -3rd.svg";
@@ -116,9 +116,16 @@ import career6 from "../serviced apartments imgs/6.JPG";
 import career7 from "../serviced apartments imgs/7.jpg";
 import lamp from "../serviced apartments imgs/lamp.jpg";
 import career9 from "../serviced apartments imgs/9.jpeg";
-
+import EnquireWindow from "../enquireWindow";
 
 const ServicedApartments = () => {
+  // const [isOpened, setIsOpened]= useState(false);
+  // const closeEnquire =() =>{
+  //   setIsOpened(false);
+  // }
+  // const openEnquire =() =>{
+  //   setIsOpened(true);
+  // }
   const redirect =(loc) =>{
     window.localStorage.setItem('referEarnPage',false);
     window.location.replace(`${loc.target.id}`);
@@ -186,6 +193,8 @@ const ServicedApartments = () => {
   return (
     <>
       {/* Banner section  */}
+      {/* {isOpened?<EnquireWindow isOpened={isOpened} onClosed={()=>closeEnquire()} />:<></>} */}
+
       <Flex w="100%" h="100vh" pos="relative">
         <Image
           w="100%"
@@ -517,7 +526,6 @@ const ServicedApartments = () => {
                   backgroundRepeat="no-repeat"
                   objectFit="cover"
                   src={prime}
-                  boxShadow="2px 4px 6px rgba(0,0,0, .2)"
                 />
               </Flex>
             ))}
@@ -528,6 +536,7 @@ const ServicedApartments = () => {
             variant="outline"
             borderColor="#B88746"
             borderRadius="full"
+            border="3px solid"
             position="absolute"
             top="50%"
             left="0"
@@ -547,6 +556,7 @@ const ServicedApartments = () => {
             className="fadein revealOnce"
             aria-label="right-arrow"
             borderRadius="full"
+            border="3px solid"
             variant="outline"
             borderColor="#B88746"
             position="absolute"
@@ -572,11 +582,12 @@ const ServicedApartments = () => {
         <embed
             height="100%"
             width="100%"
-            src={"https://www.youtube.com/embed/Psmw1t_S6-c"}
+            type="video/webm"
+            src="https://www.instagram.com/reel/MDJmNzVkMjY"
             title="The Economic Times | Best Realty Brands 2021 - Prime LifeSpace Developers"
-            frameborder="0"
+            frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
+            allowFullScreen
           ></embed>
         </Flex>
         <Flex
@@ -1185,6 +1196,7 @@ const ServicedApartments = () => {
               bgColor="#000"
               color="#fff"
               _hover={{ bgColor: "#000", color: "#fff" }}
+              // onClick={openEnquire}
             >
               SCHEDULE A VISIT
             </Button>
@@ -1458,7 +1470,7 @@ const ServicedApartments = () => {
           class="gmap_iframe"
           width="100%"
           height="430"
-          frameborder="0"
+          frameBorder="0"
           scrolling="no"
           marginheight="0"
           marginwidth="0">
@@ -1467,7 +1479,7 @@ const ServicedApartments = () => {
             class="gmap_iframe"
               width="100%"
               height="430"
-              frameborder="0"
+              frameBorder="0"
               scrolling="no"
               marginheight="0"
               marginwidth="0">
@@ -1476,7 +1488,7 @@ const ServicedApartments = () => {
             class="gmap_iframe"
               width="100%"
               height="430"
-              frameborder="0"
+              frameBorder="0"
               scrolling="no"
               marginheight="0"
               marginwidth="0">
@@ -1485,7 +1497,7 @@ const ServicedApartments = () => {
             class="gmap_iframe"
             width="100%"
             height="430"
-            frameborder="0"
+            frameBorder="0"
             scrolling="no"
             marginheight="0"
             marginwidth="0">
@@ -1494,7 +1506,7 @@ const ServicedApartments = () => {
           class="gmap_iframe"
           width="100%"
           height="430"
-          frameborder="0"
+          frameBorder="0"
           scrolling="no"
           marginheight="0"
           marginwidth="0">
@@ -1503,7 +1515,7 @@ const ServicedApartments = () => {
         class="gmap_iframe"
         width="100%"
         height="430"
-        frameborder="0"
+        frameBorder="0"
         scrolling="no"
         marginheight="0"
         marginwidth="0"></iframe>:<></>}
@@ -1511,7 +1523,7 @@ const ServicedApartments = () => {
         class="gmap_iframe"
         width="100%"
         height="430"
-        frameborder="0"
+        frameBorder="0"
         scrolling="no"
         marginheight="0"
         marginwidth="0"></iframe>:<></>}
@@ -2161,6 +2173,7 @@ const ServicedApartments = () => {
                   bgGradient: "linear(to-b, #DFBD69, #B88746)",
                 }}
                 _active={{ bgGradient: "linear(to-b, #B88746 ,#DFBD69)" }}
+                
               >
                 SCHEDULE A CALL
               </Button>{" "}

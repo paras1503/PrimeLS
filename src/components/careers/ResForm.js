@@ -192,7 +192,7 @@ const ResForm = () => {
                   fontSize="1rem"
                   htmlFor="areaOfInterest"
                 >
-                  AREA OF INTEREST
+                  AREA OF <br/>INTEREST
                 </FormLabel>
                 <Input
                   type="text"

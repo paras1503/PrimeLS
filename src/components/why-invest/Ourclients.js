@@ -30,15 +30,14 @@ const Ourclients =()=>{
     },
   };
     return (<>
-        <Flex w="100%" ref={ref} direction="column" h="100%"overflow="hidden"  px="100px" pt="3.125rem" pb="1.875rem" mb="5rem" bgImage='linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)), url("/images/bg-box.jpg")'
+        <Flex w="100%" ref={ref} direction="column" h="100%" px="100px" pt="3.125rem" pb="1.875rem" mb="5rem" bgImage='linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)), url("/images/bg-box.jpg")'
             bgRepeat="no-repeat"
             bgPos="center"
-            bgSize="cover">
-        <Center pb="1.875rem" className="slidein-top revealOnce" fontFamily="goudy" fontSize="2.5rem">HIGHER RENTALS IN RESIDENTIAL PROPERTIES</Center>
+            bgSize="cover" overflow="hidden">
+        <Center pb="1.875rem" className="slidein-top revealOnce" fontFamily="goudy" fontSize="2.5rem" overflow="hidden">HIGHER RENTALS IN RESIDENTIAL PROPERTIES</Center>
         <Flex w="100%" overflow="hidden">
         <Box
         position={"relative"}
-        overflow={"hidden"}
         w="50%"
       >
         {/* CSS files for react-slick */}
@@ -57,7 +56,8 @@ const Ourclients =()=>{
               w="100%"
             direction="column"
             align="center"
-            justify="center">
+            justify="center" 
+            >
             <Image
               className="expandcar reveal"
               w="100%"
@@ -66,16 +66,21 @@ const Ourclients =()=>{
               objectPosition="center"
               backgroundRepeat="no-repeat"
               objectFit="cover"
+              filter="drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.25))"
               src={client[0].img}
+              overflow="visible"
+              marginRight="1.6rem"
             />
             </Flex>
       </Box>
       <Flex
             className="slidein-top reveal"
-            transition="all 2s 2s"
+            initial={{ opacity: 0, y: -100 }}
+            transition={{ duration: 2, type: "just" }}
             direction="column"
             align="center"
             px="1.563rem"
+            overflow="hidden"
           >
             <Divider
               orientation="vertical"
@@ -83,6 +88,7 @@ const Ourclients =()=>{
               borderColor="#DFBD69"
               bgColor="#DFBD69"
               h="3.5rem"
+             
             />{" "}
             <Box
               height="1.875rem"
@@ -91,10 +97,11 @@ const Ourclients =()=>{
               border="3px solid white"
               boxShadow="0px 0px 0px 3px #B88746"
               borderRadius="50%"
+              
             />
           </Flex>
-            <Flex direction="column" w="50%">
-            <Heading pt="4rem" fontFamily="avenir" pb="1rem" fontSize="1.5rem" className="fadein-2sdelay revealOnce">CHENNAI’S HIGHEST 
+            <Flex direction="column" w="50%" overflow="hidden">
+            <Heading pt="4rem" fontFamily="avenir" overflow="hidden" pb="1rem" fontSize="1.5rem" className="fadein-2sdelay revealOnce">CHENNAI’S HIGHEST 
             RENTAL INCOME PROPERTY</Heading>
             <Text fontFamily="varela round" fontSize="1rem" className="fadein-2sdelay revealOnce">The real estate sector around the world functions on the principle that the rental value of the property determines the end value or purchase value of the property. In countries like Dubai Rental Rates varies from 4 to 6%, UK, Singapore Rental Rates are 2 to 3% of the property value. The FD rates in these countries are ± 1% of rental return. But in India the residential sector fetches rental returns of just 2% of the property value as compared to FD rates which are around 6%.
               <br/>

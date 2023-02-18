@@ -15,7 +15,7 @@ const ReferEarn = () => {
         src={banner}
         pos="absolute"
         objectFit="cover"
-        right="-6%"
+        right="2.5rem"
         bottom="0"
       />
       <Flex

@@ -8,11 +8,11 @@ import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
 import pgclogo from "./arete-homes imgs/Asset 1.png"
 import ponneri from "./homepage-imgs/1 - PGC entrance art.png";
 import multiSports from "./homepage-imgs/2 - Multi Sports Arena.jpg";
-import swim from "./homepage-imgs/3 - Swimming Pool High Res.tif";
+import swim from "./homepage-imgs/3 - Swimming Pool High Res.jpg";
 import hall from "./homepage-imgs/4-PGC Banquet Hall .jpg";
 import golf from "./homepage-imgs/5 - Open Golf Putting Area.png";
 import bar from "./homepage-imgs/6-PGC Sports Bar.jpg";
-import gym from "./homepage-imgs/7 - gym.tif";
+import gym from "./homepage-imgs/7 - gym.jpg";
 //import pgclogo from "/arete-homes imgs/Asset 1.png";
 
 const Ponneri = () => {
@@ -47,15 +47,19 @@ const Ponneri = () => {
       setAssetIndex(assetIndex-1);
     }
 
-  }
-  useEffect(() => {
-    setTimeout(()=>{
-      nextHandle();
-    },3000);
-    return()=>{
-      clearTimeout();
     }
-  });
+
+    const addAutoClicker = () => {
+        setTimeout(() => {
+            nextHandle();
+        }, 3000);
+    }
+    useEffect(() => {
+        addAutoClicker();
+        return () => {
+            clearTimeout();
+        }
+    });
   /*useEffect(() => {
     if (isInView) {
       animateX.start({
@@ -78,7 +82,7 @@ const Ponneri = () => {
       bgPos="center"
       bgSize="cover">
       <Flex w="100%" h="100%" direction="column">
-        <Flex ml="20%" w="100%" align="center" justify="flex-start" pb="1.875rem" overflow="hidden">
+        <Flex w="100%" align="center" justify="flex-start" pb="1.875rem" overflow="hidden">
           {/* <Image src="/images/logo.png" /> */}
           <Heading
             className="slidein-top revealOnce"
@@ -86,36 +90,44 @@ const Ponneri = () => {
             fontWeight="400"
             fontFamily="goudy"
             pr="10px"
+                      
           >
-          <Flex >
-          <Image src={pgclogo} h="2.5rem" w="2.5rem" ml="1rem" />
+          <Flex>
+          <Image src={pgclogo} h="2.5rem" w="2.5rem" ml="1rem" mx="1rem" />
           <Spacer w="3.5rem" pos="relative">
           <Text pos="absolute" bottom="0.3rem" as="span" fontSize="1.5rem">
             PVT.
           </Text>
           </Spacer>
-            PONNERI GYMKHANA CLUB
-            </Flex>
-          </Heading>
+          PONNERI GYMKHANA CLUB
+            </Flex>         
+                  </Heading>
+                  <Divider
+                      orientation="horizontal"
+                      border="3px solid"
+                      borderColor="#DFBD69"
+                      bgColor="#DFBD69"
+                      width="6.5rem"
+                      className="fadein revealOnce"
+                  />
         </Flex>
         <Flex w="100%" h="100%">
           <Flex
             w="60%"
             h="100%"
           >
-            <Image className="expandcar reveal" w="100%" h="25rem" src={assets[assetIndex].img} />{" "}
+          <Image className="expandcar reveal" w="100%" h="25rem" src={assets[assetIndex].img} filter="drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.25))"/>{" "}
           </Flex>
           <Flex align="flex-start" pr="100px" overflow="hidden">
             <Flex
               className="slidein-top reveal"
-              transition={"all 2s 2s"}
+              transition="all 2s 2s"
               h="100%"
               direction="column"
               align="center"
               px="1.563rem"
             >
               <Divider
-                
                 h="8.375rem"
                 orientation="vertical"
                 border="3px solid"
@@ -164,6 +176,7 @@ const Ponneri = () => {
           aria-label="left-arrow"
           variant="outline"
           borderColor="#B88746"
+          border="3px solid"
           borderRadius="full"
           position="absolute"
           bottom="-1.5rem"
@@ -186,10 +199,11 @@ const Ponneri = () => {
           borderRadius="full"
           variant="outline"
           borderColor="#B88746"
+          border="3px solid"
           position="absolute"
           transform={"translate(0%, -50%)"}
           zIndex={2}
-          left="4rem"
+          left="5rem"
           bottom="-1.5rem"
           h="3.125rem"
           w="3.125rem"

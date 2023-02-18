@@ -23,8 +23,8 @@ const Passionatwork =()=>{
       return (<>
         <Flex direction="column" h="100%" overflow="hidden"  px="100px" mt="1.825rem" mb="5rem">
         <Center  className="slidein-top revealOnce" fontFamily="goudy" fontSize="2.5rem" textAlign="center">PASSION AT WORK</Center>
-        <Flex pt="1.875rem" overflow="hidden">
-            <Image className="expandcar reveal" src={con} w="50%" h="468px" alt="IMAGE"/>
+        <Flex pt="1.875rem">
+            <Image className="expandcar reveal" src={con} w="50%" h="468px" filter="drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.25))" objectFit="cover" alt="IMAGE"/>
             <Flex
             className="slidein-top reveal"
             transition="all 2s 2s"
@@ -91,7 +91,7 @@ const Passionatwork =()=>{
                         <Text fontFamily="varela round" fontSize="1rem"  pt="1rem"><li>AIF II Fund</li></Text>
                     </Flex>
                     <Flex direction="column" w="49%" className="fadein-2sdelay revealOnce">
-                        <Flex gap="0.938rem"><Image h="3.125rem" w="3.125rem" src={renewableSVG}/><Heading fontFamily="avenir" fontSize="1.125rem">RENEWABLE ENERGY</Heading></Flex>
+                        <Flex gap="0.938rem"><Image h="3.125rem" w="3.125rem" src={renewableSVG}/><Heading fontFamily="avenir" fontSize="1.125rem">RENEWABLE <br/>ENERGY</Heading></Flex>
                         <Text fontFamily="varela round" fontSize="1rem"  pt="1rem"><li>Solar Power</li></Text>
                     </Flex>
                 </Flex>
@@ -113,7 +113,7 @@ const Passionatwork =()=>{
                                 bottom="0"
                                 left="0"
                                 right="0"
-                                opacity="0"
+                                
                                 bgColor="rgba(0,0,0,0.6)"
                                 transition="all .3s"
                                 opacity="1"
@@ -151,7 +151,6 @@ const Passionatwork =()=>{
                                 bottom="0"
                                 left="0"
                                 right="0"
-                                opacity="0"
                                 bgColor="rgba(0,0,0,0.6)"
                                 transition="all .3s"
                                 opacity="1"
@@ -189,7 +188,7 @@ const Passionatwork =()=>{
                                 bottom="0"
                                 left="0"
                                 right="0"
-                                opacity="0"
+                                
                                 bgColor="rgba(0,0,0,0.6)"
                                 transition="all .3s"
                                 opacity="1"
@@ -228,7 +227,7 @@ const Passionatwork =()=>{
                                 bottom="0"
                                 left="0"
                                 right="0"
-                                opacity="0"
+                                
                                 bgColor="rgba(0,0,0,0.6)"
                                 transition="all .3s"
                                 opacity="1"
@@ -267,7 +266,7 @@ const Passionatwork =()=>{
                                 bottom="0"
                                 left="0"
                                 right="0"
-                                opacity="0"
+                               
                                 bgColor="rgba(0,0,0,0.6)"
                                 transition="all .3s"
                                 opacity="1"

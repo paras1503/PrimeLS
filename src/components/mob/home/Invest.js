@@ -14,7 +14,7 @@ import { motion, useAnimation, useInView } from "framer-motion";
 import React, { useEffect, useRef, useState } from "react";
 import areteHomes from "../../arete-homes imgs/BANNER2.jpg";
 import investImg from "../../invest.png";
-import skyHigh from "../../sky-high imgs/BANNER2.jpg";
+import skyHigh from "../../sky-high imgs/BANNER2.png";
 import Slider from "react-slick";
 import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
 // import { ImLocation } from "react-icons/im";

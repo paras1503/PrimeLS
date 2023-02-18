@@ -31,7 +31,7 @@ import {
 } from "@chakra-ui/react";
 import { ImQuotesLeft, ImQuotesRight } from "react-icons/im";
 import React, { useLayoutEffect, useRef, useState } from "react";
-import banner from "../../serviced apartments imgs/MIVAN TECHNOLOGY TOWER.jpg";
+import banner from "../../serviced apartments imgs/MIVAN TECHNOLOGY TOWER.jfif";
 import apartment from "../../serviced apartments imgs/serviced apartments icons/smart way of living - 1st.svg";
 import time from "../../serviced apartments imgs/serviced apartments icons/smart way of living-2nd.svg";
 import ringbell from "../../serviced apartments imgs/serviced apartments icons/smart way of living -3rd.svg";
@@ -808,9 +808,9 @@ const ServicedApartments = () => {
             width="100%"
             src={"https://www.youtube.com/embed/y_cXovtyWlM"}
             title="The Economic Times | Best Realty Brands 2021 - Prime LifeSpace Developers"
-            frameborder="0"
+            frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
+            allowFullScreen
           ></embed>
           </Flex>
         </Flex>
@@ -1397,7 +1397,7 @@ const ServicedApartments = () => {
           class="gmap_iframe"
               width="100%"
               height="350"
-              frameborder="0"
+              frameBorder="0"
               scrolling="no"
               marginheight="0"
               marginwidth="0">
@@ -1406,7 +1406,7 @@ const ServicedApartments = () => {
             class="gmap_iframe"
             width="100%"
             height="350"
-            frameborder="0"
+            frameBorder="0"
             scrolling="no"
             marginheight="0"
             marginwidth="0">
@@ -1415,7 +1415,7 @@ const ServicedApartments = () => {
             class="gmap_iframe"
             width="100%"
             height="350"
-            frameborder="0"
+            frameBorder="0"
             scrolling="no"
             marginheight="0"
             marginwidth="0">
@@ -1424,7 +1424,7 @@ const ServicedApartments = () => {
             class="gmap_iframe"
             width="100%"
             height="350"
-            frameborder="0"
+            frameBorder="0"
             scrolling="no"
             marginheight="0"
             marginwidth="0">
@@ -1433,7 +1433,7 @@ const ServicedApartments = () => {
           class="gmap_iframe"
           width="100%"
           height="350"
-          frameborder="0"
+          frameBorder="0"
           scrolling="no"
           marginheight="0"
           marginwidth="0">
@@ -1442,7 +1442,7 @@ const ServicedApartments = () => {
         class="gmap_iframe"
         width="100%"
         height="350"
-        frameborder="0"
+        frameBorder="0"
         scrolling="no"
         marginheight="0"
         marginwidth="0"></iframe>:<></>}
@@ -1450,7 +1450,7 @@ const ServicedApartments = () => {
         class="gmap_iframe"
         width="100%"
         height="350"
-        frameborder="0"
+        frameBorder="0"
         scrolling="no"
         marginheight="0"
         marginwidth="0"></iframe>:<></>}

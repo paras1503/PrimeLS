@@ -6,9 +6,11 @@ import {
   Divider,
   Box,
   Button,
+  Link
 } from "@chakra-ui/react";
 import { motion, useAnimation, useInView } from "framer-motion";
 import React, { useEffect, useRef } from "react";
+import Smart_living from "./homepage-imgs/smart-living.jpeg";
 
 const MtnHd = motion(Heading);
 const MtnFlx = motion(Flex);
@@ -67,7 +69,7 @@ const SmartLiving = () => {
             
             transition={{ delay: 1.5, duration: 2, type: "just" }}
           >
-            <Image className="expandcar reveal" w="570px" h="20.310rem" src="/images/smartliving.png" />
+            <Image className="expandcar reveal" w="570px" h="20.310rem" src={Smart_living} filter="drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.25))"/>
           </MtnFlx>
           <MtnFlx
             initial={{ opacity: 0, x: 100 }}
@@ -76,7 +78,7 @@ const SmartLiving = () => {
             py="25%"
             align="center"
           >
-            <Image className="expandcar reveal" h="80px" w="80px" mr="2" src="/images/managed.svg" />
+            <Image className="expandcar reveal" h="80px" w="80px" mr="2" src="/images/managed.svg"  />
             <Flex direction="column">
               <Heading fontSize="24px" fontFamily="avenir">
                 MANAGED LIVING
@@ -104,6 +106,7 @@ const SmartLiving = () => {
               h="20.310rem"
               // mt="100px"
               src="/images/smartliving3.png"
+              filter="drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.25))"
             />
           </MtnFlx>
         </Flex>
@@ -122,7 +125,7 @@ const SmartLiving = () => {
               initial={{ opacity: 0, y: -50 }}
               animate={animateY}
               transition={{ delay: 1.5, duration: 2, type: "just" }}
-              height="1.875rem"
+              height="1.9rem"
               width="1.875rem"
               backgroundColor="#DFBD69"
               border="3px solid white"
@@ -154,7 +157,7 @@ const SmartLiving = () => {
               initial={{ opacity: 0, y: -50 }}
               animate={animateY}
               transition={{ delay: 3.5, duration: 2, type: "just" }}
-              height="1.875rem"
+              height="1.9rem"
               width="1.875rem"
               backgroundColor="#DFBD69"
               border="3px solid white"
@@ -211,7 +214,7 @@ const SmartLiving = () => {
             transition={{ delay: 1.5, duration: 2, type: "just" }}
             align="center"
           >
-            <Image className="expandcar reveal" w="80px" h="20.310rem" mr="2" src="/images/co-living.svg" />
+            <Image className="expandcar reveal" w="80px" h="20.310rem" mr="2" src="/images/co-living.svg"/>
             <MtnFlx initial={{ opacity: 0 }}
                 animate={animateFade}
                 transition={{ delay: 3, duration: 2, type: "just" }} direction="column" py="10">
@@ -230,7 +233,7 @@ const SmartLiving = () => {
           <MtnFlx
             transition={{ delay: 3.5, duration: 2, type: "just" }}
           >
-            <Image className="expandcar reveal"  w="570px" h="20.310rem" src="/images/smartliving2.png" />
+            <Image className="expandcar reveal"  w="570px" h="20.310rem" src="/images/smartliving2.png" filter="drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.25))"/>
           </MtnFlx>
           <MtnFlx
              mt="1rem"
@@ -260,6 +263,7 @@ const SmartLiving = () => {
         </Flex>
       </Flex>
       <Flex mt="-2rem" direction="column" align="center">
+        <Link _hover={{textDecoration:"none"}} href="/serviced-apartments">
         <MtnBtn
           initial={{ opacity: 0}}
           animate={animateY}
@@ -278,6 +282,7 @@ const SmartLiving = () => {
         >
           EXPLORE NOW
         </MtnBtn>
+        </Link>
       </Flex>
     </Flex>
   );

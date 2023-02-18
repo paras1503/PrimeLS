@@ -54,3 +54,8 @@
   animation: slideTop3 1 10s ease;
   transform: translateY(0vh);
 }
+
+option:checked{
+   background-color :#DFBD69 !important;
+   color:white;
+}

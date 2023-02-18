@@ -41,18 +41,18 @@ const FooterMob = () => {
           <Flex align="left" py="6">
             <Icon mt="1" w="8" h="6" color="#DFBD69" as={ImLocation} />
             <Text fontSize="1rem" fontFamily="veralaRound">
-              Prime Expat Infra No. 33,<br/>Mandapam Road,Kilpauk,<br/>Chennai -
+              Prime Expat Infra No. 33,Mandapam Road,<br/>Kilpauk,Chennai -
               600010.
             </Text>
           </Flex>
           <VStack align="left">
-            <Heading fontSize="20px" fontFamily="veralaRound" fontWeight="600">
-              GET IN TOUCH:
+            <Heading fontSize="1rem" fontFamily="avenir lt 65 medium" fontWeight="600">
+              GET IN TOUCH :
             </Heading>
 
             <Flex align="center">
               <Icon as={MdEmail} w="8" h="6" color="#DFBD69" />
-              <Link fontSize="1rem" fontFamily="veralaRound">
+              <Link fontSize="1.03rem" fontFamily="veralaRound">
                 sales@primelifespace.com
               </Link>
             </Flex>
@@ -75,7 +75,7 @@ const FooterMob = () => {
           <VStack
             align="flex-start"
             fontFamily="veralaRound"
-            pt="4px"
+            mt="1rem"
           >
           <Heading fontSize="1rem" fontFamily="veralaRound" textUnderlineOffset={"4px"} textDecoration={"underline"} textColor={"#DFBD69"}>
             Who we are
@@ -84,7 +84,8 @@ const FooterMob = () => {
             <Link href="/expertise" style={{textDecoration:"none"}} fontSize="1rem">EXPERTISE</Link>
             <Link style={{textDecoration:"none"}} fontSize="1rem">GREEN POWER</Link>
           </VStack>
-          <VStack mt="0.325rem" align="flex-start">
+          <Spacer/>
+          <VStack mt="1rem" align="flex-spaceBetween">
             <Heading fontSize="1rem" fontFamily="veralaRound" textUnderlineOffset={"4px"} textDecoration={"underline"} textColor={"#DFBD69"}>
               Services
             </Heading>
@@ -97,28 +98,25 @@ const FooterMob = () => {
           </VStack>
         </Flex>
         <Flex w="100%"  >
-          <Flex align={"flex-start"} pos="relative">
-          <Flex direction="column" w="100%">
+        <VStack
+            align="flex-start"
+            fontFamily="veralaRound"
+            mt="1rem"
+          >
           <Heading fontSize="1rem" fontFamily="veralaRound" textUnderlineOffset={"4px"} textDecoration={"underline"} textColor={"#DFBD69"}>
             Projects
           </Heading>
-          <VStack
-            align="flex-start"
-            fontFamily="veralaRound"
-            fontWeight="400"
-            pt="4px"
-            >
-            <Link style={{textDecoration:"none"}} href="/arete-homes" fontSize="1rem">ARETE HOMES</Link>
+          <Link style={{textDecoration:"none"}} href="/arete-homes" fontSize="1rem">ARETE HOMES</Link>
             <Link style={{textDecoration:"none"}} href="/sky-high" fontSize="1rem">SKY HIGH TOWER</Link>
-            <Link style={{textDecoration:"none"}} href="/commercial-properties"  fontSize="1rem">COMMERCIAL PROPERTIES</Link>
+            <Link style={{textDecoration:"none"}} href="/commercial-properties"  fontSize="1rem">COMMERCIAL <br/> PROPERTIES</Link>
           </VStack>
-          </Flex>
-          <Flex direction="column" pl="10" w="100%" pos="relative">
+          <Spacer />
+  
           <VStack
-            alignItems="baseline" pos="absolute" right="0"
+            alignItems="flex-start" 
             fontFamily="veralaRound"
             fontWeight="400"
-            pt="4px"
+            pt="1rem"
             >
               <Heading fontSize="1rem" fontFamily="veralaRound" textUnderlineOffset={"4px"} textDecoration={"underline"} textColor={"#DFBD69"}>
             Invest
@@ -127,14 +125,14 @@ const FooterMob = () => {
             <Link href="/arete-homes-invest" onClick={()=>window.localStorage.setItem('areteInvest',true)} style={{textDecoration:"none"}} fontSize="1rem">8% ROI ON HOMES</Link>
             <Link href="/sky-high-invest" style={{textDecoration:"none"}} fontSize="1rem">7% ROI ON HOMES</Link>
           </VStack>
-          </Flex>
-          </Flex>
         </Flex>
         <Flex w="100%">
           <VStack
             align="flex-start"
             fontFamily="veralaRound"
-            pt="4px"
+            fontWeight="400"
+            pt="1rem"
+            mr="6.5rem"
           >
           <Heading fontSize="1rem" fontFamily="veralaRound" borderBottom="1px solid #DFBD69" textColor={"#DFBD69"}>
             Helpful Links
@@ -143,21 +141,24 @@ const FooterMob = () => {
             <Link style={{textDecoration:"none"}} href="/contact-us" fontSize="1rem">CONTACT US</Link>
             <Link style={{textDecoration:"none"}} href="/careers" fontSize="1rem">CAREERS</Link>
           </VStack>
-          <VStack alignItems="baseline" pos="absolute" right="0">
-          <Heading opacity="0" fontSize="1rem" fontFamily="veralaRound" borderBottom="1px solid #DFBD69" textColor={"#DFBD69"}>
+          
+          <VStack alignItems="flex-start" 
+            fontFamily="veralaRound"
+            fontWeight="400"
+            pt="1rem"
+            >
+          <Heading opacity="0" fontSize="1rem" fontFamily="veralaRound" textColor={"#DFBD69"}>
             Helpful Links
           </Heading>
             <Link style={{textDecoration:"none",}} href="/news-and-media" fontSize="1rem">NEWS & MEDIA</Link>
-            <Link style={{textDecoration:"none",alignItems:"baseline"}} href="/refer-and-earn" onClick={()=>window.localStorage.setItem('referEarnPage',true)} fontSize="1rem">REFER & EARN</Link>
-            <Link style={{textDecoration:"none",alignItems:"baseline"}} href="/blog" fontSize="1rem">BLOG</Link>
+            <Link style={{textDecoration:"none"}} href="/refer-and-earn" onClick={()=>window.localStorage.setItem('referEarnPage',true)} fontSize="1rem">REFER & EARN</Link>
+            <Link style={{textDecoration:"none"}} href="/blog" fontSize="1.19rem">BLOG</Link>
           </VStack>
         </Flex>
       </Flex>
-      <Divider/>
-      <Flex align="center" py="1.125rem" w="100%">
-        <Text fontSize="1rem" fontWeight="600">
-        &#169; 2022. PRIMELIFESPACE PVT. LTD.
-        </Text>
+      <Flex align="center" w="100%" border="none">
+        <Divider borderBottom="2x solid gray">
+        </Divider>
         <Spacer/>
         <HStack>
         <Link href="https://instagram.com/prime_lifespace?igshid=YmMyMTA2M2Y=" isExternal>
@@ -173,8 +174,15 @@ const FooterMob = () => {
             <Icon w="14" h="14" px="1" as={AiFillYoutube} _hover={{ color: "#B88746" }} transition="linear 200ms"/>
           </Link>
         </HStack>
+        <Divider borderBottom="2x solid gray">
+        </Divider>
       </Flex>
+      <Flex align="center">
+        <Text mb="3.5rem" ml="5rem">2022. PRIMELIFESPACE PVT. LTD.</Text>
+      </Flex>
+      
     </Flex>
+    
     </>
   );
 };

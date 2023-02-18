@@ -24,6 +24,7 @@ const AboutUsSc =()=>{
         <LeaderShip/>
         <Award/>
         <DropDown/>
-      </>)
+      </>
+      )
 }
 export default AboutUsSc;
