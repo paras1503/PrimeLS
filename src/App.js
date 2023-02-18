@@ -80,6 +80,7 @@ function App() {
           <Route path="/arete-homes" element={<AreteHomes />} />
           <Route path="/news-and-media" element={<NewsMediaSc />} />
           <Route path="/refer-and-earn" element={<ReferAndEarn />} />
+          <Route path="/green-power" element={<EnergySc />} />
           <Route path="/commercial-properties" element={<CommercialProperties />} />
           <Route path="/serviced-apartments" element={<ServicedApartSc />} />
           <Route path="/blog" element={<BlogSc />} />
