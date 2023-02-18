@@ -221,6 +221,7 @@ const SkyhighInvest = () => {
                   bgGradient: "linear(to-b, #DFBD69, #B88746)",
                 }}
                 _active={{ bgGradient: "linear(to-b, #B88746 ,#DFBD69)" }}
+                onClick={()=>open()}
               >
                 I AM INTERESTED
               </Button>
@@ -405,6 +406,7 @@ const SkyhighInvest = () => {
                 bgGradient: "linear(to-b, #DFBD69, #B88746)",
               }}
               _active={{ bgGradient: "linear(to-b, #B88746 ,#DFBD69)" }}
+              onClick={()=>open()}
             >
               GET HOME LOAN
             </Button>

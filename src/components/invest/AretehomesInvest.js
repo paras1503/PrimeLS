@@ -84,8 +84,18 @@ const SkyhighInvest = () => {
     const data = window.localStorage.getItem('areteInvest');
     if ( data !== null ) setActive(JSON.parse(data));
   }, []);
+  const [isOpen, setIsOpen]= useState(false);
+  const close =() =>{
+    setIsOpen(false);
+   
+  }
+  const open =() =>{
+    setIsOpen(true);
+  }
   return (
     <>
+        {isOpen?<ModalWindwow modalTitle={"ARATE HOMES"} modalImage={areteInto1} isOpen={isOpen} onClose={()=>close()} />:<></>}
+
       {" "}
       <Flex w="100%" h="100%" direction="column" align="center">
         <Flex w="100%">
@@ -345,6 +355,7 @@ const Twobhk = () => {
                   bgGradient: "linear(to-b, #DFBD69, #B88746)",
                 }}
                 _active={{ bgGradient: "linear(to-b, #B88746 ,#DFBD69)" }}
+                onClick={open}
               >
                 I AM INTERESTED
               </Button>
@@ -1931,6 +1942,7 @@ const Twobhk = () => {
                   bgGradient: "linear(to-b, #DFBD69, #B88746)",
                 }}
                 _active={{ bgGradient: "linear(to-b, #B88746 ,#DFBD69)" }}
+                
               >
                 SCHEDULE A CALL
               </Button>{" "}
@@ -2317,6 +2329,7 @@ const Threebhk = () => {
                 bgGradient: "linear(to-b, #DFBD69, #B88746)",
               }}
               _active={{ bgGradient: "linear(to-b, #B88746 ,#DFBD69)" }}
+              onClick={open}
             >
               GET HOME LOAN
             </Button>
@@ -3685,6 +3698,7 @@ const Threebhk = () => {
                     fontFamily="veralaRound"
                     fontSize="1rem"
                     size="lg"
+                    
                   >
                     Book a visit
                   </Checkbox>
