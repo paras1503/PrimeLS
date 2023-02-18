@@ -37,7 +37,8 @@ import towerA6_2 from "../arete-homes imgs/TOWER A6-2.png";
 import towerA6_3 from "../arete-homes imgs/TOWER A6-3.jpg";
 import towerA6_4 from "../arete-homes imgs/TOWER A6-4.jpg";
 
-;
+import ModalWindwow from "../modalWindow";
+import areteInto1 from "../Invest imgs/arete homes - intro1.jpeg";
 
 const settings = {
   infinite: true,
@@ -205,9 +206,18 @@ export default TenthSec;
 
 const TowerA3 = () => {
   const imgs = [towerA3_1, towerA3_2, towerA3_3, towerA3_4];
+  const [isOpen, setIsOpen]= useState(false);
+  const close =() =>{
+    setIsOpen(false);
+  }
+  const open =() =>{
+    setIsOpen(true);
+  }
 
   return (
     <>
+        {isOpen?<ModalWindwow modalTitle={"ARATE HOMES"} modalImage={areteInto1} isOpen={isOpen} onClose={()=>close()} />:<></>}
+
       <Flex w="60%" h="100%">
         <Box
           position={"relative"}
@@ -322,6 +332,7 @@ const TowerA3 = () => {
               bgGradient: "linear(to-b,#DFBD69,#B88746)",
             }}
             _active={{ bgGradient: "linear(to-b,#B88746,#DFBD69)" }}
+            onClick={open}
           >
             CHECK PRICE
           </Button>
@@ -333,9 +344,18 @@ const TowerA3 = () => {
 
 const TowerA4 = () => {
   const imgs = [towerA4_1, towerA4_2, towerA4_3, towerA4_4];
+  const [isOpen, setIsOpen]= useState(false);
+  const close =() =>{
+    setIsOpen(false);
+  }
+  const open =() =>{
+    setIsOpen(true);
+  }
 
   return (
     <>
+            {isOpen?<ModalWindwow modalTitle={"ARATE HOMES"} modalImage={areteInto1} isOpen={isOpen} onClose={()=>close()} />:<></>}
+
       <Flex w="60%" h="100%">
         <Box
           position={"relative"}
@@ -450,6 +470,7 @@ const TowerA4 = () => {
               bgGradient: "linear(to-b,#DFBD69,#B88746)",
             }}
             _active={{ bgGradient: "linear(to-b,#B88746,#DFBD69)" }}
+            onClick={open}
           >
             CHECK PRICE
           </Button>
@@ -461,9 +482,18 @@ const TowerA4 = () => {
 
 const TowerA5 = () => {
   const imgs = [towerA5_1, towerA5_2, towerA5_3, towerA5_4];
+  const [isOpen, setIsOpen]= useState(false);
+  const close =() =>{
+    setIsOpen(false);
+  }
+  const open =() =>{
+    setIsOpen(true);
+  }
 
   return (
     <>
+     {isOpen?<ModalWindwow modalTitle={"ARATE HOMES"} modalImage={areteInto1} isOpen={isOpen} onClose={()=>close()} />:<></>}
+
       <Flex w="60%" h="100%">
         <Box
           position={"relative"}
@@ -570,6 +600,7 @@ const TowerA5 = () => {
               bgGradient: "linear(to-b,#DFBD69,#B88746)",
             }}
             _active={{ bgGradient: "linear(to-b,#B88746,#DFBD69)" }}
+          onClick={open}
           >
             CHECK PRICE
           </Button>
@@ -581,9 +612,18 @@ const TowerA5 = () => {
 
 const TowerA6 = () => {
   const imgs = [towerA6_1, towerA6_2, towerA6_3, towerA6_4];
-
+ 
+  const [isOpen, setIsOpen]= useState(false);
+  const close =() =>{
+    setIsOpen(false);
+  }
+  const open =() =>{
+    setIsOpen(true);
+  }
   return (
     <>
+    {isOpen?<ModalWindwow modalTitle={"ARATE HOMES"} modalImage={areteInto1} isOpen={isOpen} onClose={()=>close()} />:<></>}
+
       <Flex w="60%" h="100%">
         <Box
           position={"relative"}
@@ -690,6 +730,7 @@ const TowerA6 = () => {
               bgGradient: "linear(to-b,#DFBD69,#B88746)",
             }}
             _active={{ bgGradient: "linear(to-b,#B88746,#DFBD69)" }}
+            onClick={open}
           >
             CHECK PRICE
           </Button>
