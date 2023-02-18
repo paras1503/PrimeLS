@@ -106,6 +106,7 @@ const Blog = () => {
           fontFamily="avenir"
           fontSize="3rem"
           animation="fadein 1 1s linear"
+          color="white"
         >
           BLOG
         </Heading>
