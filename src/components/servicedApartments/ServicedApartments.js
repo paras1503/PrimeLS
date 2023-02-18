@@ -116,9 +116,16 @@ import career6 from "../serviced apartments imgs/6.JPG";
 import career7 from "../serviced apartments imgs/7.jpg";
 import lamp from "../serviced apartments imgs/lamp.jpg";
 import career9 from "../serviced apartments imgs/9.jpeg";
-
+import EnquireWindow from "../enquireWindow";
 
 const ServicedApartments = () => {
+  // const [isOpened, setIsOpened]= useState(false);
+  // const closeEnquire =() =>{
+  //   setIsOpened(false);
+  // }
+  // const openEnquire =() =>{
+  //   setIsOpened(true);
+  // }
   const redirect =(loc) =>{
     window.localStorage.setItem('referEarnPage',false);
     window.location.replace(`${loc.target.id}`);
@@ -186,6 +193,8 @@ const ServicedApartments = () => {
   return (
     <>
       {/* Banner section  */}
+      {/* {isOpened?<EnquireWindow isOpened={isOpened} onClosed={()=>closeEnquire()} />:<></>} */}
+
       <Flex w="100%" h="100vh" pos="relative">
         <Image
           w="100%"
@@ -527,6 +536,7 @@ const ServicedApartments = () => {
             variant="outline"
             borderColor="#B88746"
             borderRadius="full"
+            border="3px solid"
             position="absolute"
             top="50%"
             left="0"
@@ -546,6 +556,7 @@ const ServicedApartments = () => {
             className="fadein revealOnce"
             aria-label="right-arrow"
             borderRadius="full"
+            border="3px solid"
             variant="outline"
             borderColor="#B88746"
             position="absolute"
@@ -1185,6 +1196,7 @@ const ServicedApartments = () => {
               bgColor="#000"
               color="#fff"
               _hover={{ bgColor: "#000", color: "#fff" }}
+              // onClick={openEnquire}
             >
               SCHEDULE A VISIT
             </Button>
@@ -2161,6 +2173,7 @@ const ServicedApartments = () => {
                   bgGradient: "linear(to-b, #DFBD69, #B88746)",
                 }}
                 _active={{ bgGradient: "linear(to-b, #B88746 ,#DFBD69)" }}
+                
               >
                 SCHEDULE A CALL
               </Button>{" "}
