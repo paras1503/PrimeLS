@@ -176,7 +176,7 @@ const Ponneri = () => {
           aria-label="left-arrow"
           variant="outline"
           borderColor="#B88746"
-          border="2px solid"
+          border="3px solid"
           borderRadius="full"
           position="absolute"
           bottom="-1.5rem"
@@ -199,7 +199,7 @@ const Ponneri = () => {
           borderRadius="full"
           variant="outline"
           borderColor="#B88746"
-          border="2px solid"
+          border="3px solid"
           position="absolute"
           transform={"translate(0%, -50%)"}
           zIndex={2}
