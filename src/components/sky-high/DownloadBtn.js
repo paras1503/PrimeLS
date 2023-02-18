@@ -5,16 +5,16 @@ import ModalWindwow from "../modalWindow";
 import { BsDownload } from "react-icons/bs";
 import areteInto1 from "../Invest imgs/arete homes - intro1.jpeg";
 
-const DownloadBtn = () => {
+const DownloadBtn = ({title, images, Pdf}) => {
   const [isOpen, setIsOpen]= useState(false);
   const close =() =>{
     setIsOpen(false);
-    fetch("Channel Partner Brochure - Arete Homes.pdf").then(response=>{
+    fetch(Pdf).then(response=>{
       response.blob().then(blob=>{
         const fileURL = window.URL.createObjectURL(blob);
         let alink=document.createElement("a");
         alink.href = fileURL;
-        alink.download = "Channel Partner Brochure - Arete Homes.pdf"
+        alink.download = Pdf
         alink.click();
       })
     })
@@ -24,7 +24,7 @@ const DownloadBtn = () => {
   }
   return (
     <>
-    {isOpen?<ModalWindwow modalTitle={"ARATE HOMES"} modalImage={areteInto1} isOpen={isOpen} onClose={()=>close()} />:<></>}
+    {isOpen?<ModalWindwow modalTitle={title} modalImage={images} isOpen={isOpen} onClose={()=>close()} />:<></>}
 
     <Button
       pos="fixed"

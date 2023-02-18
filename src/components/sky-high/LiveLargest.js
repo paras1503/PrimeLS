@@ -6,6 +6,7 @@ import {
   Divider,
   Heading,
   Button,
+  Link
 } from "@chakra-ui/react";
 import { useInView } from "framer-motion";
 import React, { useState } from "react";
@@ -155,9 +156,10 @@ const FifthSec = () => {
                 enchanting tower lobbies, with a soothing water casacade in the
                 front, positioned for your warm welcome.
               </Text>
+              <Link _hover={{textDecoration:"none"}} href="/commercial-properties">
               <Button
-                id="/commercial-properties"
-                onClick={(e)=>redirect(e)}
+                // id="/commercial-properties"
+                // onClick={(e)=>redirect(e)}
                 w="10.875rem"
                 h="3.187rem"
                 fontSize="1rem"
@@ -171,6 +173,7 @@ const FifthSec = () => {
               >
                 EXPLORE MORE
               </Button>
+              </Link>
             </Flex>
           </Flex>
         </Flex>

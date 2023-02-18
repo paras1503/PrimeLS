@@ -7,6 +7,7 @@ import {
   Box,
   Button,
   VStack,
+  Link
 } from "@chakra-ui/react";
 import React, { useRef } from "react";
 import { useInView } from "framer-motion";
@@ -207,9 +208,10 @@ const TenthSec = () => {
             <Text fontFamily="veralaRound" fontSize="24px" mb="0.938rem">
               Income growth journey
             </Text>
+            <Link _hover={{textDecoration:"none"}} href="/sky-high-invest">
             <Button
-              id="/sky-high-invest"
-              onClick={(e)=>redirect(e)}
+              // id="/sky-high-invest"
+              // onClick={(e)=>redirect(e)}
               w="9.125rem"
               h="3.187rem"
               fontSize="1rem"
@@ -223,6 +225,7 @@ const TenthSec = () => {
             >
               KNOW MORE
             </Button>
+            </Link>
           </Flex>
         </Flex>
       </Flex>
