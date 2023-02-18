@@ -7,6 +7,7 @@ import {
   Box,
   Button,
   VStack,
+  Link
 } from "@chakra-ui/react";
 import { useInView } from "framer-motion";
 import React from "react";
@@ -278,9 +279,10 @@ const TenthSec = () => {
           >
             ASSURED RENTAL INCOME FOR 3 YEARS!
           </Heading>
+          <Link _hover={{textDecoration:"none"}} href="/arete-homes-invest">
           <Button
-            id="/arete-homes-invest"
-            onClick={(e)=>redirect(e)}
+            // id="/arete-homes-invest"
+            // onClick={(e)=>redirect(e)}
             opacity={isInView ? "1" : "0"}
             transition="all 2s"
             w="9.125"
@@ -296,6 +298,7 @@ const TenthSec = () => {
           >
             KNOW MORE
           </Button>
+          </Link>
         </Flex>
       </Flex>
     </Flex>

@@ -7,6 +7,7 @@ import {
   IconButton,
   Image,
   Button,
+  Link
 } from "@chakra-ui/react";
 import Slider from "react-slick";
 import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
@@ -87,9 +88,9 @@ const NinethSec = () => {
         position={"relative"}
         height={"100%"}
         width={"full"}
-        overflow={"hidden"}
         pl="4.687rem"
         pr="3.437rem"
+        overflow="visible"
       >
         {/* CSS files for react-slick */}
         <link
@@ -116,7 +117,7 @@ const NinethSec = () => {
                 backgroundRepeat="no-repeat"
                 objectFit="cover"
                 src={prime}
-                boxShadow="6px 3px 10px rgba(0,0,0,0.5)"
+                
               />
             </Flex>
           ))}
@@ -126,6 +127,7 @@ const NinethSec = () => {
           variant="outline"
           borderColor="#B88746"
           borderRadius="full"
+          border="3px solid"
           position="absolute"
           top="50%"
           left="0"
@@ -145,6 +147,7 @@ const NinethSec = () => {
           borderRadius="full"
           variant="outline"
           borderColor="#B88746"
+          border="3px solid"
           position="absolute"
           transform={"translate(0%, -50%)"}
           zIndex={2}
@@ -160,9 +163,10 @@ const NinethSec = () => {
           <AiOutlineRight color="#B88746" size="2.5rem" />
         </IconButton>
       </Box>
+      <Link _hover={{textDecoration:"none"}} href="/serviced-apartments">
       <Button
-        id="/serviced-apartments"
-        onClick={(e)=>redirect(e)}
+        // id="/serviced-apartments"
+        // onClick={(e)=>redirect(e)}
         opacity={isInView ? "1" : "0"}
         transition="all 2s"
         w="9.125rem"
@@ -179,6 +183,7 @@ const NinethSec = () => {
       >
         KNOW MORE
       </Button>
+      </Link>
     </Flex>
   );
 };

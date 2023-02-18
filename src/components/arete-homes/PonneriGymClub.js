@@ -131,6 +131,7 @@ const SeventhSec = () => {
           variant="outline"
           borderColor="#B88746"
           borderRadius="full"
+          border="3px solid"
           position="absolute"
           top="45%"
           left="0"
@@ -150,6 +151,7 @@ const SeventhSec = () => {
           borderRadius="full"
           variant="outline"
           borderColor="#B88746"
+          border="3px solid"
           position="absolute"
           transform={"translate(0%, -50%)"}
           zIndex={2}
