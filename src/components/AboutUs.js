@@ -326,8 +326,8 @@ Prime LifeSpace consultancy firm offers an end-to-end solution in the Real Estat
             </Flex>
           </Flex>
         </Flex>
+        <Link textDecoration="none" _hover={{textDecoration:"none"}} href="/about-us">
         <MtnBtn
-          
           initial={{ opacity: 0}}
           animate={animateHead}
           transition={{ delay:6, duration: 2, type: "just" }}
@@ -346,10 +346,9 @@ Prime LifeSpace consultancy firm offers an end-to-end solution in the Real Estat
           }}
           _active={{ bgGradient: "linear(to-b, #B88746 ,#DFBD69)" }}
         >
-          <Link textDecoration="none" href="/about-us">
           Know More
-          </Link>
         </MtnBtn>
+        </Link>
       </Flex>
     </Flex>
   );
