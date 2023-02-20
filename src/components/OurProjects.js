@@ -125,6 +125,15 @@ const OurProjects = () => {
             <Flex w="100%" h="100%" align="center" justify="center">
                 <Flex h="100%" align="center" justify="center">
                     <Text fontFamily="goudy" fontSize="40px" textAlign="center">
+          <Divider
+                      width="5.7rem"
+                      orientation="horizontal"
+                      borderBottom="3px solid #DFBD69"
+                      position="relative"
+                      top="2rem"
+                      left="5rem"
+
+                /> 
                         <Divider
                             width="5.7rem"
                             orientation="horizontal"
