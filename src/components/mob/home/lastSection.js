@@ -89,8 +89,9 @@ const LastSection = () => {
       bgRepeat="no-repeat"
       bgPos="center"
       bgSize="cover"
+      className="testimonials-wrapper"
     >
-      <Flex w="100%" pos="relative" pb="270px">
+      <Flex w="100%" pos="relative" pb="270px" className="testimonal-heading">
         <Flex
           bgGradient="linear(to-r, #B88746 ,#DFBD69)"
           pl="25px"
@@ -118,6 +119,7 @@ const LastSection = () => {
           pos="absolute"
           left="24%"
           top="10%"
+          className="testimonal-video-wrap"
         >
           <iframe
             width="100%"
@@ -130,7 +132,7 @@ const LastSection = () => {
           ></iframe>
         </MtnFlx>
       </Flex>
-      <Flex w="100%" h="100%">
+      <Flex w="100%" h="100%" className="testimonal-caption-wrapper">
         <MtnFlx
           initial={{ opacity: 0, y: 100 }}
           animate={{ opacity: 1, y: 0 }}
@@ -140,6 +142,7 @@ const LastSection = () => {
           pos="relative"
           align="flex-start"
           justify="space-between"
+          className="testimonal-content-grid"
         >
           <Icon
             pos="absolute"
@@ -149,6 +152,7 @@ const LastSection = () => {
             h="50px"
             as={ImQuotesLeft}
             color="#DFBD69"
+            className="icon-left"
           />
           {test?(
           <>
@@ -161,6 +165,7 @@ const LastSection = () => {
             pr="1.563rem"
             py="0.313rem"
             mt="3.125rem"
+            className="testimonal-caption-item1"
             key={testIndex!==0?testimonial[testIndex-1].name:testimonial[testimonial.length-1].name}
           >
             <Text fontSize="1rem" fontFamily="veralaRound">
@@ -173,15 +178,17 @@ const LastSection = () => {
               justify="flex-start"
               alignSelf="flex-end"
               justifySelf="flex-end"
+              className="testmonal-avatar-wrap"
             >
               <Avatar
+              className="avatar-icon"
                 h="5rem"
                 w="5rem"
                 mr="0.625rem"
                 src={testIndex!==0?testimonial[testIndex-1].avtr:testimonial[testimonial.length-1].avtr}
                 alt={testIndex!==0?testimonial[testIndex-1].name:testimonial[testimonial.length-1].name}
               />
-              <Flex direction="column">
+              <Flex direction="column" className="avatar-caption-text">
                 <Text
                   fontSize="1.125rem"
                   fontFamily="veralaRound"
@@ -210,6 +217,7 @@ const LastSection = () => {
             py="0.313rem"
             mt="3.125rem"
             key={test.name}
+            className="testimonal-caption-item2"
           >
             <Text fontSize="1rem" fontFamily="veralaRound">
               {test.text}
@@ -221,6 +229,7 @@ const LastSection = () => {
               justify="flex-start"
               alignSelf="flex-end"
               justifySelf="flex-end"
+              className="testmonal-avatar-wrap"
             >
               <Avatar
                 h="5rem"
@@ -228,8 +237,9 @@ const LastSection = () => {
                 mr="0.625rem"
                 src={test.avtr}
                 alt={test.name}
+                className="avatar-icon"
               />
-              <Flex direction="column">
+              <Flex direction="column" className="avatar-caption-text">
                 <Text
                   fontSize="1.125rem"
                   fontFamily="veralaRound"
@@ -257,6 +267,7 @@ const LastSection = () => {
             pr="1.563rem"
             py="0.313rem"
             mt="3.125rem"
+            className="testimonal-caption-item3"
             key={testIndex!==testimonial.length-1?testimonial[testIndex+1].name:testimonial[0].name}
           >
             <Text fontSize="1rem" fontFamily="veralaRound">
@@ -269,15 +280,17 @@ const LastSection = () => {
               justify="flex-start"
               alignSelf="flex-end"
               justifySelf="flex-end"
+              className="testmonal-avatar-wrap"
             >
               <Avatar
+                 className="avatar-icon"
                 h="5rem"
                 w="5rem"
                 mr="0.625rem"
                 src={testIndex!==testimonial.length-1?testimonial[testIndex+1].avtr:testimonial[0].avtr}
                 alt={testIndex!==testimonial.length-1?testimonial[testIndex+1].name:testimonial[0].name}
               />
-              <Flex direction="column">
+              <Flex direction="column" className="avatar-caption-text">
                 <Text
                   fontSize="1.125rem"
                   fontFamily="veralaRound"
@@ -309,6 +322,7 @@ const LastSection = () => {
             w="70px"
             h="50px"
             as={ImQuotesRight}
+            className="icon-right"
           />
         </MtnFlx>
       </Flex>

@@ -23,6 +23,7 @@ const DropDown = () => {
         border="1px solid #B88746"
         allowmultiple
         overflow="hidden"
+        className = "enterprise-dropdown-wrapper"
       >
         <AccordionItem>
           <h2>

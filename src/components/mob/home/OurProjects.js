@@ -31,52 +31,52 @@ const MtnBtn = motion(Button);
 const OurProjects = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
-  const [projIndex,setProjIndex] = useState(0);
-  const projects=[
-    {title:"ARETE HOMES",list:true,status:"READY TO MOVE IN",imgF:areteHomes,imgB:skyHigh,text:'6 Towers, 2, 2.5, 3 BHK Smart Residencies, 70% Open Space'},
-    {title:"SKY HIGH",list:true,status:"READY TO MOVE IN",imgF:skyHigh,imgB:areteHomes,text:'18 Storey Tall, Sky Residencies 2 BHK, G+1 Retail Plaza'},
-    {title:"NAKSHATRA",list:false,status:"COMPLETED",imgF:areteHomes,imgB:skyHigh,text:"Pune"},
-    {title:"I - LAND",list:false,status:"COMPLETED",imgF:areteHomes,imgB:skyHigh,text:"Pune"},
-    {title:"ARETE MALL",list:false,status:"COMING SOON",imgF:areteMall,imgB:skyHigh,text:""},
-    {title:"ARETE PLAZA",list:false,status:"NEWLY LAUNCHED",imgF:aretePlaza,imgB:areteMall,text:"20 Retail Spcaes in the Tallest Tower of North Chennai."},
-    {title:"PONNERI GYMKHANA CLUB",list:false,status:"NEWLY LAUNCHED",imgF:ponneri,imgB:aretePlaza,text:"PGC is 60,000 sqft. World Class Private Club for Sports, Business and Celebration."},
+  const [projIndex, setProjIndex] = useState(0);
+  const projects = [
+    { title: "ARETE HOMES", list: true, status: "READY TO MOVE IN", imgF: areteHomes, imgB: skyHigh, text: '6 Towers, 2, 2.5, 3 BHK Smart Residencies, 70% Open Space' },
+    { title: "SKY HIGH", list: true, status: "READY TO MOVE IN", imgF: skyHigh, imgB: areteHomes, text: '18 Storey Tall, Sky Residencies 2 BHK, G+1 Retail Plaza' },
+    { title: "NAKSHATRA", list: false, status: "COMPLETED", imgF: areteHomes, imgB: skyHigh, text: "Pune" },
+    { title: "I - LAND", list: false, status: "COMPLETED", imgF: areteHomes, imgB: skyHigh, text: "Pune" },
+    { title: "ARETE MALL", list: false, status: "COMING SOON", imgF: areteMall, imgB: skyHigh, text: "" },
+    { title: "ARETE PLAZA", list: false, status: "NEWLY LAUNCHED", imgF: aretePlaza, imgB: areteMall, text: "20 Retail Spcaes in the Tallest Tower of North Chennai." },
+    { title: "PONNERI GYMKHANA CLUB", list: false, status: "NEWLY LAUNCHED", imgF: ponneri, imgB: aretePlaza, text: "PGC is 60,000 sqft. World Class Private Club for Sports, Business and Celebration." },
   ];
-  const [isList,setIsList]= useState(true);
+  const [isList, setIsList] = useState(true);
   const animateX = useAnimation();
   const animateY = useAnimation();
   const animateFade = useAnimation();
-  const nextHandle=()=>{
-    if(projIndex===6){
+  const nextHandle = () => {
+    if (projIndex === 6) {
       setIsList(true);
       setProjIndex(0);
     }
-    else if(projIndex===5){
+    else if (projIndex === 5) {
       setIsList(true);
-      setProjIndex(projIndex+1);
+      setProjIndex(projIndex + 1);
     }
-    else{
+    else {
       setIsList(false);
-      setProjIndex(projIndex+1);
+      setProjIndex(projIndex + 1);
     }
   }
-  const prevHandle=()=>{
-    if(projIndex===0){
+  const prevHandle = () => {
+    if (projIndex === 0) {
       setIsList(true);
       setProjIndex(6);
     }
-    else if(projIndex===1){
+    else if (projIndex === 1) {
       setIsList(true);
-      setProjIndex(projIndex-1);
+      setProjIndex(projIndex - 1);
     }
-    else{
+    else {
       setIsList(false);
-      setProjIndex(projIndex-1);
+      setProjIndex(projIndex - 1);
     }
   }
-  useEffect(()=>{
+  useEffect(() => {
     console.log(isList);
     console.log(projects[projIndex].p1)
-  },[isList]);
+  }, [isList]);
   useEffect(() => {
     if (isInView) {
       animateX.start({
@@ -96,7 +96,7 @@ const OurProjects = () => {
   const settings = {
     // className: "center",
     centerMode: false,
-    autoplay:true,
+    autoplay: true,
     infinite: true,
     draggable: true,
     speed: 500,
@@ -311,36 +311,37 @@ const OurProjects = () => {
     //   </Box>
     // </Flex>
     <Flex
-    ref={ref}
-    w="100%"
-    h="100%"
-    py="3.125rem"
-    direction="column"
-    justify="center"
-    bgImage='linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)), url("/images/bg-box.jpg")'
-    bgRepeat="no-repeat"
-    bgPos="center"
-    bgSize="cover"
-  >
-    <Text textAlign="center"
+      ref={ref}
+      w="100%"
+      h="100%"
+      py="3.125rem"
+      direction="column"
+      justify="center"
+      bgImage='linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)), url("/images/bg-box.jpg")'
+      bgRepeat="no-repeat"
+      bgPos="center"
+      bgSize="cover"
+      className="ourproject-wrapper"
+    >
+      <Text textAlign="center"
         pb="1.563rem"
         transform={isInView ? "translateY(0)" : "translateY(-50px)"}
         opacity={isInView ? "1" : "0"}
         transition="all 2s"
         fontFamily="goudy"
         fontSize="2.125rem">
-      OUR PROJECTS
-    </Text>
-    <Slider {...settings} ref={(slider) => setSlider(slider)}>
-    <Flex w="100%"
-            direction="column"
-            align="center"
-            justify="center">
-    <Text m="0.5rem">
-    <Text
+        OUR PROJECTS
+      </Text>
+      <Slider {...settings} ref={(slider) => setSlider(slider)}>
+        <Flex w="100%"
+          direction="column"
+          align="center"
+          justify="center">
+          <Text m="0.5rem">
+            <Text
               fontSize="0.87rem"
               width="10rem"
-              height= "2.312rem"
+              height="2.312rem"
               color="white"
               pt="0.5rem"
               pl="0.3rem"
@@ -350,103 +351,104 @@ const OurProjects = () => {
             >
               {projects[projIndex].status}
             </Text>
-          <MtnFlx
-            initial={{ opacity: 0 }}
-            animate={animateX}
-            transition={{ duration: 1, type: "just" }}
-          >
-            
-          </MtnFlx>
-          <MtnFlx
-            initial={{ x: 1000 }}
-            animate={animateX}
-            transition={{ duration: 2, type: "just" }}
-            w="100%"
-            h="100%"
-          >
-            <Image
-              animation="fadein 1 2s"
-              zIndex="3"
-              // pos="absolute"
-              w="150%"
-              h="18.75rem"
-              src={projects[projIndex].imgF}
-            />
-          </MtnFlx>
-        </Text>
-       <Text>
-           <MtnHd
-            initial={{ x: -500 }}
-            animate={animateX}
-            transition={{ duration: 2, type: "just" }}
-            pb="15px"
-            fontFamily="avenir"
-            fontSize="1.5rem"
-            w="100%"
-            textAlign="center"
-          >
-            {projects[projIndex].title}
-          </MtnHd>
-          <Text fontFamily="varela round" maxW="12rem" height="6rem" margin="1rem auto" textAlign="center" fontSize="1rem">{projects[projIndex].text}</Text>
-          <MtnBtn
-            initial={{ opacity: 0 }}
-            animate={animateX}
-            transition={{ delay: 2.5, duration: 2, type: "just" }}
-            marginLeft="8rem"
-            w="160px"
-            h="51px"
-            bgGradient="linear(to-b, #B88746 ,#DFBD69)"
-            color="white"
-            fontSize="16px"
-            fontFamily="avenir"
-            textAlign="center"
-            _hover={{
-              bgGradient: "linear(to-b, #DFBD69, #B88746)",
-            }}
-            _active={{ bgGradient: "linear(to-b, #B88746 ,#DFBD69)" }}
-          >
-            VIEW PROJECT
-          </MtnBtn>
-          <Text marginLeft="9rem" marginTop="4rem">
-          <IconButton
-          aria-label="left-arrow"
-          variant="outline"
-          borderColor="#B88746"
-          borderRadius="full"
-          border="3px solid"
-          h="3.125rem"
-          w="3.125rem"
-          marginRight="2rem"
-          transform={"translate(0%, -50%)"}
-          zIndex={2}
-          onClick={() => {
-            prevHandle();
-          }}
-        >
-          <AiOutlineLeft color="#B88746" size="2.5rem" />
-        </IconButton>
+            <MtnFlx
+              initial={{ opacity: 0 }}
+              animate={animateX}
+              transition={{ duration: 1, type: "just" }}
+            >
 
-        <IconButton
-          aria-label="right-arrow"
-          borderRadius="full"
-          variant="outline"
-          borderColor="#B88746"
-          border="3px solid"
-          transform={"translate(0%, -50%)"}
-          zIndex={2}
-          h="3.125rem"
-          w="3.125rem"
-          onClick={() => {
-            nextHandle();
-          }}
-        >
-          <AiOutlineRight color="#B88746" size="2.5rem" />
-        </IconButton>
+            </MtnFlx>
+            <MtnFlx
+              initial={{ x: 1000 }}
+              animate={animateX}
+              transition={{ duration: 2, type: "just" }}
+              w="100%"
+              h="100%"
+            >
+              <Image
+                animation="fadein 1 2s"
+                zIndex="3"
+                // pos="absolute"
+                w="150%"
+                h="18.75rem"
+                src={projects[projIndex].imgF}
+              />
+            </MtnFlx>
           </Text>
-          
-        </Text>
+          <Text>
+            <MtnHd
+              initial={{ x: -500 }}
+              animate={animateX}
+              transition={{ duration: 2, type: "just" }}
+              pb="15px"
+              fontFamily="avenir"
+              fontSize="1.5rem"
+              w="100%"
+              textAlign="center"
+            >
+              {projects[projIndex].title}
+            </MtnHd>
+            <Text fontFamily="varela round" maxW="12rem" height="6rem" margin="1rem auto" textAlign="center" fontSize="1rem">{projects[projIndex].text}</Text>
+            <MtnBtn
+              initial={{ opacity: 0 }}
+              animate={animateX}
+              transition={{ delay: 2.5, duration: 2, type: "just" }}
+              marginLeft="8rem"
+              w="160px"
+              h="51px"
+              bgGradient="linear(to-b, #B88746 ,#DFBD69)"
+              color="white"
+              fontSize="16px"
+              fontFamily="avenir"
+              textAlign="center"
+              _hover={{
+                bgGradient: "linear(to-b, #DFBD69, #B88746)",
+              }}
+              _active={{ bgGradient: "linear(to-b, #B88746 ,#DFBD69)" }}
+              className="view-btn"
+            >
+              VIEW PROJECT
+            </MtnBtn>
+            <Text marginLeft="9rem" marginTop="4rem"  className="carsoule-btn-wrapper">
+              <IconButton
+                aria-label="left-arrow"
+                variant="outline"
+                borderColor="#B88746"
+                borderRadius="full"
+                border="3px solid"
+                h="3.125rem"
+                w="3.125rem"
+                marginRight="2rem"
+                transform={"translate(0%, -50%)"}
+                zIndex={2}
+                onClick={() => {
+                  prevHandle();
+                }}
+              >
+                <AiOutlineLeft color="#B88746" size="2.5rem" />
+              </IconButton>
+
+              <IconButton
+                aria-label="right-arrow"
+                borderRadius="full"
+                variant="outline"
+                borderColor="#B88746"
+                border="3px solid"
+                transform={"translate(0%, -50%)"}
+                zIndex={2}
+                h="3.125rem"
+                w="3.125rem"
+                onClick={() => {
+                  nextHandle();
+                }}
+              >
+                <AiOutlineRight color="#B88746" size="2.5rem" />
+              </IconButton>
+            </Text>
+
+          </Text>
         </Flex>
-        </Slider>
+      </Slider>
     </Flex>
   );
 };

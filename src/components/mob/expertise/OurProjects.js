@@ -131,6 +131,7 @@ const OurProjects = () => {
       bgRepeat="no-repeat"
       bgPos="center"
       bgSize="cover"
+      className="project-dev-wrapper"
     >
       <Flex w="100%" h="100%" align="center" justify="center">
         <Flex direction="column" h="100%" align="center" justify="center">
@@ -152,6 +153,7 @@ const OurProjects = () => {
         height={"100%"}
         width={"100vw"}
         overflow={"hidden"}
+        className="project-dev-grid"
       >
         {/* CSS files for react-slick */}
         <link

@@ -10,7 +10,7 @@ import advi from "./PRIME ADVISORS.svg";
 const Whoweare =()=>{
       return (
       <>
-      <Flex mt="1rem" px="1rem" w="100%" direction="column">
+      <Flex mt="1rem" px="1rem" w="100%" direction="column" className="ourexpetise-wrapper">
       <Flex w="100%" direction="column" pt="2.5rem">
         <Flex w="100%" direction="column" pos="relative" pb="3.125rem">
             <Flex mt="-6rem" pt="1rem" direction="column" className="fadein-2sdelay revealOnce" w="100%" bgImage='linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)), url("/images/bg-box.jpg")'

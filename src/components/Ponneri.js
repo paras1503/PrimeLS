@@ -80,7 +80,8 @@ const Ponneri = () => {
     bgImage='linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)), url("/images/bg-box.jpg")'
       bgRepeat="no-repeat"
       bgPos="center"
-      bgSize="cover">
+      bgSize="cover" 
+      >
       <Flex w="100%" h="100%" direction="column">
         <Flex w="100%" align="center" justify="flex-start" pb="1.875rem" overflow="hidden">
           {/* <Image src="/images/logo.png" /> */}
@@ -99,7 +100,7 @@ const Ponneri = () => {
             PVT.
           </Text>
           </Spacer>
-          PONNERI GYMKHANA CLUB
+          PONNERI GYMKHANA CLUB 
             </Flex>         
                   </Heading>
                   <Divider

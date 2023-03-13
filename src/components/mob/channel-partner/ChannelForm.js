@@ -160,6 +160,7 @@ const ChannelForm = () => {
         justify="center"
         px="1rem"
         bgImage='linear-gradient(rgba(255,255,255,.2), rgba(255,255,255,.2)), url("/images/bg-box.jpg")'
+        className="about-whowe-wrapper"
       >
         <Flex bg="inherit" pt="1.875rem" mt="-1.875rem" direction="column">
         <Heading
@@ -186,6 +187,7 @@ const ChannelForm = () => {
           fontSize="1rem"
                 mb="1.875rem"
           textAlign="center"
+          className="channel-text"
         >
           Your association with us is extremely valuable to us. We support our
           Channel Partners to catalyst their growth with ours. Join our network
@@ -209,6 +211,7 @@ const ChannelForm = () => {
           onSubmit={(e) => {
             onSubmit(e);
           }}
+          className="channel-text"
         >
           <FormControl ref={ref} align="center">
             <MtnFlx

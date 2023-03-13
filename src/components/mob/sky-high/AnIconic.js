@@ -80,6 +80,7 @@ const SecondSec = () => {
       bgRepeat="no-repeat"
       bgPos="center"
       bgSize="cover"
+      className="about-whowe-wrapper arete-homes-wrapper"
     >
       <MtnHead
         bgImage="inherit"

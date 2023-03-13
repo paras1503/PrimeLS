@@ -45,14 +45,14 @@ const Passionatwork =()=>{
         <Flex direction="column" pb="1.875rem" mt="3.125rem" bgImage='linear-gradient(rgba(255,255,255,.2), rgba(255,255,255,.2)), url("/images/bg-box.jpg")'
             bgRepeat="no-repeat"
             bgPos="center"
-            bgSize="cover">
+            bgSize="cover" className="consulting-wrap">
            <Flex direction="column"  w="100%" overflow="hidden">
                 <Center><Text mb="1.563rem" pt="1.875rem" className="slidein-top revealOnce" fontFamily="goudy" fontSize="1.125rem">KEY SERVICES</Text></Center>
                 <Flex direction="column" gap="2%">
                     <Flex mb="1.875rem" align="center" direction="column" w="100%" className="fadein revealOnce">
                         <Heading fontFamily="varela round" fontSize="1rem">CONSULTING</Heading>
                         <Image my=".625rem" h="3.125rem" w="3.125rem" src={consultingSVG}/>
-                        <Flex w="100%" ml="8rem" fontFamily="varela round">
+                        <Flex w="100%" ml="8rem" fontFamily="varela round" className="unorder-wrapper">
                                 <ul style={{listStylePosition:"inside",width:"20rem",textAlign:"center"}}>
                                 <li style={{float:"left"}}>Merger & Acquisition</li>
                                 <li style={{float:"right", marginRight:"2rem"}}>Contracts</li>

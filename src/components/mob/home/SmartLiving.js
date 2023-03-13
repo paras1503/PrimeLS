@@ -288,6 +288,7 @@ const SmartLiving = () => {
     py="3.125rem"
     direction="column"
     justify="center"
+    className="smartliving-wrapper"
     >
       <MtnHd
         initial={{ y: -50, opacity: 0 }}
@@ -298,7 +299,7 @@ const SmartLiving = () => {
         fontWeight="400"
         textAlign="center"
       >
-        SMART LIVING
+        SMART LIVING  
     </MtnHd>
     <Flex pt="1.875rem">
      <Flex direction="column" w="100%" h="100%" px="2" justify="flex-start">
@@ -314,6 +315,7 @@ const SmartLiving = () => {
             transition={{ delay: 3.5, duration: 2, type: "just" }}
             py="25%"
             align="center"
+            className="manage-wrap"
           >
             <Image className="expandcar reveal" h="80px" w="80px" mr="2" src="/images/managed.svg" />
             <Flex direction="column">

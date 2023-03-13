@@ -100,7 +100,7 @@ const SkyhighInvest = () => {
         </Text>
         <Flex direction="column" w="100%" h="100%">
           
-          <Flex w="100%" h="100%" overflow="hidden">
+          <Flex w="100%" h="100%" overflow="hidden" className="arete-grid-btn">
             <Flex
               overflow="hidden"
               w="100%"
@@ -108,6 +108,7 @@ const SkyhighInvest = () => {
               direction="column"
               justify="center"
               fontFamily="avenir"
+              className="home-loan-wrap"
             >
               <Heading fontSize="1.5rem" pb="0.625rem" className="fadein revealOnce">
                 ARETE HOMES SKY HIGH TOWER
@@ -127,7 +128,7 @@ const SkyhighInvest = () => {
               <Text fontFamily="veralaRound" fontSize="1rem" pb="1.875rem" className="fadein revealOnce">
                 Fully Furnished With White Goods
               </Text>
-              <Flex w="100%" gap="2.938rem" pb="1.563rem" className="fadein revealOnce">
+              <Flex w="100%" gap="2.938rem" pb="1.563rem" className="fadein revealOnce" >
                 <Flex w="100%" direction="column" align="center">
                   <Image
                     w="3.125rem"
@@ -211,7 +212,7 @@ const SkyhighInvest = () => {
         <Text textAlign="center" fontFamily="goudy" fontSize="2.5rem" pb="1.875rem" className="slidein-top revealOnce">
           EASY PAYMENT PLAN
         </Text>
-        <Flex direction="column" w="100%" h="100%" gap="1.25rem">
+        <Flex direction="column" w="100%" h="100%" gap="1.25rem" className="arete-grid-btn">
           <Flex
             w="100%"
             h="23.25rem"
@@ -296,6 +297,7 @@ const SkyhighInvest = () => {
             bgRepeat="no-repeat"
             bgPos="center"
             bgSize="cover"
+            className="home-loan-wrap "
           >
             <Heading fontSize="1.5rem" pb="1.875rem" className="fadein revealOnce">
               90% HOME LOAN
@@ -389,11 +391,12 @@ const SkyhighInvest = () => {
         align="center"
         pb="3.125rem"
         px="6.25rem"
+        className="financial-model-wrap"
       >
         <Text fontFamily="goudy" fontSize="2.5rem" pb="1.875rem" className="slidein-top revealOnce">
           FINANCIAL MODEL
         </Text>
-        <Flex w="100%" h="100%" overflow="hidden">
+        <Flex w="100%" h="100%" overflow="hidden"  className="financial-model-content">
           <Flex
           overflow="hidden"
             w="38%"
@@ -1558,7 +1561,7 @@ const SkyhighInvest = () => {
         </Flex>
         
       </Flex>
-      <Text fontSize="0.625rem" pb="1.25rem">
+      <Text fontSize="0.625rem" pb="1.25rem" className="terms-wrapper">
         Terms & Conditions* : Assured Rent for 3 years from possession • Tax
         saving subject to yearly income • Appreciation - 5% is considered
         (considering Ination) • PMAY subject to eligibility

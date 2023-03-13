@@ -386,7 +386,7 @@ const Blog = () => {
                     WHY SHOULD YOU CHOOSE FLAT OVER INDEPENDENT HOUSES?
                   </Text>
                   <Flex
-                    className="blog-text-right reveal"
+                    className="blog-text-right reveal blog-community-wrap"
                     pos="absolute"
                     w="100%"
                     bgColor="black"

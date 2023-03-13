@@ -17,7 +17,10 @@ import { AiOutlineDownCircle } from "react-icons/ai";
 
 const DropDown = () => {
   return (
-    <Flex h="100%" w="100%" bgColor="#B88746" pb="5vh">
+    <Flex h="100%" w="100%" bgColor="#B88746" pb="5vh" 
+    className="about-whowe-wrapper
+    serviced-apartments-dropdown
+    ">
       <Accordion
         w="100%"
         border="1px solid #B88746"
@@ -35,7 +38,7 @@ const DropDown = () => {
               overflow="hidden"
             >
               <Box flex="1" textAlign="left">
-                MORE INFORMATION
+                MORE INFORMATION 
               </Box>
               <AccordionIcon borderRadius="50%" border="1px solid white" />
             </AccordionButton>

@@ -56,7 +56,7 @@ const SeventhSec = () => {
       bgImage='linear-gradient(rgba(255,255,255,.2), rgba(255,255,255,.2)), url("/images/bg-box.jpg")'
       bgRepeat="no-repeat"
       bgPos="center"
-      bgSize="cover"
+      bgSize="cover"  
     >
       {" "}
       <Flex

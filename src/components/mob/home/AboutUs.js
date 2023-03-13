@@ -20,6 +20,7 @@ const AboutUs = () => {
       pb="1.875rem"
       px="1rem"
       direction="column"
+      className="about-mob-wrapper"
     >
       <Flex direction="column">
         <Heading

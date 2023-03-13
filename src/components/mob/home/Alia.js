@@ -36,8 +36,8 @@ const Allia = () => {
   }, [isInView, animateX, animateY]);
 
   return (
-    <Flex ref={ref} direction="column" align="center" pt="3.125rem">
-      <Flex w="100%" px="100px">
+    <Flex ref={ref} className="brands-wrapper" direction="column" align="center" pt="3.125rem">
+      <Flex w="100%" px="100px" className="brands-content-wrap">
         <MtnFlx
           initial={{ opacity: 0, x: -50 }}
           animate={animateX}
@@ -46,11 +46,12 @@ const Allia = () => {
           h="100%"
           direction="column"
           pt="20px"
+          className="text-brand"
         >
           <Heading fontSize="40px" fontFamily="goudy" fontWeight="400">
             India’s Best <br /> Realty Brand
           </Heading>
-          <Flex justify="center" align="center">
+          <Flex justify="center" align="center" className="brand-item">
             <Divider
               orientation="horizontal"
               border="3px solid"
@@ -69,6 +70,7 @@ const Allia = () => {
           </Flex>
         </MtnFlx>
         <MtnFlx
+        className="brands-img-wrap"
           initial={{ y: 50, opacity: 0 }}
           animate={animateY}
           transition={{ delay: 1.5, duration: 2, type: "just" }}
@@ -103,7 +105,7 @@ const Allia = () => {
             <Text fontFamily="veralaRound" fontSize="16px" textAlign="center">
               The Economic Times
               <Text fontSize="18px" pt="10px">
-                "Best Realty<br/>Brand 2020-21"
+                "Best Realty<br />Brand 2020-21"
               </Text>
             </Text>
           </Flex>
@@ -119,7 +121,7 @@ const Allia = () => {
           </Flex>
         </MtnFlx>
       </Flex>
-      <Flex w="100%" direction="column" align="center" justify="center" pb="3.125rem">
+      <Flex className=" OURALLIANCES" w="100%" direction="column" align="center" justify="center" pb="3.125rem">
         <Heading fontSize="40px" fontFamily="goudy" fontWeight="400">
           OUR ALLIANCES
         </Heading>
@@ -130,6 +132,7 @@ const Allia = () => {
           w="100%"
           pt="1.875rem"
           px="100px"
+          className="alliance-brand-wrap"
         >
           <LogoSlider logos={logos} />
         </MtnFlx>

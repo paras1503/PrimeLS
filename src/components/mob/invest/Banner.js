@@ -4,7 +4,7 @@ import banner from "../../Invest imgs/MIVAN TECHNOLOGY TOWER.jpg";
 
 const Banner = () => {
   return (
-    <Flex w="100%" h="100vh" pos="relative">
+    <Flex w="100%" h="100vh" pos="relative" className="arete-homes-invest-banner">
       <Image
         animation="serv-expand-img 1 1s linear"
         w="100%"

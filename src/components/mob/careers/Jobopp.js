@@ -71,6 +71,7 @@ const Jobopp = () => {
               templateRows="repeat(1, 1fr)"
               templateColumns="repeat(1, 1fr)"
               gap="15px"
+              className="sale-manager-wrap"
             >
               <Flex
                 as={Link}
@@ -85,6 +86,7 @@ const Jobopp = () => {
                 color="white"
                 _hover={{ textDecoration: "none" }}
                 onClick={clickHandler}
+                
               >
                 <MtnHead
                   initial={{ opacity: 0 }}

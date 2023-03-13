@@ -43,7 +43,7 @@ const AboutUs = () => {
       pt="5rem"
       pb="1.875rem"
       px="6.2rem"
-      direction="column"
+      direction="column" 
     >
       <Flex w="100%" h="100%" direction="column" align="center">
         <MtnHead
@@ -54,7 +54,7 @@ const AboutUs = () => {
           fontWeight="400"
           fontSize="2.5rem"
         >
-          ABOUT US
+          ABOUT US 
         </MtnHead>
         <Flex w="100%" h="100%" align="center" direction="column">
           <MtnHead

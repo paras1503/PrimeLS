@@ -47,6 +47,7 @@ const SecondSec = () => {
       bgRepeat="no-repeat"
       bgPos="center"
       bgSize="cover"
+      className="arete-homes-wrapper"
     >
       <Heading
         bgImage="inherit"

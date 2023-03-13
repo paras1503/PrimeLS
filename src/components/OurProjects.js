@@ -198,7 +198,7 @@ const OurProjects = () => {
                                 }}
                                 _active={{ bgGradient: "linear(to-b, #B88746 ,#DFBD69)" }}
                             >
-                                VIEW PROJECT
+                                VIEW PROJECT  
                             </MtnBtn>
                             </Link>
                             <IconButton

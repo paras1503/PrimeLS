@@ -2179,7 +2179,7 @@ const LocationAndFormMall = () => {const [isOpen, setIsOpen]= useState(false);
                 w={{ base: "55%", lg: "fit-content" }}
                 fontFamily="veralaRound"
                 fontSize={{ base: "0.75rem", lg: "1rem" }}
-                justifySelf="flex-end"
+                justifySelf="flex-end" 
               >
                 <ListItem pb="0.625rem">Velammal International School</ListItem>
                 <ListItem pb="0.625rem">Origin By Mahindra</ListItem>

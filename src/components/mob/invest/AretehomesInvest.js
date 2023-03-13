@@ -58,7 +58,7 @@ const SkyhighInvest = () => {
   return (
     <>
       {" "}
-      <Flex w="100%" h="100%" px="1rem" direction="column" align="center">
+      <Flex w="100%" h="100%" px="1rem" direction="column" align="center" className="arete-grid-btn">
         <Flex w="100%">
           <Button
             w="100%"
@@ -109,7 +109,7 @@ const SkyhighInvest = () => {
         </Flex>
         {active===true ? <Twobhk /> : <Threebhk />}
       </Flex>
-      <Text fontSize="0.625rem" pb="1.25rem" textTransform="uppercase">
+      <Text fontSize="0.625rem" pb="1.25rem" textTransform="uppercase" className="terms-wrapper">
         Terms & Conditions* : Assured Rent for 3 years from possession • Tax
         saving subject to yearly income • Appreciation - 5% is considered
         (considering Ination) • PMAY subject to eligibility
@@ -369,6 +369,7 @@ const Twobhk = () => {
             bgRepeat="no-repeat"
             bgPos="center"
             bgSize="cover"
+            className="home-loan-wrap"
           >
             <Heading fontSize="1.5rem" pb="1.875rem" className="fadein revealOnce">
               HOME LOAN
@@ -462,11 +463,12 @@ const Twobhk = () => {
         align="center"
         pb="1.875rem"
         px="6.25rem"
+        className="financial-model-wrap"
       >
         <Text fontFamily="goudy" fontSize="2.5rem" pb="1.875rem" className="slidein-top revealOnce">
           FINANCIAL MODEL
         </Text>
-        <Flex w="100%" h="100%" overflow="hidden">
+        <Flex w="100%" h="100%" overflow="hidden"   className="financial-model-content">
           <Flex
           overflow="hidden"
             w="38%"
@@ -541,6 +543,7 @@ const Twobhk = () => {
               border="3px solid"
               borderColor="#DFBD69"
               bgColor="#DFBD69"
+              className="diveder-finance"
             />
             <Box
               height="1.875rem"

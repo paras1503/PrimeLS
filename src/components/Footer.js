@@ -58,7 +58,7 @@ const Footer = () => {
             </Flex>
             <Flex align="center">
               <Icon as={BsWhatsapp} w="8" h="6" color="#DFBD69" />
-              <Link fontSize="1rem" fontFamily="veralaRound" href="https://web.whatsapp.com/send?phone=919003199000">
+              <Link fontSize="1rem" fontFamily="veralaRound"  target="_blank" href="https://web.whatsapp.com/send?phone=919003199000">
                 +91 9003199000
               </Link>
             </Flex>
